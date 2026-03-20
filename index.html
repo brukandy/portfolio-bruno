@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruno Lorenzon — UX & Product Designer</title>
+  <meta name="description" content="Bruno Lorenzon — Mid-level UX & Product Designer. Esperienze digitali e prodotti educativi." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <ul class="nav__links nav__left">
+      <li><a href="works.html" class="nav__link">Works</a></li>
+    </ul>
+
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-top">Bruno &amp;</span>
+      <span class="nav__logo-bottom">Bruno</span>
+    </a>
+
+    <ul class="nav__links nav__right">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__floats">
+      <div class="hero__float hero__float--1">
+        <img src="assets/images/hero-float-1.jpg" alt="" onerror="this.parentElement.style.background='#e0deda'" />
+      </div>
+      <div class="hero__float hero__float--2">
+        <img src="assets/images/hero-float-2.jpg" alt="" onerror="this.parentElement.style.background='#cadcfc'" />
+      </div>
+      <div class="hero__float hero__float--3">
+        <img src="assets/images/hero-float-3.jpg" alt="" onerror="this.parentElement.style.background='#ebe9e4'" />
+      </div>
+      <div class="hero__float hero__float--4">
+        <img src="assets/images/hero-float-4.jpg" alt="" onerror="this.parentElement.style.background='#f0e8d8'" />
+      </div>
+    </div>
+
+    <p class="hero__eyebrow fade-up">This is Bruno</p>
+    <h1 class="hero__title fade-up fade-up-delay-1">UX &amp;<br>Product Designer</h1>
+    <p class="hero__subtitle fade-up fade-up-delay-2">esperienze digitali e prodotti educativi che le persone amano davvero usare.</p>
+    <a href="works.html" class="hero__cta fade-up fade-up-delay-3">
+      Vedi i progetti
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ===================== SNEAK PEAK ===================== -->
+  <section class="sneak">
+    <div class="sneak__label">
+      <div class="sneak__icon">🔭</div>
+      <h2 class="sneak__title fade-up">Sneak peak dei miei lavori</h2>
+    </div>
+    <div class="sneak__track-wrapper">
+      <div class="sneak__track">
+        <!-- First set -->
+        <div class="sneak__item"><img src="assets/images/sneak-1.jpg" alt="RentAll" onerror="this.style.display='none';this.parentElement.style.background='#cadcfc'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-2.jpg" alt="Leone" onerror="this.style.display='none';this.parentElement.style.background='#001666'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-3.jpg" alt="TIAA" onerror="this.style.display='none';this.parentElement.style.background='#f0e8d8'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-4.jpg" alt="Colosseum" onerror="this.style.display='none';this.parentElement.style.background='#e0deda'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-5.jpg" alt="Adecco" onerror="this.style.display='none';this.parentElement.style.background='#ff5900'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-6.jpg" alt="Treedom" onerror="this.style.display='none';this.parentElement.style.background='#2a3132'" /></div>
+        <!-- Duplicate for infinite loop -->
+        <div class="sneak__item"><img src="assets/images/sneak-1.jpg" alt="" onerror="this.style.display='none';this.parentElement.style.background='#cadcfc'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-2.jpg" alt="" onerror="this.style.display='none';this.parentElement.style.background='#001666'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-3.jpg" alt="" onerror="this.style.display='none';this.parentElement.style.background='#f0e8d8'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-4.jpg" alt="" onerror="this.style.display='none';this.parentElement.style.background='#e0deda'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-5.jpg" alt="" onerror="this.style.display='none';this.parentElement.style.background='#ff5900'" /></div>
+        <div class="sneak__item"><img src="assets/images/sneak-6.jpg" alt="" onerror="this.style.display='none';this.parentElement.style.background='#2a3132'" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORKS PREVIEW ===================== -->
+  <section class="works-section">
+    <div class="container">
+      <div class="works-section__header">
+        <p class="works-section__eyebrow">Design in azione</p>
+        <h2 class="works-section__title fade-up">Progetti selezionati</h2>
+        <p class="works-section__sub fade-up fade-up-delay-1">Piattaforme digitali, app, e-learning e strategie UX che producono risultati reali.</p>
+      </div>
+
+      <div class="filters fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="product">Product Design</button>
+        <button class="filter-btn" data-filter="ux-research">UX Research</button>
+        <button class="filter-btn" data-filter="elearning">E-learning</button>
+        <button class="filter-btn" data-filter="ui">UI Design</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 1. RentAll -->
+        <a href="works/rentall.html" class="project-card card-reveal card-reveal-delay-1" data-categories="product ux-research">
+          <div class="project-card__image">
+            <div class="project-card__placeholder" style="background: linear-gradient(135deg,#cadcfc,#e8f0ff);">📱</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">RentAll – P2P Rental App</h3>
+            <p class="project-card__desc">App di noleggio peer-to-peer progettata con design thinking: ricerca utenti, analisi competitor, prototipazione e test.</p>
+            <div class="project-card__tags">
+              <span class="tag">Product Design</span>
+              <span class="tag tag--outline">UX Research</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. Leone Master -->
+        <a href="works/leone-master.html" class="project-card card-reveal card-reveal-delay-2" data-categories="elearning product ui">
+          <div class="project-card__image">
+            <div class="project-card__placeholder" style="background: linear-gradient(135deg,#132E55,#1a4a8a);">🎓</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Leone Master School – Platform UX</h3>
+            <p class="project-card__desc">Redesign completo della piattaforma e-learning: onboarding, homepage personalizzata, architettura contenuti e UX mobile.</p>
+            <div class="project-card__tags">
+              <span class="tag">E-learning</span>
+              <span class="tag tag--outline">Product Design</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. There Is An Alternative -->
+        <a href="works/tiaa.html" class="project-card card-reveal card-reveal-delay-3" data-categories="product ui">
+          <div class="project-card__image">
+            <div class="project-card__placeholder" style="background: linear-gradient(135deg,#1a1a1a,#333);">💼</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">There Is An Alternative – Career Platform</h3>
+            <p class="project-card__desc">UX e layout per piattaforma career media: esplorazione aziende con contenuti immersivi e job discovery.</p>
+            <div class="project-card__tags">
+              <span class="tag">UI Design</span>
+              <span class="tag tag--outline">Product Design</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4. Colosseum -->
+        <a href="works/colosseum.html" class="project-card card-reveal card-reveal-delay-4" data-categories="ui product">
+          <div class="project-card__image">
+            <div class="project-card__placeholder" style="background: linear-gradient(135deg,#c8a96e,#e8d5a3);">🏛️</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Colosseum Luxury Suite – Website</h3>
+            <p class="project-card__desc">Sito per affitti brevi ottimizzato per conversione: struttura, CTA, contenuti e miglioramenti di performance.</p>
+            <div class="project-card__tags">
+              <span class="tag">UI Design</span>
+              <span class="tag tag--outline">UX/CRO</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5. Adecco Gen Z -->
+        <a href="works/adecco.html" class="project-card card-reveal card-reveal-delay-5" data-categories="ux-research product">
+          <div class="project-card__image">
+            <div class="project-card__placeholder" style="background: linear-gradient(135deg,#e8392a,#ff6b5b);">🚀</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Adecco Gen Z – Engagement Platform</h3>
+            <p class="project-card__desc">Engagement Gen Z: ricerca utenti, persona, contenuti editoriali e strategia digitale per registrazioni e upload CV.</p>
+            <div class="project-card__tags">
+              <span class="tag">UX Research</span>
+              <span class="tag tag--outline">Strategy</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6. Treedom -->
+        <a href="works/treedom.html" class="project-card card-reveal card-reveal-delay-6" data-categories="product ui">
+          <div class="project-card__image">
+            <div class="project-card__placeholder" style="background: linear-gradient(135deg,#2d7a3a,#4caf50);">🌳</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Treedom – UX Concept & Experience</h3>
+            <p class="project-card__desc">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità.</p>
+            <div class="project-card__tags">
+              <span class="tag">UX Concept</span>
+              <span class="tag tag--outline">Storytelling</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUE ===================== -->
+  <section class="value">
+    <div class="container">
+      <div class="value__icon fade-up">🛸</div>
+      <h2 class="value__title fade-up">Cosa porto al tavolo</h2>
+      <p class="value__sub fade-up fade-up-delay-1">Esperienze digitali che coinvolgono gli utenti e aiutano i prodotti a crescere davvero.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card fade-up">
+          <div class="skill-card__icon">🔍</div>
+          <h4 class="skill-card__title">UX Research</h4>
+          <p class="skill-card__text">User interviews, usability test, analisi competitive e sintesi dei dati per decisioni fondate.</p>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-1">
+          <div class="skill-card__icon">⚡</div>
+          <h4 class="skill-card__title">Product Design</h4>
+          <p class="skill-card__text">Dal problema al prototipo testato: architettura, wireframe, design system e iterazioni rapide.</p>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-2">
+          <div class="skill-card__icon">🤖</div>
+          <h4 class="skill-card__title">AI-Driven Workflows</h4>
+          <p class="skill-card__text">Integrazione di strumenti AI nel processo di design per velocizzare ricerca, ideazione e produzione.</p>
+        </div>
+        <div class="skill-card fade-up">
+          <div class="skill-card__icon">🎓</div>
+          <h4 class="skill-card__title">E-learning Design</h4>
+          <p class="skill-card__text">Piattaforme educative con onboarding efficace, architettura dei contenuti e UX mobile-first.</p>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-1">
+          <div class="skill-card__icon">🎨</div>
+          <h4 class="skill-card__title">UI Design</h4>
+          <p class="skill-card__text">Interfacce visivamente coerenti, accessibili e scalabili. Design system e component library.</p>
+        </div>
+        <div class="skill-card fade-up fade-up-delay-2">
+          <div class="skill-card__icon">📊</div>
+          <h4 class="skill-card__title">Strategy & Metrics</h4>
+          <p class="skill-card__text">KPI, conversion rate, engagement: collego le decisioni di design ai risultati di business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" style="padding: 0 0 var(--gap);">
+    <div class="about fade-up">
+      <div class="about__content">
+        <p class="about__eyebrow">Behind the canvas</p>
+        <h2 class="about__title">Ciao,<br>sono Bruno</h2>
+        <p class="about__text">
+          UX & Product Designer con 3+ anni di esperienza su piattaforme digitali, app e prodotti educativi.
+          Mi muovo lungo tutto il processo — dalla ricerca utenti al prototipo testato — con una forte attenzione
+          ai risultati di business e all'adozione di workflow AI che accelerano ogni fase del lavoro.
+        </p>
+        <a href="#contact" class="about__cta">
+          Parliamo
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="about__photo">
+        <div class="about__photo-placeholder">👤</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact__icon fade-up">📬</div>
+      <h2 class="contact__title fade-up">Costruiamo qualcosa<br>di straordinario?</h2>
+      <p class="contact__sub fade-up fade-up-delay-1">Sono disponibile per collaborazioni, freelance e opportunità full-time.</p>
+
+      <div class="contact__links fade-up fade-up-delay-2">
+        <a href="mailto:bruno@example.com" class="contact__link-item">
+          <span class="contact__link-label">Email</span>
+          <span class="contact__link-value">bruno@example.com</span>
+        </a>
+        <a href="https://linkedin.com/in/brunolorenzon" target="_blank" class="contact__link-item">
+          <span class="contact__link-label">LinkedIn</span>
+          <span class="contact__link-value">linkedin.com/in/brunolorenzon</span>
+        </a>
+        <a href="https://behance.net/brunolorenzon" target="_blank" class="contact__link-item">
+          <span class="contact__link-label">Behance</span>
+          <span class="contact__link-value">behance.net/brunolorenzon</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__logo">Bruno Lorenzon</div>
+    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
