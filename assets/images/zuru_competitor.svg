@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" width="1200" height="660" font-family="'Trebuchet MS',Helvetica,Arial,sans-serif">
+  <defs>
+    <clipPath id="card">
+      <rect x="20" y="16" width="1160" height="628" rx="24"/>
+    </clipPath>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="8" stdDeviation="24" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Page background -->
+  <rect width="1200" height="660" fill="#EDECEA"/>
+
+  <!-- Card shadow -->
+  <rect x="20" y="16" width="1160" height="628" rx="24" fill="#1C1C2E" filter="url(#sh)"/>
+
+  <!-- Card base (dark) -->
+  <rect x="20" y="16" width="1160" height="628" rx="24" fill="#1C1C2E"/>
+
+  <!-- === HEADER AREA (y=16 to y=112) === -->
+  <!-- Red top accent line -->
+  <rect x="20" y="16" width="1160" height="4" rx="0" fill="#E5173F" clip-path="url(#card)"/>
+
+  <!-- Logo backdrop: light pill so the dark "Tech" in PNG is visible -->
+  <rect x="40" y="30" width="130" height="56" rx="8" fill="rgba(255,255,255,0.88)"/>
+
+  <!-- Zuru logo -->
+  <image x="44" y="34" width="120" height="48" href="data:image/png;base64,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" clip-path="url(#card)"/>
+
+  <!-- Title block -->
+  <text x="192" y="60" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">VANTAGGIO COMPETITIVO</text>
+  <text x="192" y="82" font-size="13" fill="#666680">L'unico che parte già con il digital twin della casa</text>
+
+  <!-- Score summary chips on right -->
+  <rect x="930" y="38" width="80" height="26" rx="13" fill="rgba(30,215,96,0.15)"/>
+  <text x="970" y="56" text-anchor="middle" font-size="11" font-weight="700" fill="#1ED760">6 / 6 ✓</text>
+  <text x="1024" y="57" font-size="11" fill="#444460">features</text>
+
+  <!-- Header bottom separator -->
+  <rect x="20" y="112" width="1160" height="1" fill="rgba(255,255,255,0.08)" clip-path="url(#card)"/>
+
+  <!-- === COLUMN BACKGROUNDS === -->
+  <!-- Feature col bg (slightly lighter) -->
+  <rect x="20" y="112" width="230" height="464" fill="#242438" clip-path="url(#card)"/>
+  <!-- Zuru col bg (full red) -->
+  <rect x="1040" y="112" width="140" height="464" fill="#E5173F" clip-path="url(#card)"/>
+
+  <!-- === TABLE HEADER ROW (y=112, h=44) === -->
+  <rect x="20" y="112" width="1160" height="44" fill="#161628" clip-path="url(#card)"/>
+  <!-- Feature header left dark override -->
+  <rect x="20" y="112" width="230" height="44" fill="#131325" clip-path="url(#card)"/>
+  <!-- Zuru header darker red -->
+  <rect x="1040" y="112" width="140" height="44" fill="#C41230" clip-path="url(#card)"/>
+
+  <!-- Header text — Feature -->
+  <text x="135" y="139" text-anchor="middle" font-size="10" font-weight="700" fill="#555570" letter-spacing="1.2">FEATURE</text>
+  <!-- Header text — Competitors -->
+  <text x="329" y="139" text-anchor="middle" font-size="10" font-weight="700" fill="#555570" letter-spacing="1">TESLA</text>
+  <text x="487" y="139" text-anchor="middle" font-size="10" font-weight="700" fill="#555570" letter-spacing="1">LOXONE</text>
+  <text x="645" y="139" text-anchor="middle" font-size="10" font-weight="700" fill="#555570" letter-spacing="1">JOSH.AI</text>
+  <text x="803" y="139" text-anchor="middle" font-size="10" font-weight="700" fill="#555570" letter-spacing="0.5">GOOGLE HOME</text>
+  <text x="961" y="139" text-anchor="middle" font-size="10" font-weight="700" fill="#555570" letter-spacing="0.5">APPLE HOME</text>
+  <!-- Zuru header text -->
+  <text x="1110" y="132" text-anchor="middle" font-size="14" font-weight="800" fill="#FFFFFF" letter-spacing="2">ZURU</text>
+  <text x="1110" y="148" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(255,255,255,0.7)" letter-spacing="0.5">★ WINNER</text>
+
+  <!-- === ROW DIVIDERS (very subtle) === -->
+  <line x1="20" y1="156" x2="1180" y2="156" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="20" y1="226" x2="1180" y2="226" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="20" y1="296" x2="1180" y2="296" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="20" y1="366" x2="1180" y2="366" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="20" y1="436" x2="1180" y2="436" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="20" y1="506" x2="1180" y2="506" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- === COLUMN DIVIDERS (vertical, very subtle) === -->
+  <line x1="250" y1="112" x2="250" y2="576" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <line x1="408" y1="112" x2="408" y2="576" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="566" y1="112" x2="566" y2="576" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="724" y1="112" x2="724" y2="576" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="882" y1="112" x2="882" y2="576" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="1040" y1="112" x2="1040" y2="576" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- ============================================================ -->
+  <!-- ROW 1: Digital twin casa — y=156, center=191, tag-y=177 -->
+  <!-- ============================================================ -->
+  <text x="44" y="195" font-size="13" font-weight="700" fill="#FFFFFF">Digital twin casa</text>
+  <!-- Tesla: No -->
+  <rect x="302" y="177" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="329" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Loxone: Parziale -->
+  <rect x="453" y="177" width="68" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="487" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Parziale</text>
+  <!-- Josh.ai: No -->
+  <rect x="618" y="177" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="645" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Google Home: No -->
+  <rect x="776" y="177" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="803" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Apple Home: No -->
+  <rect x="934" y="177" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="961" y="196" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Zuru: Nativo (white tag on red) -->
+  <rect x="1076" y="177" width="68" height="28" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="1110" y="196" text-anchor="middle" font-size="12" font-weight="800" fill="#1A7A33">Nativo ✓</text>
+
+  <!-- ============================================================ -->
+  <!-- ROW 2: Lista dispositivi UI — y=226, center=261, tag-y=247 -->
+  <!-- ============================================================ -->
+  <text x="44" y="265" font-size="13" font-weight="700" fill="#FFFFFF">Lista dispositivi UI</text>
+  <!-- Tesla: No -->
+  <rect x="302" y="247" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="329" y="266" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Loxone: Secondaria -->
+  <rect x="442" y="247" width="90" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="487" y="266" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Secondaria</text>
+  <!-- Josh.ai: Sì -->
+  <rect x="623" y="247" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="645" y="266" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Google Home: Sì -->
+  <rect x="781" y="247" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="803" y="266" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Apple Home: Sì -->
+  <rect x="939" y="247" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="961" y="266" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Zuru: Sì -->
+  <rect x="1088" y="247" width="44" height="28" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="1110" y="266" text-anchor="middle" font-size="12" font-weight="800" fill="#1A7A33">Sì ✓</text>
+
+  <!-- ============================================================ -->
+  <!-- ROW 3: Controllo angolo/% — y=296, center=331, tag-y=317 -->
+  <!-- ============================================================ -->
+  <text x="44" y="335" font-size="13" font-weight="700" fill="#FFFFFF">Controllo angolo/%</text>
+  <!-- Tesla: No -->
+  <rect x="302" y="317" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="329" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Loxone: Sì -->
+  <rect x="465" y="317" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="487" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Josh.ai: Dipende HW -->
+  <rect x="598" y="317" width="94" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="645" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Dipende HW</text>
+  <!-- Google Home: Dipende HW -->
+  <rect x="756" y="317" width="94" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="803" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Dipende HW</text>
+  <!-- Apple Home: Dipende HW -->
+  <rect x="914" y="317" width="94" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="961" y="336" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Dipende HW</text>
+  <!-- Zuru: HW proprio -->
+  <rect x="1064" y="317" width="92" height="28" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="1110" y="336" text-anchor="middle" font-size="12" font-weight="800" fill="#1A7A33">HW proprio</text>
+
+  <!-- ============================================================ -->
+  <!-- ROW 4: Timer durata limitata — y=366, center=401, tag-y=387 -->
+  <!-- ============================================================ -->
+  <text x="44" y="405" font-size="13" font-weight="700" fill="#FFFFFF">Timer durata limitata</text>
+  <!-- Tesla: No -->
+  <rect x="302" y="387" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="329" y="406" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Loxone: Sì -->
+  <rect x="465" y="387" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="487" y="406" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Josh.ai: Sì -->
+  <rect x="623" y="387" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="645" y="406" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Google Home: Workaround -->
+  <rect x="756" y="387" width="94" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="803" y="406" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Workaround</text>
+  <!-- Apple Home: Workaround -->
+  <rect x="914" y="387" width="94" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="961" y="406" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Workaround</text>
+  <!-- Zuru: Progettato -->
+  <rect x="1060" y="387" width="100" height="28" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="1110" y="406" text-anchor="middle" font-size="12" font-weight="800" fill="#1A7A33">Progettato</text>
+
+  <!-- ============================================================ -->
+  <!-- ROW 5: Setup senza tecnico — y=436, center=471, tag-y=457 -->
+  <!-- ============================================================ -->
+  <text x="44" y="475" font-size="13" font-weight="700" fill="#FFFFFF">Setup senza tecnico</text>
+  <!-- Tesla: Sì -->
+  <rect x="307" y="457" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="329" y="476" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Loxone: No -->
+  <rect x="460" y="457" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="487" y="476" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Josh.ai: No -->
+  <rect x="618" y="457" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="645" y="476" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Google Home: Sì -->
+  <rect x="781" y="457" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="803" y="476" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Apple Home: Sì -->
+  <rect x="939" y="457" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="961" y="476" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Zuru: Core -->
+  <rect x="1086" y="457" width="48" height="28" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="1110" y="476" text-anchor="middle" font-size="12" font-weight="800" fill="#1A7A33">Core</text>
+
+  <!-- ============================================================ -->
+  <!-- ROW 6: Ecosistema aperto — y=506, center=541, tag-y=527 -->
+  <!-- ============================================================ -->
+  <text x="44" y="545" font-size="13" font-weight="700" fill="#FFFFFF">Ecosistema aperto</text>
+  <!-- Tesla: No -->
+  <rect x="302" y="527" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="329" y="546" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Loxone: Parziale -->
+  <rect x="453" y="527" width="68" height="28" rx="6" fill="rgba(255,184,0,0.12)"/>
+  <text x="487" y="546" text-anchor="middle" font-size="12" font-weight="700" fill="#FFB800">Parziale</text>
+  <!-- Josh.ai: No -->
+  <rect x="618" y="527" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="645" y="546" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Google Home: Sì -->
+  <rect x="781" y="527" width="44" height="28" rx="6" fill="rgba(30,215,96,0.15)"/>
+  <text x="803" y="546" text-anchor="middle" font-size="12" font-weight="700" fill="#1ED760">Sì</text>
+  <!-- Apple Home: No -->
+  <rect x="934" y="527" width="54" height="28" rx="6" fill="rgba(255,74,74,0.15)"/>
+  <text x="961" y="546" text-anchor="middle" font-size="12" font-weight="700" fill="#FF6B6B">No</text>
+  <!-- Zuru: Opportunità -->
+  <rect x="1056" y="527" width="108" height="28" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <text x="1110" y="546" text-anchor="middle" font-size="12" font-weight="800" fill="#1A7A33">Opportunità</text>
+
+  <!-- === BOTTOM AREA === -->
+  <!-- Bottom separator -->
+  <rect x="20" y="576" width="1160" height="1" fill="rgba(255,255,255,0.08)" clip-path="url(#card)"/>
+
+  <!-- Legend -->
+  <rect x="44" y="595" width="12" height="12" rx="3" fill="rgba(30,215,96,0.25)"/>
+  <text x="62" y="606" font-size="11" fill="#555570">Supportato</text>
+  <rect x="160" y="595" width="12" height="12" rx="3" fill="rgba(255,184,0,0.2)"/>
+  <text x="178" y="606" font-size="11" fill="#555570">Parziale / Workaround</text>
+  <rect x="336" y="595" width="12" height="12" rx="3" fill="rgba(255,74,74,0.2)"/>
+  <text x="354" y="606" font-size="11" fill="#555570">Non supportato</text>
+  <!-- Zuru indicator -->
+  <rect x="480" y="592" width="50" height="18" rx="9" fill="#E5173F"/>
+  <text x="505" y="605" text-anchor="middle" font-size="9" font-weight="800" fill="white" letter-spacing="0.5">ZURU</text>
+  <text x="538" y="606" font-size="11" fill="#555570">Unico con digital twin nativo</text>
+</svg>

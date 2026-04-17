@@ -3,73 +3,309 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Treedom – Bruno Lorenzon</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <title>Treedhome – Bruno Lorenzon</title>
+  <link rel="stylesheet" href="../css/style.css?v=8" />
+  <style>
+    /* Fix: avif non era nella lista cover — zero padding, riempie il box */
+    .case-full-image img[src$=".avif"] { object-fit: cover; padding: 0; }
+    .case-cover img[src$=".avif"] { object-fit: cover; }
+
+    /* Margini ridotti per le immagini di questo progetto */
+    .case-full-image:has(img[src$=".avif"]) { margin-bottom: 56px; }
+
+    /* Bento grid */
+    .bento {
+      display: grid;
+      gap: 10px;
+      margin: 0 40px 56px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .bento-2        { grid-template-columns: 1fr 1fr; }
+    .bento-3        { grid-template-columns: 1fr 1fr 1fr; }
+    .bento-featured { grid-template-columns: 5fr 3fr; }
+    .bento > div {
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--cream-2);
+      border-radius: 12px;
+    }
+    .bento > div img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 768px) {
+      .bento { margin: 0 16px 40px; gap: 6px; }
+      .bento-2, .bento-3, .bento-featured { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
   <nav class="nav scrolled" id="nav">
     <ul class="nav__links nav__left"><li><a href="../works.html" class="nav__link">← Works</a></li></ul>
-    <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno &amp;</span><span class="nav__logo-bottom">Bruno</span></a>
+    <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
     <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
   </nav>
 
+  <!-- 1. HERO -->
   <div class="case-hero">
-    <h1 class="case-hero__title fade-up">Treedom</h1>
-    <p class="case-hero__desc fade-up fade-up-delay-1">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità, con focus su storytelling e interazione.</p>
-    <div class="case-hero__tags fade-up fade-up-delay-2">
-      <span class="tag">UX Concept</span>
-      <span class="tag tag--outline">Storytelling</span>
+    <p class="case-hero__eyebrow fade-up">Sustainability · UX Research · Concept Design</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1">Riprogettare il valore<br>di piantare un albero</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2">Un'esperienza fisica immersiva per ridare peso emotivo a un gesto digitale — e trasformare utenti passivi in ambasciatori del rimboschimento</p>
+    <div class="case-hero__tags fade-up fade-up-delay-3">
+      <span class="tag">UX Research</span>
+      <span class="tag tag--outline">Concept Design</span>
+      <span class="tag tag--outline">Service Design</span>
       <span class="tag tag--outline">UI Design</span>
     </div>
   </div>
 
-  <div class="case-cover">
-    <div class="case-cover-placeholder" style="background: linear-gradient(135deg,#2d7a3a,#4caf50);">🌳</div>
+  <!-- Cover -->
+  <div class="case-cover img-reveal">
+    <img src="../assets/images/hero%20treedom.avif" alt="Treedhome — hero" />
+  </div>
+
+  <!-- Meta -->
+  <div class="case-body">
+    <div class="case-meta fade-up">
+      <div class="case-meta__item">
+        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__value">UX/UI Designer</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Settore</div>
+        <div class="case-meta__value">Sustainability</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Durata</div>
+        <div class="case-meta__value">5 settimane</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Cliente</div>
+        <div class="case-meta__value">Treedom</div>
+      </div>
+    </div>
+
+    <!-- 2. Contesto -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Contesto</p>
+      <h2 class="case-section__heading fade-up">Treedom punta a 10 milioni<br>di alberi — ma la conversione cala</h2>
+      <p class="case-section__text fade-up">Treedom è una delle principali piattaforme di rimboschimento al mondo: permette di piantare e adottare alberi reali in aree a rischio deforestazione, con l'obiettivo di raggiungere 10 milioni di alberi entro il 2025.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Il problema: regalare un albero ha perso valore emotivo negli anni. Un'azione digitale astratta, distante geograficamente, difficile da percepire come reale. La piattaforma ne risente direttamente — serviva una soluzione disruptive, non un redesign incrementale.</p>
+    </div>
+
+    <!-- 3. La sfida -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">La sfida</p>
+      <h2 class="case-section__heading fade-up">Come si rende di nuovo<br>significativo un gesto digitale?</h2>
+      <p class="case-section__text fade-up">La sfida non era migliorare l'interfaccia — era recuperare la tangibilità di un'azione che il digitale aveva reso troppo astratta. Un albero piantato a 10.000 km di distanza non si vede, non si sente, non si ricorda.</p>
+      <ul class="case-list fade-up">
+        <li>Il gesto di piantare un albero ha perso peso emotivo</li>
+        <li>La distanza geografica annulla la percezione di impatto reale</li>
+        <li>L'engagement post-acquisto è basso — nessuna ragione per tornare</li>
+        <li>Serviva una rottura concettuale, non un miglioramento visivo</li>
+      </ul>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">10M</span>
+          <span class="case-metric__label">Obiettivo alberi — Treedom entro 2025</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↓</span>
+          <span class="case-metric__label">Valore percepito del gesto</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↓</span>
+          <span class="case-metric__label">Conversione e retention post-acquisto</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Processo -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Processo</p>
+      <h2 class="case-section__heading fade-up">Double Diamond —<br>5 settimane, approccio multidisciplinare</h2>
+      <p class="case-section__text fade-up">Ho collaborato in team applicando la metodologia Double Diamond: divergenza nella fase di ricerca, convergenza nella sintesi degli insight, poi ideazione e prototipazione. Ogni fase ha informato la successiva — il concept è costruito su dati reali, non su intuizioni.</p>
+    </div>
+  </div>
+
+  <!-- Process SVG -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/treedome_process.svg" alt="Processo — Double Diamond 5 settimane" />
+  </div>
+
+  <!-- 5. Ricerca + Insights + Persona -->
+  <div class="case-body">
+    <div class="case-section">
+      <p class="case-section__title fade-up">Ricerca</p>
+      <h2 class="case-section__heading fade-up">Benchmark, osservazione<br>e 9 interviste semi-strutturate</h2>
+      <p class="case-section__text fade-up">Abbiamo condotto un benchmark esteso — competitor, casi di successo nella sostenibilità e referenze disruptive da altri settori — per capire cosa genera davvero engagement emotivo.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Le 9 interviste semi-strutturate con utenti target hanno restituito pattern comportamentali e motivazionali che nessun dato quantitativo avrebbe rivelato.</p>
+      <ul class="case-list fade-up">
+        <li>Benchmark competitivo e ispirativo su piattaforme di sostenibilità</li>
+        <li>Osservazione digitale del comportamento utente</li>
+        <li>Survey per validare le ipotesi iniziali</li>
+        <li>9 interviste semi-strutturate con utenti target</li>
+      </ul>
+    </div>
+
+    <!-- 6. Insight chiave -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Insight chiave</p>
+      <h2 class="case-section__heading fade-up">Tre pattern che guidano<br>le scelte di progetto</h2>
+      <div class="case-system-box fade-up">
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">01</span>
+          <span class="case-system-box__value"><strong>Fun is the key</strong> — Le persone si impegnano ambientalmente quando l'azione è piacevole, non quando è una responsabilità morale. Il divertimento abbassa la barriera d'accesso.</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">02</span>
+          <span class="case-system-box__value"><strong>Natural escapism</strong> — Gli utenti cercano attivamente momenti di disconnessione dalla vita iperconnessa. La natura è un rifugio mentale, non solo un valore etico.</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">03</span>
+          <span class="case-system-box__value"><strong>Contributo digitale percepito come irreale</strong> — Piantare un albero online sembra meno concreto di qualsiasi azione fisica. La distanza annulla il senso di impatto.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Persona -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Persona</p>
+      <h2 class="case-section__heading fade-up">Lorenzo — il creativo<br>iperconnesso in cerca di pausa</h2>
+      <p class="case-section__text fade-up">Content designer, early adopter per natura. Ama la tecnologia ma soffre i lati oscuri di una vita troppo digitale: stress, dipendenza, blocchi creativi. Il suo antidoto sono i momenti di isolamento e contatto con la natura — che cerca sempre più attivamente.</p>
+      <div class="case-system-box fade-up">
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Goal</span>
+          <span class="case-system-box__value">Trovare ispirazione · Disconnettersi dalla routine digitale · Scoprire esperienze nuove e tangibili</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Frustrazione</span>
+          <span class="case-system-box__value">I gesti ambientali sembrano vuoti · L'iperconnessione genera stress · Non trova esperienze che uniscano tech e natura in modo autentico</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Fit</span>
+          <span class="case-system-box__value">Treedhome è esattamente ciò che Lorenzo cerca — un'esperienza fisica, tech, immersiva e con impatto reale sul pianeta</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. La visione -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">La visione</p>
+      <h2 class="case-section__heading fade-up">Treedhome — una cupola<br>che porta la foresta in città</h2>
+      <p class="case-section__text fade-up">Treedhome è una struttura fisica itinerante: una cupola immersiva che replica l'esperienza sensoriale di una foresta reale — suoni spaziali, fragranze integrate, pareti LED con video live delle foreste dove gli utenti hanno piantato i loro alberi.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Non è solo un'installazione. È il touchpoint fisico che trasforma un gesto digitale astratto in un'esperienza memorabile — e converte visitatori curiosi in sostenitori attivi del rimboschimento.</p>
+      <ul class="case-list fade-up">
+        <li><strong>Itinerante</strong> — si sposta tra piazze e fiere italiane, portando la missione Treedom dove sono le persone</li>
+        <li><strong>Interattiva</strong> — l'utente personalizza l'esperienza dal proprio device nella sezione "Fai suonare la tua foresta"</li>
+        <li><strong>Sostenibile</strong> — costruita con materiali che assorbono CO₂. La struttura è rivestita con <strong>vernice Gosh</strong>: un coating innovativo a base minerale capace di catturare anidride carbonica dall'atmosfera, trasformando la cupola stessa in uno strumento attivo di riduzione delle emissioni</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bento: struttura cupola + cupola in piazza -->
+  <div class="bento bento-2 img-reveal">
+    <div><img src="../assets/images/cupola%20struttura.avif" alt="Treedhome — struttura della cupola" /></div>
+    <div><img src="../assets/images/moving%20cupola.avif" alt="Treedhome — la cupola in piazza" /></div>
+  </div>
+
+  <!-- Journey SVG -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/treedome_journey.svg" alt="Service blueprint — il journey con Treedhome" />
+  </div>
+
+  <!-- 9. Prototipi + Learnings -->
+  <div class="case-body">
+    <div class="case-section">
+      <p class="case-section__title fade-up">Prototipo 01</p>
+      <h2 class="case-section__heading fade-up">La cupola — immersione<br>sensoriale totale</h2>
+      <p class="case-section__text fade-up">All'interno della cupola l'utente è avvolto da suoni spaziali, profumi naturali e video live delle foreste reali dove Treedom pianta alberi ogni giorno. Non una simulazione: un collegamento autentico alla natura.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">La prima esperienza è gratuita e guidata dall'app. Al termine, una CTA naturale invita a sbloccare i suoni anche a casa — primo passo verso la conversione.</p>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">3</span>
+          <span class="case-metric__label">Sensi coinvolti — udito, olfatto, vista</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Connessione emotiva con la foresta</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Conversione — da visitatore ad abbonato</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/grazie%20visitato%20cupola.avif" alt="Treedhome — esperienza nella cupola" />
   </div>
 
   <div class="case-body">
-    <div class="case-meta fade-up">
-      <div class="case-meta__item"><div class="case-meta__label">Cliente</div><div class="case-meta__value">Concept / Self-initiated</div></div>
-      <div class="case-meta__item"><div class="case-meta__label">Ruolo</div><div class="case-meta__value">UX Designer</div></div>
-      <div class="case-meta__item"><div class="case-meta__label">Anno</div><div class="case-meta__value">2024</div></div>
-      <div class="case-meta__item"><div class="case-meta__label">Strumenti</div><div class="case-meta__value">Figma, Principle</div></div>
+    <div class="case-section">
+      <p class="case-section__title fade-up">Prototipo 02</p>
+      <h2 class="case-section__heading fade-up">Make Your Forest Play —<br>la foresta a casa tua</h2>
+      <p class="case-section__text fade-up">"Make Your Forest Play" estende l'esperienza Treedhome oltre la cupola. Gli utenti abbonati ascoltano i suoni reali delle foreste dove hanno piantato i propri alberi — costruendo un ambiente sonoro personalizzato nel quotidiano.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">L'interfaccia è componibile: ogni utente crea la propria sinfonia naturale scegliendo foresta, stagione e intensità. Un prodotto digitale con impatto emotivo concreto — e un motivo per tornare ogni giorno.</p>
+      <div class="case-system-box fade-up">
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Input</span>
+          <span class="case-system-box__value">Foresta scelta · Alberi piantati dall'utente · Preferenze stagione e intensità</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Output</span>
+          <span class="case-system-box__value">Paesaggio sonoro personalizzato — suoni reali dalla foresta dell'utente</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Valore</span>
+          <span class="case-system-box__value">Riduce lo stress · Mantiene vivo il legame con la foresta · Rafforza la retention post-acquisto</span>
+        </div>
+      </div>
     </div>
 
-    <div class="case-section fade-up">
-      <p class="case-section__title">Project Overview</p>
-      <p class="case-section__text">Placeholder — Treedom è una piattaforma che permette di piantare alberi nel mondo. Il concept nasce da un'analisi critica dell'esperienza attuale: come si può comunicare meglio il valore della sostenibilità e creare un legame emotivo più forte tra utente e albero?</p>
+  </div>
+
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/suoni.avif" alt="Make Your Forest Play — interfaccia suoni" />
+  </div>
+
+  <div class="case-body">
+    <!-- 10. Next Steps -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Next Step</p>
+      <h2 class="case-section__heading fade-up">Scala del concept<br>e nuovi contesti d'uso</h2>
+      <ul class="case-list fade-up">
+        <li><strong>Visor 3D</strong> — l'esperienza immersiva potrebbe evolvere con XR per un accesso domestico alla foresta senza hardware fisso</li>
+        <li><strong>Adattamento culturale</strong> — integrare suoni, fragranze ed elementi visivi locali per ogni contesto geografico</li>
+        <li><strong>Applicazioni B2B</strong> — contesti corporate per il benessere dei dipendenti e sanitari per recovery e stress relief</li>
+      </ul>
     </div>
 
-    <div class="case-image fade-up"><div class="case-image-placeholder">🖼️</div></div>
+  </div>
 
-    <div class="case-section fade-up">
-      <p class="case-section__title">Analisi dell'Esperienza Attuale</p>
-      <p class="case-section__text">Placeholder — quali gap hai identificato nell'esperienza Treedom esistente? Dove il valore non viene comunicato efficacemente? Quali momenti chiave del journey sono sottoottimizzati?</p>
-    </div>
+  <!-- Bento: panoramica app + risultati affiancati -->
+  <div class="bento bento-2 img-reveal">
+    <div><img src="../assets/images/panoramica%20applicativi.avif" alt="Treedhome — panoramica applicativi" /></div>
+    <div><img src="../assets/images/risultati.avif" alt="Treedhome — risultati" /></div>
+  </div>
 
-    <div class="case-section fade-up">
-      <p class="case-section__title">Storytelling & Connessione Emotiva</p>
-      <p class="case-section__text">Placeholder — come hai riprogettato la narrazione? Come si racconta la storia di ogni albero? Quali meccaniche di engagement e notifiche hanno creato il senso di connessione nel tempo?</p>
-    </div>
-
-    <div class="case-image fade-up"><div class="case-image-placeholder">✨</div></div>
-
-    <div class="case-section fade-up">
-      <p class="case-section__title">Sistema di Interazione</p>
-      <p class="case-section__text">Placeholder — illustra i nuovi pattern di interazione proposti: animazioni, micro-interazioni, mappa degli alberi, timeline di crescita. Come si è evoluta la UI?</p>
-    </div>
-
-    <div class="case-image fade-up"><div class="case-image-placeholder">🎨</div></div>
-
-    <div class="case-section fade-up">
-      <p class="case-section__title">Risultati & Learnings</p>
-      <p class="case-section__text">Placeholder — cosa hai imparato da questo progetto? Quali principi di design emotivo e sostenibilità porti con te?</p>
+  <div class="case-body">
+    <!-- 11. Learnings -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Learnings</p>
+      <h2 class="case-section__heading fade-up">Quello che ho imparato<br>su sostenibilità e design</h2>
+      <ul class="case-list case-list--bold fade-up">
+        <li>Il design disruptive è concettuale prima che visivo — la vera rottura è nel modello di esperienza, non nel look</li>
+        <li>Un'azione digitale perde valore quando manca di fisicità — il phygital colma quel gap in modo potente</li>
+        <li>Fun is the key — l'impegno ambientale cresce quando smette di essere un peso morale e diventa piacere</li>
+        <li>Il touchpoint fisico è il più forte convertitore — converte e fidelizza meglio di qualsiasi notifica push</li>
+      </ul>
     </div>
   </div>
 
   <a href="rentall.html" class="case-next">
-    <p class="case-next__label">Torna all'inizio</p>
+    <p class="case-next__label">Prossimo progetto</p>
     <h2 class="case-next__title">RentAll →</h2>
   </a>
 
@@ -77,6 +313,6 @@
     <div class="footer__logo">Bruno Lorenzon</div>
     <p class="footer__copy">© 2025 — UX & Product Designer</p>
   </footer>
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=16"></script>
 </body>
 </html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leone Master School – Bruno Lorenzon (Dark)</title>
+  <link rel="stylesheet" href="../css/style.css?v=8" />
+  <link rel="stylesheet" href="https://use.typekit.net/rhk6dpu.css" />
+  <style>
+    /* ══════════════════════════════════════
+       DARK VERSION — leone-master-dark
+       ══════════════════════════════════════ */
+
+    html, body { overflow-x: hidden; max-width: 100%; }
+
+    :root {
+      --cream:   #0e0c18;
+      --cream-2: #16132a;
+      --cream-3: #1e1a32;
+      --navy:    #ffffff;
+      --black:   #f0ede8;
+      --gray:    #888884;
+      --accent:  #C6F135;
+    }
+
+    body {
+      background-color: #0e0c18;
+      background-image:
+        radial-gradient(ellipse 80% 55% at 50% -5%, rgba(97,53,241,0.45) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 30% at 80% 90%, rgba(97,53,241,0.18) 0%, transparent 60%);
+      color: #f0ede8;
+    }
+
+    h1, h2, h3 {
+      font-family: 'gunter', sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400;
+      color: #C6F135 !important;
+    }
+    h1 { letter-spacing: -0.01em; }
+
+    /* ── Nav ── */
+    .nav, .nav.scrolled {
+      background: rgba(14,12,24,0.95) !important;
+      border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+    }
+    .nav__link { color: #a0a09a; }
+    .nav__link:hover { color: #ffffff; }
+    .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .nav__logo-top  { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
+    .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
+
+    /* ── Case hero ── */
+    .case-hero { background: transparent; }
+    .case-hero__eyebrow { color: #C6F135 !important; }
+    .case-hero__title   { color: #ffffff !important; }
+    .case-hero__desc    { color: #888884 !important; }
+
+    /* ── Tags ── */
+    .tag          { background: rgba(198,241,53,0.10); color: #C6F135; }
+    .tag--outline { border-color: rgba(255,255,255,0.15); color: #888884; }
+
+    /* ── Case body / sections ── */
+    .case-body  { color: #f0ede8; }
+    .case-cover { background: #0e0c18; }
+    .case-meta__label { color: #555552; }
+    .case-meta__value { color: #ffffff; }
+    .case-meta__value a { color: #C6F135 !important; text-decoration-color: rgba(198,241,53,0.4) !important; }
+    .case-section__title   { color: rgba(198,241,53,0.55) !important; }
+    .case-section__heading { color: #C6F135 !important; font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .case-section__text { color: #888884 !important; }
+    .case-body p, .case-body li { color: #888884; }
+    .case-body strong { color: #f0ede8; }
+
+    /* ── Metrics ── */
+    .case-metric {
+      background: #16132a !important;
+      border-color: rgba(255,255,255,0.06) !important;
+    }
+    .case-metric__value { color: #C6F135 !important; background: transparent !important; background-color: transparent !important; }
+    .case-metric .case-metric__value,
+    .case-metrics .case-metric .case-metric__value { background: none !important; background-color: transparent !important; }
+    .case-metric__label { color: #888884 !important; }
+
+    /* ── System box ── */
+    .case-system-box {
+      background: #16132a !important;
+      border: 1px solid rgba(255,255,255,0.06) !important;
+      border-radius: 20px !important;
+    }
+    .case-system-box__row {
+      border-bottom-color: rgba(255,255,255,0.06) !important;
+    }
+    .case-system-box__label { color: rgba(198,241,53,0.55) !important; }
+    .case-system-box__value { color: #f0ede8 !important; }
+
+    /* ── Full image — fondo grigio chiarissimo, uniforme per SVG e screenshot ── */
+    .case-full-image {
+      background: #f2f1ed !important;
+      border: none !important;
+      border-radius: 24px !important;
+      overflow: hidden !important;
+      margin-left: 40px !important;
+      margin-right: 40px !important;
+    }
+    .case-full-image img,
+    .case-full-image picture img {
+      border-radius: 0 !important;
+      width: 100%;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .case-full-image { margin-left: 16px !important; margin-right: 16px !important; }
+    }
+
+    /* ── Next project + footer ── */
+    .case-next         { background: #16132a; border-color: rgba(255,255,255,0.06); display: block; }
+    .case-next:hover   { border-color: rgba(198,241,53,0.3); }
+    .case-next__label  { color: #555552 !important; }
+    .case-next__title  { color: #C6F135 !important; font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .footer            { background: #16132a !important; border-top: 1px solid rgba(255,255,255,0.06) !important; }
+    .footer__logo      { font-family: 'gunter', sans-serif !important; font-style: normal !important; font-size: 28px !important; color: #C6F135 !important; }
+    .footer__copy      { color: #555552 !important; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
+    <a href="../index-dark.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
+    <ul class="nav__links nav__right"><li><a href="../index-dark.html#contact" class="nav__link">Contact</a></li></ul>
+  </nav>
+
+  <!-- 1. HERO -->
+  <div class="case-hero">
+    <p class="case-hero__eyebrow fade-up">E-learning · Product Design · UX Research</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1">Progettare un'esperienza<br>e-learning scalabile</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2">Design di una piattaforma formativa per supportare contenuti complessi, personalizzazione e crescita nel tempo</p>
+    <div class="case-hero__tags fade-up fade-up-delay-3">
+      <span class="tag">UX Research</span>
+      <span class="tag tag--outline">Product Design</span>
+      <span class="tag tag--outline">UI Design</span>
+      <span class="tag tag--outline">Content Architecture</span>
+    </div>
+  </div>
+
+  <!-- Hero image -->
+  <div class="case-cover img-reveal">
+    <img src="../assets/images/HERO.webp" alt="Leone Master School — Home after login" />
+  </div>
+
+  <!-- Meta -->
+  <div class="case-body">
+    <div class="case-meta fade-up">
+      <div class="case-meta__item">
+        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__value">UX / Product Designer</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Scope</div>
+        <div class="case-meta__value">Product design, UX, UI, Content architecture</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Tipo</div>
+        <div class="case-meta__value">E-learning — 0 → sistema scalabile</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">URL</div>
+        <div class="case-meta__value"><a href="https://app.leonemasterschool.it" target="_blank" rel="noopener" style="color: #C6F135; text-decoration: underline; text-underline-offset: 3px;">app.leonemasterschool.it ↗</a></div>
+      </div>
+    </div>
+
+    <!-- 2. Contesto -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Contesto</p>
+      <h2 class="case-section__heading fade-up">Un ecosistema complesso<br>da rendere chiaro</h2>
+      <p class="case-section__text fade-up">Ho lavorato alla progettazione di Leone Master School, una piattaforma formativa digitale con percorsi di affiancamento tenuti da imprenditori e professionisti reali. Il progetto richiedeva di gestire un ecosistema complesso — contenuti, docenti, percorsi, utenti free e a pagamento — mantenendo chiarezza e scalabilità nel tempo.</p>
+    </div>
+  </div>
+
+  <!-- Image: mappa sistema -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <source media="(max-width: 768px)" srcset="../assets/images/leone_system_map_v4_mobile.svg" />
+      <img src="../assets/images/leone_system_map_v4.svg" alt="Mappa del sistema Leone Master School" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 3. Problema -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Problema</p>
+      <h2 class="case-section__heading fade-up">Non un problema di UI —<br>un problema di sistema</h2>
+      <p class="case-section__text fade-up">La home logout mostrava tutti i corsi indistintamente, senza differenziare gratuito da pagamento, senza un percorso guidato, senza un onboarding attivo. Gli utenti di ritorno non avevano un punto di ripresa immediato.</p>
+      <ul class="case-list fade-up">
+        <li>Corsi gratuiti e a pagamento non differenziati visivamente</li>
+        <li>Nessun onboarding guidato — no video, no test, no percorso assegnato</li>
+        <li>Nessuna progressione chiara per il nuovo utente</li>
+        <li>Alto drop-off iniziale e bassa attivazione</li>
+        <li>Utenti di ritorno senza punto di ripresa immediato</li>
+      </ul>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">—</span>
+          <span class="case-metric__label">Completion rate non ottimizzato</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Tempo medio di onboarding elevato</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">—</span>
+          <span class="case-metric__label">Bassa differenziazione tra utenti</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image: confusion map -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <source media="(max-width: 768px)" srcset="../assets/images/leone_confusion_map_finale_mobile.svg" />
+      <img src="../assets/images/leone_confusion_map_finale.svg" alt="Confusion map — entry point caotici" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 4. Approccio -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Approccio / Strategia</p>
+      <h2 class="case-section__heading fade-up">Esperienze diverse<br>per stati utente diversi</h2>
+      <p class="case-section__text fade-up">Ho affrontato il progetto come un problema di sistema, non di interfaccia. Ogni fase del framework ha un obiettivo strategico preciso — conversione, attivazione, orientamento, engagement, retention — e logiche invisibili che operano in background.</p>
+      <ul class="case-list fade-up">
+        <li>Il nuovo utente ha bisogno di orientamento</li>
+        <li>L'utente attivo ha bisogno di continuità</li>
+        <li>L'utente di ritorno ha bisogno di riprendere senza frizione</li>
+      </ul>
+      <p class="case-section__text fade-up" style="margin-top: 24px;"><strong>Framework:</strong> Accesso → Onboarding → Home → Consumo → Ritorno</p>
+    </div>
+  </div>
+
+  <!-- Image: framework strategico -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <source media="(max-width: 768px)" srcset="../assets/images/leone_framework_strategico_mobile.svg" />
+      <img src="../assets/images/leone_framework_strategico.svg" alt="Framework strategico — 5 fasi" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 5.1 Home logout -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 01</p>
+      <h2 class="case-section__heading fade-up">Home logout:<br>conversione progressiva</h2>
+      <p class="case-section__text fade-up">Ho progettato la home logout come un funnel di conversione progressiva, dove ogni elemento riduce l'incertezza e abbassa la barriera d'ingresso.</p>
+      <ul class="case-list fade-up">
+        <li>Video di benvenuto che spiega la piattaforma e riduce l'incertezza</li>
+        <li>Anteprima dei corsi per categoria (management, real estate, crescita personale, AI)</li>
+        <li>Sezione docenti imprenditori per costruire credibilità</li>
+        <li>CTA "Iscriviti gratuitamente" che abbassa la barriera d'ingresso</li>
+        <li>Form di registrazione in fondo pagina</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image: home logout -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/home log out.png" alt="Screenshot — Home logout Leone Master School" />
+  </div>
+
+  <div class="case-body">
+    <!-- 5.2 Onboarding -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 02</p>
+      <h2 class="case-section__heading fade-up">Onboarding guidato:<br>non un tutorial, un sistema</h2>
+      <p class="case-section__text fade-up">Ho progettato un onboarding che combina contenuto guidato e raccolta di preferenze, trasformando il primo accesso in un momento attivo e rilevante. Non "ti mostro contenuti": ti costruisco un percorso.</p>
+      <ul class="case-list fade-up">
+        <li><strong>Video hero</strong> — riduce l'incertezza e crea contesto prima di qualsiasi scelta</li>
+        <li><strong>Test preferenze</strong> — raccolta di obiettivi e interessi (Duolingo-style)</li>
+        <li><strong>Assegnazione corsi gratuiti</strong> — percorso personalizzato in base alle risposte</li>
+      </ul>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">↓</span>
+          <span class="case-metric__label">Drop-off onboarding</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">First content interaction</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Activation rate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image: onboarding flow -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <source media="(max-width: 768px)" srcset="../assets/images/leone_onboarding_flow_v2_mobile.svg" />
+      <img src="../assets/images/leone_onboarding_flow_v2.svg" alt="Onboarding flow — Login → Video → Test → Corsi → Home" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 5.3 Home personalizzata -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 03</p>
+      <h2 class="case-section__heading fade-up">Home adattiva:<br>il componente Continua</h2>
+      <p class="case-section__text fade-up">Ho progettato una home basata sullo stato dell'utente. Il componente "Continua il tuo affiancamento" elimina la frizione del riorientamento — l'utente vede esattamente il corso, la sezione e la lezione da cui riprendere, con un singolo click.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Il calendario sessioni live mantiene l'engagement nel tempo, mostrando le prossime lezioni in diretta con data, orario e CTA di accesso diretto.</p>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Continuità d'uso</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Retention</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Session depth</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image: home after login -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/componente continua.png" alt="Screenshot — Home after login con componente Continua" />
+  </div>
+
+  <div class="case-body">
+    <!-- 5.4 Sales page -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 04</p>
+      <h2 class="case-section__heading fade-up">Sales page strutturata<br>per convertire</h2>
+      <p class="case-section__text fade-up">Ho strutturato la sell page di ogni percorso per comunicare valore prima dell'accesso, riducendo l'incertezza attraverso informazione, credibilità e navigazione guidata.</p>
+      <ul class="case-list fade-up">
+        <li>Hero con 4 box info chiave: Formazione, Durata, Format, Full Time</li>
+        <li>Video introduttivo con docente dedicato per quel modulo</li>
+        <li>Mappa interattiva con tooltip che guida l'utente attraverso i moduli</li>
+        <li>Programma accordion laterale con i moduli numerati</li>
+        <li>Sezione docenti del percorso con card foto + ruolo</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image: sell page -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/sell page.png" alt="Screenshot — Sell page con hero 4 box e mappa interattiva" />
+  </div>
+
+  <div class="case-body">
+    <!-- 5.5 Architettura docenti -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 05</p>
+      <h2 class="case-section__heading fade-up">Architettura docenti:<br>esperti dalla pratica</h2>
+      <p class="case-section__text fade-up">Ogni modulo è associato a un docente esperto reale — imprenditori e manager attivi che insegnano dalla pratica quotidiana. Nessun teorico, nessun professore di ruolo.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Ho progettato le pagine docente con 6 card: Ruolo e specializzazione, Competenze chiave, Citazione, Formazione, Valori, Missione formativa.</p>
+    </div>
+  </div>
+
+  <!-- Image: architettura docenti -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/pagina docente.png" alt="Pagina docente — Architettura contenuti Leone Master School" />
+  </div>
+
+  <div class="case-body">
+    <!-- 5.6 Personalizzazione -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 06</p>
+      <h2 class="case-section__heading fade-up">Personalizzazione<br>e logiche di sistema</h2>
+      <p class="case-section__text fade-up">Ho introdotto logiche di personalizzazione per adattare l'esperienza in base al comportamento e allo stato dell'utente.</p>
+      <div class="case-system-box fade-up">
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Input</span>
+          <span class="case-system-box__value">Test preferenze · Comportamento utente · Stato avanzamento · Tipo utente (nuovo / attivo / ritorno)</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Motore</span>
+          <span class="case-system-box__value">Stato utente + progress tracking invisibile</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Output</span>
+          <span class="case-system-box__value">Corsi gratuiti assegnati · Home adattata · Componente Continua · Upsell progressivo gratuito → pagamento</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Principi</span>
+          <span class="case-system-box__value">Progressiva — non invasiva · Rilevante — basata su dati reali · Scalabile — adatta nel tempo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image: personalizzazione -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <source media="(max-width: 768px)" srcset="../assets/images/leone_personalizzazione_mobile.svg" />
+      <img src="../assets/images/leone_personalizzazione.svg" alt="Personalizzazione — input → motore → output → feedback loop" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 6. Design System -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Design System</p>
+      <h2 class="case-section__heading fade-up">Componenti riutilizzabili<br>per un sistema scalabile</h2>
+      <p class="case-section__text fade-up">Ho progettato componenti riutilizzabili per garantire coerenza e scalabilità del sistema.</p>
+      <ul class="case-list fade-up">
+        <li>Card corso (con badge gratuito / pagamento e progress bar integrata)</li>
+        <li>Componente Continua (thumbnail + sezione + lezione + CTA riprendi)</li>
+        <li>Lista moduli (stati: completato / in corso / da iniziare + docente dedicato)</li>
+        <li>Card docente (avatar + nome + ruolo)</li>
+        <li>CTA (primario scuro, verde gratuito, secondario)</li>
+        <li>Progress bar (0% / parziale / 100%)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image: UI kit -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/design system.png" alt="UI Kit — Componenti del design system" />
+  </div>
+
+  <div class="case-body">
+    <!-- 7. Risultati -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Risultati</p>
+      <h2 class="case-section__heading fade-up">Chiarezza, attivazione<br>e scalabilità del sistema</h2>
+      <div class="case-metrics case-metrics--grid fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Engagement contenuti</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Completamento onboarding</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↓</span>
+          <span class="case-metric__label">Tempo orientamento iniziale</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">First content interaction</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Retention e session depth</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Continuità d'uso</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Learnings -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Learnings</p>
+      <h2 class="case-section__heading fade-up">Quello che ho imparato<br>progettando il sistema</h2>
+      <ul class="case-list case-list--bold fade-up">
+        <li>Progettare piattaforme significa progettare sistemi</li>
+        <li>L'onboarding non è un tutorial — è il primo momento di personalizzazione</li>
+        <li>La home deve adattarsi allo stato dell'utente, non essere uguale per tutti</li>
+        <li>Il componente Continua è più potente di qualsiasi raccomandazione algoritmica</li>
+        <li>Differenziare gratuito e pagamento non è solo commerciale — è un principio di UX</li>
+      </ul>
+    </div>
+
+    <!-- 9. Next Step -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Next Step</p>
+      <ul class="case-list fade-up">
+        <li>A/B test onboarding</li>
+        <li>Personalizzazione predittiva basata sul comportamento</li>
+        <li>Tracking avanzato per modulo</li>
+        <li>Ottimizzazione mobile</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="tiaa.html" class="case-next">
+    <p class="case-next__label">Prossimo progetto</p>
+    <h2 class="case-next__title">There Is An Alternative →</h2>
+  </a>
+
+  <footer class="footer">
+    <div class="footer__logo">Bruno Lorenzon</div>
+    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+  </footer>
+
+  <script src="../js/main.js?v=16"></script>
+</body>
+</html>

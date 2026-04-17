@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RentAll – Bruno Lorenzon (Dark)</title>
+  <link rel="stylesheet" href="../css/style.css?v=8" />
+  <link rel="stylesheet" href="https://use.typekit.net/rhk6dpu.css" />
+  <style>
+    /* ══════════════════════════════════════
+       DARK VERSION — proof of concept
+       ══════════════════════════════════════ */
+
+    html, body { overflow-x: hidden; max-width: 100%; }
+
+    :root {
+      --cream:     #0e0c18;
+      --cream-2:   #16132a;
+      --cream-3:   #1e1a32;
+      --navy:      #ffffff;
+      --black:     #f0ede8;
+      --gray:      #888884;
+      --dark-bg:   #C6F135;
+      --accent:    #C6F135;
+    }
+
+    body {
+      background-color: #0e0c18;
+      background-image:
+        radial-gradient(ellipse 80% 55% at 50% -5%, rgba(97,53,241,0.45) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 30% at 80% 90%, rgba(97,53,241,0.18) 0%, transparent 60%);
+      color: #f0ede8;
+    }
+
+    h1, h2, h3 {
+      font-family: 'gunter', sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400;
+      color: #C6F135 !important;
+    }
+    h1 { letter-spacing: -0.01em; }
+
+    /* Nav */
+    .nav, .nav.scrolled { background: rgba(14,12,24,0.95) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
+    .nav__link { color: #a0a09a; }
+    .nav__link:hover { color: #ffffff; }
+    .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .nav__logo-top { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
+    .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
+
+    /* Case hero */
+    .case-hero { background: transparent; }
+    .case-hero__eyebrow { color: #C6F135 !important; }
+    .case-hero__title { color: #ffffff !important; }
+    .case-hero__desc { color: #888884 !important; }
+
+    /* Tags */
+    .tag { background: rgba(198,241,53,0.10); color: #C6F135; }
+    .tag--outline { border-color: rgba(255,255,255,0.15); color: #888884; }
+
+    /* Body sections */
+    .case-body { color: #f0ede8; }
+    .case-cover { background: #0e0c18; }
+    .case-meta__label { color: #555552; }
+    .case-meta__value { color: #ffffff; }
+    .case-section__heading { color: #C6F135 !important; font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .case-body p, .case-body li { color: #888884; }
+    .case-body strong { color: #f0ede8; }
+
+    /* ── RentAll dark overrides ── */
+
+    /* Phase cards */
+    .ra-phase { background: #16132a !important; border-color: rgba(255,255,255,0.06) !important; }
+    .ra-phase::before { background: #C6F135 !important; }
+    .ra-phase__num { color: rgba(198,241,53,0.4) !important; }
+    .ra-phase__title { color: #ffffff !important; }
+    .ra-phase__desc { color: #888884 !important; }
+    .ra-phase__week { background: rgba(198,241,53,0.10) !important; color: #C6F135 !important; }
+
+    /* Research methods */
+    .ra-method { background: #16132a !important; }
+    .ra-method__title { color: #ffffff !important; }
+    .ra-method__desc { color: #888884 !important; }
+
+    /* Quote — già scura, potenziamo */
+    .ra-quote { background: #16132a !important; box-shadow: inset 0 0 60px rgba(97,53,241,0.15), 0 0 40px rgba(97,53,241,0.10) !important; }
+    .ra-quote__author { color: rgba(198,241,53,0.5) !important; font-style: italic; }
+
+    /* AI feature cards */
+    .ra-ai-card--dark { background: #16132a !important; }
+    .ra-ai-card--light { background: rgba(97,53,241,0.12) !important; color: #f0ede8 !important; border-color: rgba(97,53,241,0.25) !important; }
+    .ra-ai-card--light .ra-ai-card__badge { background: rgba(198,241,53,0.10) !important; color: #C6F135 !important; }
+    .ra-ai-card--light .ra-ai-card__title { color: #ffffff !important; }
+    .ra-ai-card--light .ra-ai-step__num { background: rgba(198,241,53,0.12) !important; color: #C6F135 !important; }
+    .ra-ai-card--dark .ra-ai-step__num { background: rgba(255,255,255,0.08) !important; }
+
+    /* Learnings */
+    .ra-learning { border-top-color: #C6F135 !important; }
+    .ra-learning__num { color: rgba(198,241,53,0.4) !important; }
+    .ra-learning__title { color: #ffffff !important; }
+    .ra-learning__desc { color: #888884 !important; }
+
+    /* Next steps */
+    .ra-nextstep { background: #16132a !important; }
+    .ra-nextstep__icon { background: rgba(198,241,53,0.12) !important; color: #C6F135 !important; }
+    .ra-nextstep__title { color: #ffffff !important; }
+    .ra-nextstep__desc { color: #888884 !important; }
+
+    /* Screen cards già scuri — solo label */
+    .ra-screen { background: #0e0c18 !important; border: 1px solid rgba(255,255,255,0.05) !important; }
+    .ra-screen__label { color: rgba(198,241,53,0.3) !important; }
+    .ra-screen--light { background: #ffffff !important; border-color: rgba(255,255,255,0.08) !important; }
+    .ra-screen--light .ra-screen__label { color: rgba(0,0,0,0.35) !important; }
+
+    /* Next project + footer */
+    .case-next { background: #16132a; border-color: rgba(255,255,255,0.06); }
+    .case-next:hover { border-color: rgba(198,241,53,0.3); }
+    .case-next__label { color: #555552 !important; }
+    .case-next__title { color: #C6F135 !important; font-family: 'gunter', sans-serif !important; }
+    .footer { background: #16132a !important; border-top: 1px solid rgba(255,255,255,0.06) !important; }
+    .footer__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; font-size: 28px !important; color: #C6F135 !important; }
+    .footer__copy { color: #555552 !important; }
+
+    /* ── RentAll-specific overrides ── */
+    /* Hero image fit — no black borders */
+    .ra-screen:has(.ra-screen__img--fit) {
+      padding: 0;
+      margin-top: 100px;
+      aspect-ratio: 16/9;
+      position: relative;
+    }
+    .ra-screen__img--fit {
+      position: absolute;
+      inset: 0;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center top;
+      border-radius: 0;
+    }
+
+    /* ── Phase cards (metodologia) ── */
+    .ra-phases {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .ra-phase {
+      border: 1px solid #EBEBEB;
+      border-radius: 16px;
+      padding: 28px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ra-phase::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: #111;
+    }
+    .ra-phase__num {
+      font-size: 11px;
+      font-weight: 700;
+      color: #BBB;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .ra-phase__title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .ra-phase__desc {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+    }
+    .ra-phase__week {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 11px;
+      font-weight: 700;
+      color: #111;
+      background: #F0F0EE;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    /* ── Research methods ── */
+    .ra-methods {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .ra-method {
+      background: #F7F7F5;
+      border-radius: 14px;
+      padding: 24px 20px;
+    }
+    .ra-method__icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .ra-method__title {
+      font-size: 14px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 6px;
+    }
+    .ra-method__desc {
+      font-size: 12px;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    /* ── Discovery quote ── */
+    .ra-quote {
+      background: #111;
+      border-radius: 20px;
+      padding: 48px 56px;
+      margin: 48px 0 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .ra-quote::before {
+      content: '"';
+      position: absolute;
+      font-size: 200px;
+      font-weight: 900;
+      color: rgba(255,255,255,0.04);
+      top: -40px;
+      left: 32px;
+      line-height: 1;
+      font-family: Georgia, serif;
+    }
+    .ra-quote__text {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.5;
+      position: relative;
+      z-index: 1;
+    }
+    .ra-quote__author {
+      margin-top: 20px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── AI feature cards ── */
+    .ra-ai-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .ra-ai-card {
+      border-radius: 20px;
+      padding: 36px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ra-ai-card--dark {
+      background: #111;
+      color: #fff;
+    }
+    .ra-ai-card--light {
+      background: #F7F7F5;
+      color: #111;
+      border: 1px solid #E8E8E5;
+    }
+    .ra-ai-card__badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .ra-ai-card--dark .ra-ai-card__badge {
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.6);
+    }
+    .ra-ai-card--light .ra-ai-card__badge {
+      background: rgba(0,0,0,0.07);
+      color: rgba(0,0,0,0.5);
+    }
+    .ra-ai-card__title {
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .ra-ai-card__desc {
+      font-size: 14px;
+      line-height: 1.7;
+      opacity: 0.7;
+      margin-bottom: 24px;
+    }
+    .ra-ai-steps {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .ra-ai-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .ra-ai-step__num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .ra-ai-card--dark .ra-ai-step__num {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+    }
+    .ra-ai-card--light .ra-ai-step__num {
+      background: rgba(0,0,0,0.08);
+      color: #111;
+    }
+    .ra-ai-step__text {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .ra-ai-step__text strong {
+      display: block;
+      margin-bottom: 1px;
+    }
+    .ra-ai-step__text span {
+      opacity: 0.55;
+      font-size: 12px;
+    }
+
+    /* ── Learnings grid ── */
+    .ra-learnings {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .ra-learning {
+      padding: 24px 20px;
+      border-top: 2px solid #111;
+    }
+    .ra-learning__num {
+      font-size: 11px;
+      font-weight: 700;
+      color: #BBB;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .ra-learning__title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .ra-learning__desc {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ── Next steps ── */
+    .ra-nextstep {
+      background: #F7F7F5;
+      border-radius: 16px;
+      padding: 28px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .ra-nextstep__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: #111;
+      color: #fff;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ra-nextstep__title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 6px;
+    }
+    .ra-nextstep__desc {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    /* ── Screen cards (mockup video/image) ── */
+    .ra-screen {
+      background: #0D0D0D;
+      border-radius: 28px;
+      margin: 0 40px 80px;
+      padding: 56px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      overflow: hidden;
+    }
+    .ra-screen__label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.28);
+      align-self: flex-start;
+    }
+    .ra-screen__phones {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      justify-content: center;
+    }
+    .ra-screen video,
+    .ra-screen img.ra-screen__img {
+      height: 700px;
+      width: auto;
+      border-radius: 0;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .ra-hero-cover { margin: 0 16px 48px; min-height: 260px; }
+      .ra-hero-cover__wordmark { font-size: 52px; }
+      .ra-phases, .ra-methods, .ra-ai-grid, .ra-learnings { grid-template-columns: 1fr; }
+      .ra-screen { margin: 0 16px 48px; padding: 40px 24px; }
+      .ra-screen video, .ra-screen img.ra-screen__img { height: 380px; }
+      .ra-screen__phones { flex-direction: column; gap: 20px; }
+    }
+
+    /* ── Design Thinking phases — Gunter numbered (colosseum style) ── */
+    .ra-dt-phases { display: flex; flex-direction: column; gap: 0; margin-top: 40px; }
+    .ra-dt-phase {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 32px;
+      padding: 36px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1);
+    }
+    .ra-dt-phase:last-child { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .ra-dt-phase.visible { opacity: 1 !important; transform: translateY(0) !important; }
+    .ra-dt-phase__num {
+      font-family: 'gunter', sans-serif;
+      font-size: 64px;
+      font-weight: 400;
+      color: rgba(198,241,53,0.22);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      transition: color 0.3s ease;
+    }
+    .ra-dt-phase:hover .ra-dt-phase__num { color: #C6F135; }
+    .ra-dt-phase__title { font-size: 19px !important; font-weight: 700 !important; color: #ffffff !important; margin-bottom: 8px; }
+    .ra-dt-phase__desc { font-size: 14px; color: #888884; line-height: 1.65; }
+    .ra-dt-phase__week { display: inline-block; margin-top: 12px; font-size: 10px; font-weight: 700; letter-spacing: 2px; color: rgba(198,241,53,0.5); text-transform: uppercase; }
+
+    /* ── Research insights — numbered (colosseum style) ── */
+    .ra-insights { display: flex; flex-direction: column; gap: 0; margin-top: 8px; }
+    .ra-insight {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 32px;
+      padding: 36px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1);
+    }
+    .ra-insight:last-child { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .ra-insight.visible { opacity: 1 !important; transform: translateY(0) !important; }
+    .ra-insight__num {
+      font-family: 'gunter', sans-serif;
+      font-size: 64px;
+      font-weight: 400;
+      color: rgba(198,241,53,0.22);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      transition: color 0.3s ease;
+    }
+    .ra-insight:hover .ra-insight__num { color: #C6F135; }
+    .ra-insight__title { font-size: 19px !important; font-weight: 700 !important; color: #ffffff !important; margin-bottom: 8px; }
+    .ra-insight__desc { font-size: 14px; color: #888884; line-height: 1.65; }
+
+    /* ── User Journey — 3 atti ── */
+    .ra-journey {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 40px;
+    }
+    .ra-journey-act {
+      background: #16132a;
+      padding: 36px 28px;
+    }
+    .ra-journey-act:first-child { border-radius: 20px 0 0 20px; }
+    .ra-journey-act:last-child { border-radius: 0 20px 20px 0; }
+    .ra-journey-act__label { font-size: 10px; font-weight: 700; letter-spacing: 2.5px; color: rgba(198,241,53,0.4); text-transform: uppercase; margin-bottom: 12px; }
+    .ra-journey-act__num {
+      font-family: 'gunter', sans-serif;
+      font-size: 48px;
+      font-weight: 400;
+      color: rgba(198,241,53,0.18);
+      line-height: 1;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+    .ra-journey-act__role { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #C6F135; background: rgba(198,241,53,0.1); padding: 3px 10px; border-radius: 100px; margin-bottom: 16px; }
+    .ra-journey-act__title { font-size: 18px !important; font-weight: 700 !important; color: #ffffff !important; margin-bottom: 16px; line-height: 1.3; }
+    .ra-journey-act__steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+    .ra-journey-act__step { font-size: 13px; color: #888884; line-height: 1.5; padding-left: 18px; position: relative; }
+    .ra-journey-act__step::before { content: '→'; position: absolute; left: 0; color: rgba(198,241,53,0.4); font-size: 11px; top: 1px; }
+
+    /* ── Competitor SVG — rimuove bordo ── */
+    .ra-competitor-wrap { margin: 0 40px 80px; border: none !important; outline: none !important; box-shadow: none !important; }
+    .ra-competitor-wrap img { width: 100%; display: block; border: none !important; border-radius: 24px; }
+
+    /* ── Bottom fix ── */
+    .case-next { display: block; }
+
+    @media (max-width: 768px) {
+      .ra-dt-phase, .ra-insight { grid-template-columns: 60px 1fr; gap: 20px; }
+      .ra-dt-phase__num, .ra-insight__num { font-size: 44px; }
+      .ra-journey { grid-template-columns: 1fr; gap: 8px; }
+      .ra-journey-act:first-child { border-radius: 20px 20px 0 0; }
+      .ra-journey-act:last-child { border-radius: 0 0 20px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled" id="nav">
+    <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
+    <a href="../index-dark.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
+    <ul class="nav__links nav__right"><li><a href="../index-dark.html#contact" class="nav__link">Contact</a></li></ul>
+  </nav>
+
+  <!-- ── 1. HERO ── -->
+  <div class="case-hero">
+    <h1 class="case-hero__title fade-up fade-up-delay-1">Noleggiare tra privati,<br>naturale come inviare un messaggio</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2">Un'app di noleggio P2P progettata per trasformare la diffidenza in fiducia — 5 settimane di Design Thinking, ricerca qualitativa, e funzionalità AI per abbassare radicalmente la soglia d'ingresso.</p>
+    <div class="case-hero__tags fade-up fade-up-delay-3">
+      <span class="tag">UX Research</span>
+      <span class="tag tag--outline">Design Thinking</span>
+      <span class="tag tag--outline">Prototyping</span>
+      <span class="tag tag--outline">AI Features</span>
+    </div>
+  </div>
+
+  <!-- ── SCREEN: Hero ── -->
+  <div class="ra-screen img-reveal">
+    <span class="ra-screen__label">RentAll — Cover</span>
+    <img class="ra-screen__img ra-screen__img--fit" src="../assets/images/rentallhero.png" alt="RentAll Hero" />
+  </div>
+
+  <!-- ── META + LA SFIDA ── -->
+  <div class="case-body">
+    <div class="case-meta fade-up">
+      <div class="case-meta__item">
+        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__value">Lead UX Designer</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Durata</div>
+        <div class="case-meta__value">5 settimane</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Anno</div>
+        <div class="case-meta__value">2023</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Strumenti</div>
+        <div class="case-meta__value">Figma · Maze · Miro · Notion</div>
+      </div>
+    </div>
+
+    <!-- ── 2. LA SFIDA ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">La Sfida</p>
+      <h2 class="case-section__heading fade-up">Trasformare un gesto insolito<br>in qualcosa di naturale</h2>
+      <p class="case-section__text fade-up">Noleggiare tra privati è un'idea potente, ma spesso frenata da dubbi e diffidenze. La sfida era progettare un'esperienza che trasmettesse <strong>fiducia, semplicità e sicurezza</strong>, trasformando un gesto insolito in qualcosa di naturale.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">RentAll doveva rendere il noleggio facile quanto inviare un messaggio — anche per chi non ha mai condiviso nulla con uno sconosciuto. La tecnologia doveva diventare un ponte, non un ostacolo.</p>
+    </div>
+  </div>
+
+  <!-- ── SCREEN: Home ── -->
+  <div class="ra-screen img-reveal">
+    <span class="ra-screen__label">L'app — Home</span>
+    <video autoplay muted loop playsinline>
+      <source src="../assets/images/generico%20home%20rentall.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="case-body">
+    <!-- ── 3. METODOLOGIA ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Metodologia</p>
+      <h2 class="case-section__heading fade-up">Design Thinking in 5 settimane<br>sprint da 10 giorni</h2>
+      <p class="case-section__text fade-up">Il progetto è stato sviluppato seguendo un approccio ispirato al <strong>Design Thinking</strong>, unendo strumenti qualitativi e quantitativi per ottenere insight solidi e utili alla progettazione.</p>
+
+      <div class="ra-dt-phases">
+        <div class="ra-dt-phase">
+          <div class="ra-dt-phase__num">01</div>
+          <div>
+            <div class="ra-dt-phase__title">Ricerca</div>
+            <div class="ra-dt-phase__desc">Comprensione di bisogni, ostacoli e comportamenti reali attraverso interviste, survey e analisi del contesto competitivo.</div>
+            <span class="ra-dt-phase__week">Settimane 1–2</span>
+          </div>
+        </div>
+        <div class="ra-dt-phase">
+          <div class="ra-dt-phase__num">02</div>
+          <div>
+            <div class="ra-dt-phase__title">Ideazione e Concettualizzazione</div>
+            <div class="ra-dt-phase__desc">Traduzione degli insight in opportunità di design, definizione delle funzionalità chiave e architettura dell'informazione.</div>
+            <span class="ra-dt-phase__week">Settimane 3–4</span>
+          </div>
+        </div>
+        <div class="ra-dt-phase">
+          <div class="ra-dt-phase__num">03</div>
+          <div>
+            <div class="ra-dt-phase__title">Prototipazione e Validazione</div>
+            <div class="ra-dt-phase__desc">Costruzione di prototipi ad alto realismo e test con utenti reali per validare le soluzioni e identificare ulteriori aree di miglioramento.</div>
+            <span class="ra-dt-phase__week">Settimana 5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 4. LA RICERCA (ESPANSA) ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">La Ricerca</p>
+      <h2 class="case-section__heading fade-up">Due domande guida<br>per capire il comportamento reale</h2>
+      <p class="case-section__text fade-up">La ricerca si è concentrata su <strong>due aspetti principali</strong>, spesso trascurati dalle piattaforme esistenti:</p>
+      <ul class="case-list fade-up">
+        <li><strong>Le condizioni che spingono una persona a noleggiare</strong> un oggetto anziché acquistarlo — quando il noleggio diventa la scelta razionale e qual è il trigger emotivo.</li>
+        <li><strong>I timori e le resistenze</strong> che impediscono di mettere a disposizione i propri oggetti — il lato "proprietario" è quello più fragile da un punto di vista della fiducia.</li>
+      </ul>
+
+      <ul class="case-list fade-up">
+        <li><strong>Interviste semi-strutturate</strong> — Sessioni individuali per esplorare motivazioni, paure e comportamenti profondi. Focus su episodi reali: "Dimmi l'ultima volta che hai avuto bisogno di qualcosa per un uso temporaneo."</li>
+        <li><strong>Survey quantitativa</strong> — Questionario per misurare la propensione al noleggio, la soglia di fiducia verso gli sconosciuti e l'importanza di garanzie e verifiche.</li>
+        <li><strong>Analisi competitor</strong> — Studio approfondito di Fat Llama, Subito e Wallapop per identificare gap critici in fiducia, sicurezza e accessibilità del servizio.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Research Insights — inline numbered -->
+  <div class="case-body" style="padding-top: 0;">
+    <div class="case-section" style="padding-top: 0;">
+      <p class="case-section__title fade-up">Insight chiave</p>
+      <h2 class="case-section__heading fade-up">Tre scoperte che hanno<br>guidato il progetto</h2>
+
+      <div class="ra-insights">
+        <div class="ra-insight">
+          <div class="ra-insight__num">01</div>
+          <div>
+            <div class="ra-insight__title">Oggetti inutilizzati, valore nascosto</div>
+            <div class="ra-insight__desc">Le persone accumulano oggetti che non usano più — spesso dopo un cambio di hobby o stile di vita. La barriera non è la disponibilità degli oggetti, ma la fiducia nel processo di condivisione.</div>
+          </div>
+        </div>
+        <div class="ra-insight">
+          <div class="ra-insight__num">02</div>
+          <div>
+            <div class="ra-insight__title">La fiducia è la barriera principale</div>
+            <div class="ra-insight__desc">Il lato proprietario è il più vulnerabile: la paura che l'oggetto venga danneggiato o non restituito blocca sistematicamente l'adozione. Nessun competitor aveva risolto questo problema in modo convincente.</div>
+          </div>
+        </div>
+        <div class="ra-insight">
+          <div class="ra-insight__num">03</div>
+          <div>
+            <div class="ra-insight__title">Pubblicare è percepito come un lavoro</div>
+            <div class="ra-insight__desc">Creare un annuncio — fotografare, descrivere, fissare il prezzo — è visto come un'attività faticosa e rischiosa, non come un gesto naturale. Il friction iniziale è il principale punto di abbandono.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-body">
+    <!-- ── 5. LA SCOPERTA ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">La Scoperta</p>
+      <h2 class="case-section__heading fade-up">Oggetti inutilizzati, fiducia mancante,<br>setup troppo complesso</h2>
+      <p class="case-section__text fade-up">Cambiando hobby o stile di vita, le persone tendono ad accumulare oggetti inutilizzati. <strong>Chi presta è spesso preoccupato per lo stato in cui l'oggetto verrà restituito</strong> e per l'affidabilità dell'interlocutore.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">In parallelo, l'analisi di competitor come Fat Llama, Subito e Wallapop ha evidenziato <strong>criticità sistemiche</strong> nella fiducia, nella sicurezza e nell'accessibilità del servizio. Nessuno aveva risolto il lato del proprietario in modo convincente.</p>
+
+      <div class="ra-quote fade-up">
+        <div class="ra-quote__text">Il problema non è solo trovare chi noleggia — è convincere il proprietario che vale la pena farlo. Senza fiducia, il marketplace non parte.</div>
+        <div class="ra-quote__author">— Insight chiave dalla ricerca</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Competitor Analysis SVG -->
+  <div class="ra-competitor-wrap img-reveal">
+    <img src="../assets/images/rentall_competitor.svg" alt="Analisi competitor RentAll" />
+  </div>
+
+  <!-- ── SCREEN: Oggetti ── -->
+  <div class="ra-screen img-reveal">
+    <span class="ra-screen__label">Schermata oggetti</span>
+    <img class="ra-screen__img" src="../assets/images/schermata%20oggetti%20rentall.webp" alt="Schermata oggetti disponibili" />
+  </div>
+
+  <div class="case-body">
+    <!-- ── 6. IL VIAGGIO ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Il Viaggio</p>
+      <h2 class="case-section__heading fade-up">Tre atti, due protagonisti,<br>una piattaforma di fiducia</h2>
+      <p class="case-section__text fade-up">Ho costruito un <strong>customer journey narrativo in tre atti</strong> che copre entrambi i lati del mercato — il proprietario che mette a noleggio e il noleggiatore che cerca — più il momento critico del controllo a metà noleggio.</p>
+    </div>
+  </div>
+
+  <!-- Journey 3 atti — inline -->
+  <div class="case-body" style="padding-top: 0;">
+    <div class="ra-journey fade-up">
+      <div class="ra-journey-act">
+        <div class="ra-journey-act__label">Atto 01</div>
+        <div class="ra-journey-act__num">I</div>
+        <div class="ra-journey-act__role">Proprietario</div>
+        <div class="ra-journey-act__title">Metti l'oggetto<br>al lavoro</div>
+        <ul class="ra-journey-act__steps">
+          <li class="ra-journey-act__step">Scansione oggetto con Smart Scan AI</li>
+          <li class="ra-journey-act__step">Generazione automatica dell'inserzione</li>
+          <li class="ra-journey-act__step">Imposta prezzo e disponibilità</li>
+          <li class="ra-journey-act__step">Approva la prima richiesta</li>
+        </ul>
+      </div>
+      <div class="ra-journey-act">
+        <div class="ra-journey-act__label">Atto 02</div>
+        <div class="ra-journey-act__num">II</div>
+        <div class="ra-journey-act__role">Noleggiatore</div>
+        <div class="ra-journey-act__title">Trova quello<br>che ti serve</div>
+        <ul class="ra-journey-act__steps">
+          <li class="ra-journey-act__step">Cerca per categoria o evento</li>
+          <li class="ra-journey-act__step">Verifica profilo e recensioni proprietario</li>
+          <li class="ra-journey-act__step">Invia richiesta di noleggio</li>
+          <li class="ra-journey-act__step">Conferma e pagamento</li>
+        </ul>
+      </div>
+      <div class="ra-journey-act">
+        <div class="ra-journey-act__label">Atto 03</div>
+        <div class="ra-journey-act__num">III</div>
+        <div class="ra-journey-act__role">Entrambi</div>
+        <div class="ra-journey-act__title">Il controllo<br>che crea fiducia</div>
+        <ul class="ra-journey-act__steps">
+          <li class="ra-journey-act__step">Mid-Rental Check automatico a metà noleggio</li>
+          <li class="ra-journey-act__step">Scansione stato oggetto con AI</li>
+          <li class="ra-journey-act__step">Report istantaneo al proprietario</li>
+          <li class="ra-journey-act__step">Restituzione e rating bidirezionale</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SCREEN: Richiesta noleggio ── -->
+  <div class="ra-screen ra-screen--light img-reveal">
+    <span class="ra-screen__label">Richiesta noleggio</span>
+    <video autoplay muted loop playsinline>
+      <source src="../assets/images/richiesta%20noleggio%20rentall.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="case-body">
+    <!-- ── 7. SMART SCAN + AI MID-CHECK ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Funzionalità AI</p>
+      <h2 class="case-section__heading fade-up">Due feature per costruire fiducia<br>da entrambi i lati</h2>
+      <p class="case-section__text fade-up">I due insight più critici — "pubblicare è faticoso" e "ho paura che rovinino l'oggetto" — hanno generato direttamente due funzionalità AI che abbattono le barriere principali del marketplace.</p>
+
+      <div class="ra-ai-grid fade-up">
+        <!-- Smart Scan -->
+        <div class="ra-ai-card ra-ai-card--dark">
+          <span class="ra-ai-card__badge">PER IL PROPRIETARIO</span>
+          <div class="ra-ai-card__title">Smart Scan<br>AI genera l'inserzione</div>
+          <div class="ra-ai-card__desc">Il proprietario posiziona l'oggetto su una superficie libera e segue le istruzioni per la scansione. L'AI analizza l'oggetto, crea immagini ottimizzate, genera una descrizione personalizzata e suggerisce automaticamente un prezzo di mercato.</div>
+          <ul class="ra-ai-steps">
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">1</div>
+              <div class="ra-ai-step__text">
+                <strong>Posiziona l'oggetto</strong>
+                <span>Su superficie libera, con buona luce</span>
+              </div>
+            </li>
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">2</div>
+              <div class="ra-ai-step__text">
+                <strong>Scansione guidata</strong>
+                <span>L'app guida la fotografia multi-angolo dell'oggetto</span>
+              </div>
+            </li>
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">3</div>
+              <div class="ra-ai-step__text">
+                <strong>AI crea l'inserzione</strong>
+                <span>Render 3D, titolo, descrizione e prezzo suggerito</span>
+              </div>
+            </li>
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">4</div>
+              <div class="ra-ai-step__text">
+                <strong>Revisione e pubblicazione</strong>
+                <span>Con pochi tap, l'inserzione è online</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mid-Rental Check -->
+        <div class="ra-ai-card ra-ai-card--light">
+          <span class="ra-ai-card__badge">PER LA FIDUCIA</span>
+          <div class="ra-ai-card__title">AI Mid-Rental Check<br>Controllo automatico</div>
+          <div class="ra-ai-card__desc">A metà noleggio, l'app notifica automaticamente il noleggiatore. Bastano pochi secondi per inquadrare l'oggetto: l'AI verifica lo stato delle parti più fragili, confronta con le foto originali e invia un report al proprietario.</div>
+          <ul class="ra-ai-steps">
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">1</div>
+              <div class="ra-ai-step__text">
+                <strong>Notifica push automatica</strong>
+                <span>Al 50% della durata del noleggio</span>
+              </div>
+            </li>
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">2</div>
+              <div class="ra-ai-step__text">
+                <strong>Scansione rapida</strong>
+                <span>Il noleggiatore inquadra l'oggetto con la camera</span>
+              </div>
+            </li>
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">3</div>
+              <div class="ra-ai-step__text">
+                <strong>Rilevamento danni AI</strong>
+                <span>Verifica parti fragili, confronto con foto originali</span>
+              </div>
+            </li>
+            <li class="ra-ai-step">
+              <div class="ra-ai-step__num">4</div>
+              <div class="ra-ai-step__text">
+                <strong>Report al proprietario</strong>
+                <span>Conferma stato o segnalazione anomalie in tempo reale</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!-- /case-body -->
+
+  <!-- ── SCREEN: Controllo post noleggio ── -->
+  <div class="ra-screen img-reveal">
+    <span class="ra-screen__label">Controllo post noleggio</span>
+    <video autoplay muted loop playsinline>
+      <source src="../assets/images/controllo%20post%20noleggio%20rentall.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="case-body">
+    <!-- ── 8. COSA HO IMPARATO ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Cosa ho imparato</p>
+      <h2 class="case-section__heading fade-up">Tecnologia al servizio<br>della fiducia tra le persone</h2>
+
+      <div class="ra-learnings fade-up">
+        <div class="ra-learning">
+          <div class="ra-learning__num">01</div>
+          <div class="ra-learning__title">Legare tecnologia e fiducia</div>
+          <div class="ra-learning__desc">In contesti peer-to-peer, la tecnologia non basta da sola. Ogni feature deve rispondere a una paura reale dell'utente — e questo vale doppio quando si tratta di oggetti personali.</div>
+        </div>
+        <div class="ra-learning">
+          <div class="ra-learning__num">02</div>
+          <div class="ra-learning__title">Prototipi ad alto realismo</div>
+          <div class="ra-learning__desc">Lavorare con prototipi ad alto realismo mi ha aiutato a ottenere feedback concreti anche su funzionalità avanzate come lo Smart Scan e il Mid-Rental Check — gli utenti reagiscono in modo molto più autentico.</div>
+        </div>
+        <div class="ra-learning">
+          <div class="ra-learning__num">03</div>
+          <div class="ra-learning__title">Semplificare il complesso</div>
+          <div class="ra-learning__desc">Ho rafforzato la mia capacità di semplificare interfacce complesse, trasformandole in esperienze familiari e intuitive. La semplicità percepita è il vero differenziatore in un marketplace di fiducia.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 9. NEXT STEPS ── -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Next Steps</p>
+      <h2 class="case-section__heading fade-up">Dove porterebbe<br>l'iterazione successiva</h2>
+
+      <ul class="case-list fade-up">
+        <li><strong>Sistema di garanzie e assicurazione</strong> — Integrazione di un sistema di garanzie e copertura assicurativa per aumentare la fiducia nella piattaforma da parte di chi presta oggetti di valore — il principale blocco all'adozione per il segmento "proprietario".</li>
+        <li><strong>Sistema di reputazione evoluto</strong> — Profili verificati, storia dei noleggi e rating bidirezionali per costruire un sistema di reputazione che riduca ulteriormente la diffidenza iniziale e incentivi i comportamenti virtuosi.</li>
+      </ul>
+    </div>
+
+  </div><!-- /case-body -->
+
+  <!-- ── NEXT PROJECT ── -->
+  <a href="leone-master-dark.html" class="case-next">
+    <p class="case-next__label">Prossimo progetto</p>
+    <h2 class="case-next__title">Leone Master School →</h2>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__logo">Bruno Lorenzon</div>
+    <p class="footer__copy">© 2025 — UX &amp; Product Designer</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    /* Parallax on hero cover */
+    (function () {
+      const cover = document.getElementById('ra-cover');
+      const img   = document.getElementById('ra-cover-img');
+      if (!cover || !img) return;
+      let ticking = false;
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          requestAnimationFrame(function () {
+            const rect = cover.getBoundingClientRect();
+            const scrolled = -rect.top;
+            const speed = 0.3;
+            img.style.transform = 'translateY(' + (scrolled * speed) + 'px)';
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+
+    /* Staggered scroll animation for Design Thinking phases and Insights */
+    (function () {
+      const animatedItems = document.querySelectorAll('.ra-dt-phase, .ra-insight');
+      const obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const idx = Array.from(animatedItems).indexOf(el);
+            setTimeout(function () { el.classList.add('visible'); }, idx * 120);
+            obs.unobserve(el);
+          }
+        });
+      }, { threshold: 0.15 });
+      animatedItems.forEach(function (el) { obs.observe(el); });
+    })();
+  </script>
+</body>
+</html>

@@ -4,67 +4,539 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>There Is An Alternative – Bruno Lorenzon</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/style.css?v=8" />
 </head>
 <body>
 
   <nav class="nav scrolled" id="nav">
     <ul class="nav__links nav__left"><li><a href="../works.html" class="nav__link">← Works</a></li></ul>
-    <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno &amp;</span><span class="nav__logo-bottom">Bruno</span></a>
+    <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
     <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
   </nav>
 
+  <!-- 1. HERO -->
   <div class="case-hero">
-    <h1 class="case-hero__title fade-up">There Is An Alternative</h1>
-    <p class="case-hero__desc fade-up fade-up-delay-1">UX e layout di una piattaforma career media per esplorare aziende tramite contenuti immersivi e job discovery.</p>
-    <div class="case-hero__tags fade-up fade-up-delay-2">
-      <span class="tag">UI Design</span>
-      <span class="tag tag--outline">Product Design</span>
+    <p class="case-hero__eyebrow fade-up">Career Media · UX Design · Content Strategy</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1">Rethinking<br>Job Discovery</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2">Progettare un'esperienza content-driven per aiutare la Gen Z a scegliere dove lavorare, non solo dove candidarsi</p>
+    <div class="case-hero__tags fade-up fade-up-delay-3">
+      <span class="tag">UX Design</span>
+      <span class="tag tag--outline">Content Strategy</span>
       <span class="tag tag--outline">Career Platform</span>
+      <span class="tag tag--outline">UI Design</span>
     </div>
   </div>
 
-  <div class="case-cover">
-    <div class="case-cover-placeholder" style="background: linear-gradient(135deg,#1a1a1a,#333);">💼</div>
+  <!-- Hero image — Desktop Mockup -->
+  <div class="case-cover img-reveal tiaa-mockup-wrap">
+    <div class="tiaa-desktop-mockup">
+      <div class="tiaa-desktop-frame">
+        <div class="tiaa-topbar">
+          <div class="tiaa-dots">
+            <span class="tiaa-dot red"></span>
+            <span class="tiaa-dot yellow"></span>
+            <span class="tiaa-dot green"></span>
+          </div>
+          <div class="tiaa-url">thereisanalternative.com</div>
+        </div>
+        <div class="tiaa-screen">
+          <img src="../assets/images/desktop1.jpg" alt="There Is An Alternative — Home page" draggable="false" />
+        </div>
+      </div>
+      <div class="tiaa-stand">
+        <div class="tiaa-neck"></div>
+        <div class="tiaa-base"></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .case-hero { padding-bottom: 60px; }
+    .tiaa-mockup-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 0 24px;
+      margin: 0 40px;
+      aspect-ratio: unset;
+      overflow: visible;
+      background: transparent;
+    }
+    .tiaa-desktop-mockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: perspective(1200px) rotateY(-4deg) rotateX(2deg);
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      cursor: default;
+    }
+    .tiaa-desktop-mockup:hover {
+      transform: perspective(1200px) rotateY(0deg) rotateX(0deg);
+    }
+    .tiaa-desktop-frame {
+      width: min(780px, 90vw);
+      background: #1c1c1e;
+      border-radius: 14px;
+      overflow: hidden;
+      outline: 6px solid transparent;
+      box-shadow:
+        0 0 0 1px #a0a0a8,
+        0 0 0 7px #c8c8cc,
+        0 0 0 8px #8e8e93,
+        0 40px 80px -20px rgba(0,0,0,0.55),
+        0 0 80px -20px rgba(99,102,241,0.10);
+      transition: box-shadow 0.5s ease;
+    }
+    .tiaa-desktop-mockup:hover .tiaa-desktop-frame {
+      box-shadow:
+        0 0 0 1px #a0a0a8,
+        0 0 0 7px #c8c8cc,
+        0 0 0 8px #8e8e93,
+        0 60px 120px -20px rgba(0,0,0,0.45),
+        0 0 120px -20px rgba(99,102,241,0.22);
+    }
+    .tiaa-topbar {
+      height: 36px;
+      background: #2c2c2e;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .tiaa-dots { display: flex; gap: 6px; }
+    .tiaa-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+    .tiaa-dot.red    { background: #ff5f57; }
+    .tiaa-dot.yellow { background: #febc2e; }
+    .tiaa-dot.green  { background: #28c840; }
+    .tiaa-url {
+      flex: 1;
+      background: #1c1c1e;
+      border-radius: 6px;
+      height: 22px;
+      font-size: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+      color: #71717a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.02em;
+    }
+    .tiaa-screen {
+      height: clamp(260px, 38vw, 460px);
+      overflow: hidden;
+      background: linear-gradient(160deg, #0f172a 0%, #1e293b 50%, #312e81 100%);
+      position: relative;
+    }
+    .tiaa-screen img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: translateY(0);
+      transition: transform 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .tiaa-desktop-mockup:hover .tiaa-screen img {
+      transform: translateY(calc(-100% + clamp(260px, 38vw, 460px)));
+    }
+    .tiaa-stand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .tiaa-neck {
+      width: 70px; height: 22px;
+      background: linear-gradient(to bottom, #2c2c2e, #1c1c1e);
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    }
+    .tiaa-base {
+      width: 160px; height: 8px;
+      background: #2c2c2e;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+  </style>
+
+  <!-- Meta -->
+  <div class="case-body">
+    <div class="case-meta fade-up">
+      <div class="case-meta__item">
+        <div class="case-meta__label">Cliente</div>
+        <div class="case-meta__value">There Is An Alternative</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__value">UX / UI Designer</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Scope</div>
+        <div class="case-meta__value">UX, Layout, Content Architecture</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">URL</div>
+        <div class="case-meta__value"><a href="https://thereisanalternative.it" target="_blank" rel="noopener" style="color: var(--navy); text-decoration: underline; text-underline-offset: 3px;">thereisanalternative.it ↗</a></div>
+      </div>
+    </div>
+
+    <!-- 2. Contesto -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Contesto</p>
+      <h2 class="case-section__heading fade-up">Una piattaforma per scegliere,<br>non solo cercare</h2>
+      <p class="case-section__text fade-up">There Is An Alternative nasce con una missione precisa: ridare potere ai candidati nel processo di scelta lavorativa. Non un portale di annunci, ma una media platform che mette al centro le storie delle aziende — chi sono, come lavorano, cosa credono.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Ho lavorato sulla UX e sul layout della piattaforma, contribuendo a definire un sistema capace di connettere contenuto editoriale, identità aziendale e opportunità lavorative in un'esperienza fluida e coerente.</p>
+    </div>
+  </div>
+
+  <!-- Image: benchmark -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/tiaa_benchmark.svg" alt="Benchmark — Job Board Tradizionale vs TIA" />
   </div>
 
   <div class="case-body">
-    <div class="case-meta fade-up">
-      <div class="case-meta__item"><div class="case-meta__label">Cliente</div><div class="case-meta__value">There Is An Alternative</div></div>
-      <div class="case-meta__item"><div class="case-meta__label">Ruolo</div><div class="case-meta__value">UX/UI Designer</div></div>
-      <div class="case-meta__item"><div class="case-meta__label">Anno</div><div class="case-meta__value">2024</div></div>
-      <div class="case-meta__item"><div class="case-meta__label">Strumenti</div><div class="case-meta__value">Figma, FigJam</div></div>
+    <!-- 3. Problema -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Problema</p>
+      <h2 class="case-section__heading fade-up">Non un problema di listing —<br>un problema di fiducia</h2>
+      <p class="case-section__text fade-up">I portali tradizionali trattano il lavoro come un catalogo di posizioni aperte. Ogni annuncio è una scheda: titolo, requisiti, stipendio, candidati. Ma questo modello ignora la domanda più importante che si fa un candidato: <em>"Sarò nel posto giusto per me?"</em></p>
+      <ul class="case-list fade-up">
+        <li>Esperienza di navigazione povera e identica per tutte le aziende</li>
+        <li>Cultura aziendale completamente invisibile all'utente</li>
+        <li>Nessun contenuto autentico — solo copy corporate e job description generiche</li>
+        <li>Disconnessione totale tra contenuto editoriale e opportunità lavorative</li>
+        <li>Scarsa fiducia nel processo: gli utenti non si riconoscono nei formati esistenti</li>
+      </ul>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">—</span>
+          <span class="case-metric__label">Engagement nei portali tradizionali</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Mismatch candidato–azienda</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">—</span>
+          <span class="case-metric__label">Fiducia nella piattaforma</span>
+        </div>
+      </div>
+      <div class="case-system-box fade-up" style="margin-top: 32px;">
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Insight</span>
+          <span class="case-system-box__value">La Gen Z non cerca semplicemente lavoro. Cerca contesti in cui riconoscersi. Non valuta solo la posizione — valuta l'azienda, le persone, i valori, l'ambiente di lavoro quotidiano.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image: user flow comparison -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/tiaa_user_flow.svg" alt="User Flow — Portali tradizionali vs percorso TIA" />
+  </div>
+
+  <div class="case-body">
+    <!-- 4. Approccio -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Approccio / Strategic Shift</p>
+      <h2 class="case-section__heading fade-up">Da job board<br>a content-driven experience</h2>
+      <p class="case-section__text fade-up">Abbiamo affrontato il problema come un cambio di paradigma, non come un restyling. Il punto non era rendere più belle le schede azienda — era ripensare completamente il modello di scoperta.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Il framework strategico si basa su tre principi che operano in sequenza: il contenuto attira e coinvolge, lo storytelling costruisce fiducia, l'integrazione job converte l'interesse in azione. Le aziende non sono più schede statiche — sono narrazioni immersive.</p>
+      <ul class="case-list fade-up">
+        <li><strong>Contenuto per attirare e coinvolgere</strong> — video, foto, storie reali prima degli annunci</li>
+        <li><strong>Storytelling per costruire fiducia</strong> — le aziende hanno una voce e un'identità, non solo posizioni aperte</li>
+        <li><strong>Job integration per convertire</strong> — le offerte entrano nel flusso naturale della scoperta</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image: framework -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/tiaa_framework.svg" alt="Framework strategico — Contenuto, Fiducia, Azione" />
+  </div>
+
+  <div class="case-body">
+    <!-- 5.1 Company page -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 01</p>
+      <h2 class="case-section__heading fade-up">Le aziende raccontate,<br>non elencate</h2>
+      <p class="case-section__text fade-up">Ogni company page è progettata come una storia, non come una scheda anagrafica. L'utente non arriva su una lista di requisiti — arriva su un'identità. Il modello di contenuto è strutturato per costruire riconoscimento progressivo: prima l'ambiente, poi i volti, poi la cultura, infine le opportunità.</p>
+      <ul class="case-list fade-up">
+        <li><strong>Hero immersivo</strong> — foto d'ambiente che comunica l'atmosfera aziendale</li>
+        <li><strong>Video TIA Insider</strong> — dipendenti reali che parlano del lavoro quotidiano, non spot promozionali</li>
+        <li><strong>Grid editoriale</strong> — interviste, testimonianze, momenti di vita aziendale</li>
+        <li><strong>Sidebar dati chiave</strong> — dipendenti, anno fondazione, età media, sedi, valori</li>
+        <li><strong>CTA contestuali</strong> — "Esplora l'azienda" e "Vedi posizioni aperte" inseriti in modo naturale</li>
+      </ul>
+    </div>
+  </div>
+
+  <style>
+    .tiaa-mini-mockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: perspective(900px) rotateY(-5deg) rotateX(2deg);
+      transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      cursor: default;
+      width: 100%;
+    }
+    .tiaa-mini-mockup:hover {
+      transform: perspective(900px) rotateY(0deg) rotateX(0deg);
+    }
+    .tiaa-mini-frame {
+      width: 100%;
+      background: #1c1c1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px #a0a0a8,
+        0 0 0 6px #c8c8cc,
+        0 0 0 7px #8e8e93,
+        0 20px 50px -10px rgba(0,0,0,0.35),
+        0 0 50px -10px rgba(99,102,241,0.10);
+      transition: box-shadow 0.4s ease;
+    }
+    .tiaa-mini-mockup:hover .tiaa-mini-frame {
+      box-shadow:
+        0 0 0 1px #a0a0a8,
+        0 0 0 6px #c8c8cc,
+        0 0 0 7px #8e8e93,
+        0 30px 70px -10px rgba(0,0,0,0.28),
+        0 0 70px -10px rgba(99,102,241,0.18);
+    }
+    .tiaa-mini-topbar {
+      height: 30px;
+      background: #2c2c2e;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .tiaa-mini-screen {
+      height: 320px;
+      overflow: hidden;
+      background: linear-gradient(160deg, #0f172a 0%, #1e293b 50%, #312e81 100%);
+      position: relative;
+    }
+    .tiaa-mini-screen img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: translateY(0);
+      transition: transform 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .tiaa-mini-mockup:hover .tiaa-mini-screen img {
+      transform: translateY(calc(-100% + 320px));
+    }
+  </style>
+
+  <!-- Image: content model company page — split con mockup -->
+  <div class="case-full-image img-reveal tiaa-card-split">
+    <div class="tiaa-card-split__img">
+      <img src="../assets/images/tiaa_content_model.svg" alt="Anatomia Company Page — 5 layer di contenuto" />
+    </div>
+    <div class="tiaa-card-split__mockup">
+      <div class="tiaa-mini-mockup">
+        <div class="tiaa-mini-frame">
+          <div class="tiaa-mini-topbar">
+            <div class="tiaa-dots">
+              <span class="tiaa-dot red"></span>
+              <span class="tiaa-dot yellow"></span>
+              <span class="tiaa-dot green"></span>
+            </div>
+            <div class="tiaa-url">thereisanalternative.com</div>
+          </div>
+          <div class="tiaa-mini-screen">
+            <img src="../assets/images/desktop1.jpg" alt="TIA Company Page" draggable="false" />
+          </div>
+        </div>
+        <div class="tiaa-stand">
+          <div class="tiaa-neck"></div>
+          <div class="tiaa-base"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .tiaa-card-split {
+      display: grid !important;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 0;
+      align-items: center;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+    .tiaa-card-split__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px 24px 24px;
+      background: var(--cream-2, #f0ede8);
+    }
+    .tiaa-card-split__img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .tiaa-card-split__mockup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 24px 24px 16px;
+      background: var(--cream-2, #f0ede8);
+    }
+    .tiaa-card-split__mockup .tiaa-mini-mockup {
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (max-width: 768px) {
+      .tiaa-card-split {
+        grid-template-columns: 1fr !important;
+      }
+      .tiaa-card-split__img {
+        padding: 24px 24px 12px;
+      }
+      .tiaa-card-split__mockup {
+        padding: 12px 24px 24px;
+      }
+    }
+  </style>
+
+  <div class="case-body">
+    <!-- 5.2 Job listing -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 02</p>
+      <h2 class="case-section__heading fade-up">Il lavoro integrato<br>nel contenuto</h2>
+      <p class="case-section__text fade-up">Le offerte di lavoro non interrompono il flusso narrativo — ne fanno parte. Un annuncio su TIA non è mai separato dal contesto aziendale che lo ospita. L'utente che arriva a una job description ha già esplorato l'azienda, guardato video, letto la cultura: la candidatura diventa un gesto consapevole, non un clic al buio.</p>
+      <ul class="case-list fade-up">
+        <li>Identità aziendale sempre visibile nel listing (logo, settore, cultura)</li>
+        <li>Tag visivi per tipologia: full time, ibrido, occasionale</li>
+        <li>Descrizione del ruolo con tono editoriale, non burocratico</li>
+        <li>Link diretto alla company page per chi vuole approfondire il contesto</li>
+        <li>CTA "Candidati ora" al termine di un percorso, non come unico obiettivo della pagina</li>
+      </ul>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Qualità candidature ricevute</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Tempo medio su company page</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↓</span>
+          <span class="case-metric__label">Mismatch candidato–azienda</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image: benchmark repurposed for job listing section -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/tiaa_user_flow.svg" alt="Confronto percorso — candidatura tradizionale vs TIA" />
+  </div>
+
+  <div class="case-body">
+    <!-- 5.3 Discovery e navigazione -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione 03</p>
+      <h2 class="case-section__heading fade-up">Trovare l'azienda giusta<br>senza cercarla</h2>
+      <p class="case-section__text fade-up">Uno dei problemi principali dei portali tradizionali è che richiedono all'utente di sapere già cosa cercare. TIA introduce un modello di scoperta — non solo di ricerca. La navigazione è progettata per sorprendere, non solo per filtrare.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">La home presenta una search bar centralizzata, ma il contenuto visivo subito sotto — aziende in evidenza, curate editorialmente — invita alla scoperta passiva. L'utente esplora prima di cercare.</p>
+      <ul class="case-list fade-up">
+        <li>Home con search + company grid "in evidenza" curata editorialmente</li>
+        <li>Trova un'azienda: filtri per settore, città, dimensioni con focus visivo sui contenuti</li>
+        <li>Navigazione fluida: da "cerco un lavoro" a "esploro dove voglio stare"</li>
+        <li>Media section: contenuti editoriali separati ma connessi alla scoperta aziendale</li>
+        <li>Riduzione attrito: nessuna lista di requisiti come primo contenuto visibile</li>
+      </ul>
+      <div class="case-system-box fade-up">
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Input</span>
+          <span class="case-system-box__value">Comportamento Gen Z · aspettative di autenticità · bisogno di riconoscersi prima di candidarsi</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Shift</span>
+          <span class="case-system-box__value">Storytelling aziendale + visual content + integrazione contenuto-job</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Output</span>
+          <span class="case-system-box__value">Scoperta come esperienza narrativa e immersiva · candidatura consapevole e motivata</span>
+        </div>
+        <div class="case-system-box__row">
+          <span class="case-system-box__label">Principi</span>
+          <span class="case-system-box__value">Content-first · Autentico · Fluido · Contestuale</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image: content model -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/tiaa_content_model.svg" alt="Content model — architettura contenuti TIA" />
+  </div>
+
+  <div class="case-body">
+    <!-- 6. Risultati -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Risultati</p>
+      <h2 class="case-section__heading fade-up">Chiarezza, autenticità<br>e posizionamento differenziato</h2>
+      <p class="case-section__text fade-up">Il risultato è un'esperienza più coinvolgente, credibile e allineata alle aspettative della nuova generazione di utenti. TIA si posiziona come un'alternativa reale ai portali tradizionali, spostando il focus da "trovare lavoro" a "scegliere dove lavorare".</p>
+      <div class="case-metrics case-metrics--grid fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Qualità percepita della piattaforma</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Coinvolgimento fruizione video</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Allineamento aspettative Gen Z</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Posizionamento vs portali tradizionali</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Chiarezza della USP</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↓</span>
+          <span class="case-metric__label">Mismatch candidato–azienda</span>
+        </div>
+      </div>
     </div>
 
-    <div class="case-section fade-up">
-      <p class="case-section__title">Project Overview</p>
-      <p class="case-section__text">Placeholder — descrivi cos'è There Is An Alternative, il suo posizionamento nel mercato career media e gli obiettivi del progetto di design.</p>
+    <!-- 7. Learnings -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Learnings</p>
+      <h2 class="case-section__heading fade-up">Quello che ho imparato<br>progettando per la fiducia</h2>
+      <p class="case-section__text fade-up">Questo progetto mi ha insegnato che nel design di piattaforme complesse, il vero problema raramente è tecnico o visivo — è relazionale. La sfida principale non era come mostrare le aziende, ma come far sentire l'utente nel posto giusto prima ancora di candidarsi.</p>
+      <ul class="case-list case-list--bold fade-up">
+        <li>Il problema non era l'accesso alle informazioni — era il modo in cui le persone costruiscono fiducia</li>
+        <li>Progettare per la Gen Z significa progettare per l'autenticità, non per l'efficienza</li>
+        <li>Il contenuto non è un accessorio — è il prodotto stesso</li>
+        <li>La scoperta è più potente della ricerca: un utente che esplora converte meglio di uno che filtra</li>
+        <li>Integrare editoriale e funzionale richiede una visione di sistema, non due reparti separati</li>
+      </ul>
     </div>
 
-    <div class="case-image fade-up"><div class="case-image-placeholder">🖼️</div></div>
-
-    <div class="case-section fade-up">
-      <p class="case-section__title">Esplorazione Aziende</p>
-      <p class="case-section__text">Placeholder — come hai progettato il sistema di esplorazione delle aziende? Quali pattern immersivi hai scelto e perché? Come differisce da un classico job board?</p>
-    </div>
-
-    <div class="case-image fade-up"><div class="case-image-placeholder">✏️</div></div>
-
-    <div class="case-section fade-up">
-      <p class="case-section__title">Job Discovery</p>
-      <p class="case-section__text">Placeholder — come funziona il flusso di job discovery? Quali filtri, raccomandazioni o meccaniche di serendipity hai introdotto per migliorare l'engagement?</p>
-    </div>
-
-    <div class="case-image fade-up"><div class="case-image-placeholder">📐</div></div>
-
-    <div class="case-section fade-up">
-      <p class="case-section__title">Contenuti Immersivi</p>
-      <p class="case-section__text">Placeholder — descrivi il sistema di contenuti: video, articoli, company stories. Come hai bilanciato editoriale e funzionalità di recruiting?</p>
-    </div>
-
-    <div class="case-section fade-up">
-      <p class="case-section__title">Risultati</p>
-      <p class="case-section__text">Placeholder — outcome del progetto: feedback del cliente, metriche di engagement o altri KPI.</p>
+    <!-- 8. Next Step -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Next Step</p>
+      <ul class="case-list fade-up">
+        <li>Test A/B su diversi modelli di company page per misurare engagement</li>
+        <li>Personalizzazione del feed basata su settore e comportamento di navigazione</li>
+        <li>Ottimizzazione mobile — esperienza video-first su smartphone</li>
+        <li>Dashboard aziendale: analytics per misurare l'impatto dei contenuti sulle candidature</li>
+      </ul>
     </div>
   </div>
 
@@ -77,6 +549,7 @@
     <div class="footer__logo">Bruno Lorenzon</div>
     <p class="footer__copy">© 2025 — UX & Product Designer</p>
   </footer>
-  <script src="../js/main.js"></script>
+
+  <script src="../js/main.js?v=16"></script>
 </body>
 </html>

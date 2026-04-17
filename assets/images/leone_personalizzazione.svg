@@ -1,0 +1,124 @@
+<svg width="100%" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<text x="340" y="16" text-anchor="middle" style="font-size:9px;opacity:0.35;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">logica di personalizzazione — come il sistema adatta l'esperienza</text>
+
+<!-- ══════════════════════════════════
+  COLONNA SINISTRA — INPUT
+  x=30 w=140
+  3 box: y=40, y=120, y=200
+══════════════════════════════════ -->
+<text x="100" y="32" text-anchor="middle" style="font-size:9px;opacity:0.38;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.38;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">input utente</text>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="30" y="40" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="100" y="59" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Test preferenze</text>
+  <text x="100" y="75" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Obiettivi &amp; interessi</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="30" y="120" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="100" y="139" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Comportamento</text>
+  <text x="100" y="155" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Lezioni viste · tempo</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="30" y="200" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="100" y="219" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Stato avanzamento</text>
+  <text x="100" y="235" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">% completamento corsi</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="30" y="280" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="100" y="299" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Tipo utente</text>
+  <text x="100" y="315" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Nuovo · attivo · ritorno</text>
+</g>
+
+<!-- frecce input → motore -->
+<line x1="170" y1="64" x2="240" y2="200" marker-end="url(#arrow)" stroke-opacity="0.4" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="170" y1="144" x2="240" y2="210" marker-end="url(#arrow)" stroke-opacity="0.4" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="170" y1="224" x2="240" y2="220" marker-end="url(#arrow)" stroke-opacity="0.4" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="170" y1="304" x2="240" y2="230" marker-end="url(#arrow)" stroke-opacity="0.4" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- ══════════════════════════════════
+  CENTRO — MOTORE DI PERSONALIZZAZIONE
+  x=250 w=180 y=160 h=120
+  cx=340
+══════════════════════════════════ -->
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="250" y="150" width="180" height="120" rx="10" stroke-width="2" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="340" y="188" text-anchor="middle" dominant-baseline="central" style="font-size:12px;fill:#F6C243;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:12px;font-weight:500;text-anchor:middle;dominant-baseline:central">Motore di</text>
+  <text x="340" y="206" text-anchor="middle" dominant-baseline="central" style="font-size:12px;fill:#F6C243;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:12px;font-weight:500;text-anchor:middle;dominant-baseline:central">personalizzazione</text>
+  <text x="340" y="228" text-anchor="middle" dominant-baseline="central" style="font-size:8.5px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:8.5px;font-weight:400;text-anchor:middle;dominant-baseline:central">Stato utente · progress tracking</text>
+  <text x="340" y="244" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Logica invisibile</text>
+</g>
+
+<!-- ══════════════════════════════════
+  COLONNA DESTRA — OUTPUT
+  x=510 w=140
+  4 box
+══════════════════════════════════ -->
+<text x="580" y="32" text-anchor="middle" style="font-size:9px;opacity:0.38;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.38;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">output sistema</text>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="510" y="40" width="140" height="48" rx="6" stroke-width="1" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="580" text-anchor="middle" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:500;text-anchor:middle;dominant-baseline:central"><tspan x="580" dy="0" y="54">Corsi gratuiti</tspan><tspan x="580" dy="12">assegnati</tspan></text>
+  <text x="580" y="75" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Percorso su misura</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="510" y="120" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="580" y="139" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Home adattata</text>
+  <text x="580" y="155" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Ciao [Nome] · continua</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="510" y="200" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="580" y="219" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Componente Continua</text>
+  <text x="580" y="235" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Ultima lezione vista</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="510" y="280" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="580" y="299" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#F6C243;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Upsell progressivo</text>
+  <text x="580" y="315" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Gratuito → pagamento</text>
+</g>
+
+<!-- frecce motore → output -->
+<line x1="430" y1="190" x2="508" y2="64" marker-end="url(#arrow)" stroke-opacity="0.45" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="430" y1="200" x2="508" y2="144" marker-end="url(#arrow)" stroke-opacity="0.45" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="430" y1="215" x2="508" y2="224" marker-end="url(#arrow)" stroke-opacity="0.45" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="430" y1="230" x2="508" y2="304" marker-end="url(#arrow)" stroke-opacity="0.35" stroke-dasharray="4 3" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:4px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- ══════════════════════════════════
+  LOOP FEEDBACK — freccia dal basso
+  da output torna verso input
+══════════════════════════════════ -->
+<path d="M580 328 L580 400 L100 400 L100 330" fill="none" marker-end="url(#arrow)" stroke-dasharray="5 3" stroke-opacity="0.3" style="fill:none;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:5px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="340" y="418" text-anchor="middle" style="font-size:9px;opacity:0.35;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">feedback loop — ogni azione aggiorna il profilo utente</text>
+
+<!-- ══════════════════════════════════
+  3 PRINCIPI CHIAVE — barra bassa
+  y=440 3 box w=180 gap=16
+  x: 30 226 422
+══════════════════════════════════ -->
+<text x="340" y="434" text-anchor="middle" style="font-size:9px;opacity:0.28;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.28;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">principi di progettazione</text>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="30" y="440" width="188" height="36" rx="6" stroke-width="0.5" style="fill: #F4F7FD;stroke: #C5D5EE;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="124" y="458" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill: #6B85A8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Progressiva — non invasiva</text>
+</g>
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="236" y="440" width="188" height="36" rx="6" stroke-width="0.5" style="fill: #F4F7FD;stroke: #C5D5EE;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="330" y="458" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill: #6B85A8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Rilevante — basata su dati reali</text>
+</g>
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="442" y="440" width="188" height="36" rx="6" stroke-width="0.5" style="fill: #F4F7FD;stroke: #C5D5EE;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="536" y="458" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill: #6B85A8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Scalabile — adatta nel tempo</text>
+</g>
+
+</svg>

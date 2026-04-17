@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 720" font-family="system-ui,-apple-system,'Helvetica Neue',sans-serif">
+
+  <!-- Header -->
+  <text x="280" y="24" text-anchor="middle" font-size="9" letter-spacing="3" fill="#AAA" font-weight="500">FRAMEWORK STRATEGICO</text>
+  <text x="280" y="48" text-anchor="middle" font-size="16" font-weight="700" fill="#132E55">Contenuto → Fiducia → Azione</text>
+
+  <!-- Pillar 1: Contenuto -->
+  <rect x="8" y="64" width="544" height="196" rx="12" fill="#132E55"/>
+  <text x="280" y="90" text-anchor="middle" font-size="9" letter-spacing="3" fill="#C8F53E" font-weight="600">01</text>
+  <text x="280" y="116" text-anchor="middle" font-size="20" font-weight="700" fill="#FFF">Contenuto</text>
+  <line x1="28" y1="128" x2="532" y2="128" stroke="#FFFFFF20" stroke-width="1"/>
+  <text x="280" y="148" text-anchor="middle" font-size="11" fill="#FFFFFF99">Attira e coinvolge prima ancora della job offer</text>
+  <rect x="28" y="164" width="504" height="24" rx="5" fill="#FFFFFF15"/>
+  <text x="280" y="181" text-anchor="middle" font-size="12" fill="#FFF">Video TIA Insider</text>
+  <rect x="28" y="194" width="504" height="24" rx="5" fill="#FFFFFF15"/>
+  <text x="280" y="211" text-anchor="middle" font-size="12" fill="#FFF">Interviste a dipendenti reali</text>
+  <rect x="28" y="224" width="504" height="24" rx="5" fill="#FFFFFF15"/>
+  <text x="280" y="241" text-anchor="middle" font-size="12" fill="#FFF">Foto ambiente + team</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="280" y="278" text-anchor="middle" font-size="18" fill="#132E55">↓</text>
+
+  <!-- Pillar 2: Fiducia -->
+  <rect x="8" y="288" width="544" height="196" rx="12" fill="#1E3F6E"/>
+  <text x="280" y="314" text-anchor="middle" font-size="9" letter-spacing="3" fill="#C8F53E" font-weight="600">02</text>
+  <text x="280" y="340" text-anchor="middle" font-size="20" font-weight="700" fill="#FFF">Fiducia</text>
+  <line x1="28" y1="352" x2="532" y2="352" stroke="#FFFFFF20" stroke-width="1"/>
+  <text x="280" y="372" text-anchor="middle" font-size="11" fill="#FFFFFF99">Costruisce riconoscimento e senso di appartenenza</text>
+  <rect x="28" y="388" width="504" height="24" rx="5" fill="#FFFFFF15"/>
+  <text x="280" y="405" text-anchor="middle" font-size="12" fill="#FFF">Riconoscimento valori</text>
+  <rect x="28" y="418" width="504" height="24" rx="5" fill="#FFFFFF15"/>
+  <text x="280" y="435" text-anchor="middle" font-size="12" fill="#FFF">Autenticità percepita</text>
+  <rect x="28" y="448" width="504" height="24" rx="5" fill="#FFFFFF15"/>
+  <text x="280" y="465" text-anchor="middle" font-size="12" fill="#FFF">Senso di appartenenza</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="280" y="502" text-anchor="middle" font-size="18" fill="#C8F53E">↓</text>
+
+  <!-- Pillar 3: Azione -->
+  <rect x="8" y="512" width="544" height="196" rx="12" fill="#C8F53E"/>
+  <text x="280" y="538" text-anchor="middle" font-size="9" letter-spacing="3" fill="#132E55" font-weight="700">03</text>
+  <text x="280" y="564" text-anchor="middle" font-size="20" font-weight="700" fill="#111">Azione</text>
+  <line x1="28" y1="576" x2="532" y2="576" stroke="#11111130" stroke-width="1"/>
+  <text x="280" y="596" text-anchor="middle" font-size="11" fill="#333">Converte interesse in candidatura consapevole</text>
+  <rect x="28" y="612" width="504" height="24" rx="5" fill="#11111115"/>
+  <text x="280" y="629" text-anchor="middle" font-size="12" fill="#111">Candidatura motivata</text>
+  <rect x="28" y="642" width="504" height="24" rx="5" fill="#11111115"/>
+  <text x="280" y="659" text-anchor="middle" font-size="12" fill="#111">Match culturale reale</text>
+  <rect x="28" y="672" width="504" height="24" rx="5" fill="#11111115"/>
+  <text x="280" y="689" text-anchor="middle" font-size="12" fill="#111">Riduzione mismatch</text>
+
+</svg>

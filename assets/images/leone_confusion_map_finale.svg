@@ -1,0 +1,142 @@
+<svg width="100%" viewBox="0 0 680 580" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<text x="340" y="16" text-anchor="middle" style="font-size:9px;opacity:0.35;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">situazione prima dell'intervento</text>
+
+<!-- ══════════════════════════════════
+  UTENTE — x=30 w=140 cx=100 y=30
+  "Utente" 6ch×8=48 + 24pad = 72 → 140 ✓
+  "Accede alla piattaforma" 24ch×7=168 + 24 = 192 → uso 140 e abbrevio
+══════════════════════════════════ -->
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="30" y="28" width="140" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="100" y="47" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Utente</text>
+  <text x="100" y="63" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Accede alla piattaforma</text>
+</g>
+
+<!-- ══════════════════════════════════
+  3 ENTRY POINT
+  col1 x=230 w=160 cx=310  "Homepage" + "Nessuna gerarchia"
+  col2 x=230 w=160 cx=310  sotto
+  col3 x=230 w=160 cx=310  sotto
+  gap verticale 16px
+  y1=28 y2=92 y3=156
+══════════════════════════════════ -->
+
+<!-- Homepage -->
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="230" y="28" width="160" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="310" y="47" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Homepage</text>
+  <text x="310" y="63" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Nessuna gerarchia</text>
+</g>
+
+<!-- Lista corsi -->
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="230" y="92" width="160" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="310" y="111" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Lista corsi</text>
+  <text x="310" y="127" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Gratuiti e pag. indistinti</text>
+</g>
+
+<!-- Ricerca -->
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="230" y="156" width="160" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="310" y="175" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Ricerca</text>
+  <text x="310" y="191" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Risultati non filtrati</text>
+</g>
+
+<!-- frecce utente → 3 entry (L-bend per evitare incroci) -->
+<path d="M170 52 L200 52 L200 52 L228 52" fill="none" marker-end="url(#arrow)" stroke="#2D6BE4" stroke-opacity="0.7" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M170 52 L200 52 L200 116 L228 116" fill="none" marker-end="url(#arrow)" stroke="#2D6BE4" stroke-opacity="0.6" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M170 52 L200 52 L200 180 L228 180" fill="none" marker-end="url(#arrow)" stroke="#2D6BE4" stroke-opacity="0.5" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- ══════════════════════════════════
+  COLONNA DESTRA — problemi
+  x=460 w=190
+  y1=28  "Corsi gratuiti non distinti"
+  y2=92  "Corsi a pagamento"
+  y3=156 "Nessun onboarding guidato"
+  y4=236 "Nessun componente Continua"
+  y5=316 "Nessuna progressione utente"
+══════════════════════════════════ -->
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="460" y="28" width="190" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="555" y="47" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Corso gratuito A</text>
+  <text x="555" y="63" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Non distinto da quelli a pag.</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="460" y="92" width="190" height="48" rx="6" stroke-width="0.5" style="fill:#132E55;stroke:#1E4A8C;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="555" y="111" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">Corso a pagamento B</text>
+  <text x="555" y="127" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#A0B8D8;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Stessa priorità visiva</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="460" y="156" width="190" height="48" rx="6" stroke-width="1" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="555" y="175" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">No onboarding guidato</text>
+  <text x="555" y="191" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">No video · no test · no percorso</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="460" y="220" width="190" height="48" rx="6" stroke-width="1" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="555" y="239" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">No componente Continua</text>
+  <text x="555" y="255" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Nessun punto di ripresa</text>
+</g>
+
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="460" y="284" width="190" height="48" rx="6" stroke-width="1" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="555" y="303" text-anchor="middle" dominant-baseline="central" style="font-size:11px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:11px;font-weight:500;text-anchor:middle;dominant-baseline:central">No progressione utente</text>
+  <text x="555" y="319" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">Stato ignorato dal sistema</text>
+</g>
+
+<!-- frecce entry → problemi -->
+<line x1="390" y1="52" x2="458" y2="52" marker-end="url(#arrow)" stroke-opacity="0.4" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<line x1="390" y1="116" x2="458" y2="116" marker-end="url(#arrow)" stroke-opacity="0.4" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M390 180 L420 180 L420 244 L458 244" fill="none" marker-end="url(#arrow)" stroke-opacity="0.35" stroke-dasharray="4 3" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:4px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M310 204 L310 230 L420 230 L420 308 L458 308" fill="none" marker-end="url(#arrow)" stroke-opacity="0.3" stroke-dasharray="4 3" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:4px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M310 204 L310 244 L420 244 L420 180 L458 180" fill="none" marker-end="url(#arrow)" stroke-opacity="0" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- freccia da ricerca ai problemi rossi -->
+<path d="M390 180 L420 180 L420 180 L458 180" fill="none" marker-end="url(#arrow)" stroke-opacity="0.35" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- ══════════════════════════════════
+  ABBANDONO — full width y=380 h=56
+  x=30 w=620
+  "Utente bloccato" 16ch×8=128 + 24 = ok
+  subtitle "alto drop-off · bassa attivazione · nessun percorso assegnato"
+  54ch×7=378 + 24 = 402 → box 620 ✓
+══════════════════════════════════ -->
+<g style="fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+  <rect x="30" y="380" width="620" height="56" rx="8" stroke-width="1" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="340" y="400" text-anchor="middle" dominant-baseline="central" style="font-size:12px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:12px;font-weight:500;text-anchor:middle;dominant-baseline:central">Utente bloccato — non sa da dove iniziare</text>
+  <text x="340" y="420" text-anchor="middle" dominant-baseline="central" style="font-size:10px;fill:#FFFFFF;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:central">alto drop-off · bassa attivazione · nessun percorso assegnato · nessun punto di ripresa</text>
+</g>
+
+<!-- frecce convergenti verso abbandono -->
+<path d="M100 76 L100 370 L100 378" fill="none" marker-end="url(#arrow)" stroke="#2D6BE4" stroke-opacity="0.25" stroke-dasharray="5 3" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:5px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M555 332 L555 360 L400 360 L400 378" fill="none" marker-end="url(#arrow)" stroke="#2D6BE4" stroke-opacity="0.3" stroke-dasharray="5 3" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:5px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<path d="M310 204 L310 360 L250 360 L250 378" fill="none" marker-end="url(#arrow)" stroke="#888780" stroke-opacity="0.25" stroke-dasharray="5 3" style="fill:none;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:5px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- ══════════════════════════════════
+  LEGENDA  y=458
+══════════════════════════════════ -->
+<line x1="30" y1="460" x2="52" y2="460" stroke="#2D6BE4" stroke-width="1.5" stroke-opacity="0.65" marker-end="url(#arrow)" style="fill:#0D1F3C;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="58" y="464" style="font-size:9px;opacity:0.5;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">flusso utente</text>
+
+<line x1="160" y1="460" x2="182" y2="460" stroke="#888780" stroke-width="1.5" stroke-dasharray="4 3" stroke-opacity="0.65" marker-end="url(#arrow)" style="fill:#0D1F3C;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:1.5px;stroke-dasharray:4px, 3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="188" y="464" style="font-size:9px;opacity:0.5;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">percorso ambiguo</text>
+
+<rect x="320" y="453" width="8" height="8" rx="1" fill="#E8EFFC" stroke="#2D6BE4" stroke-width="0.5" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="334" y="461" style="font-size:9px;opacity:0.5;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">entry point caotico</text>
+
+<rect x="460" y="453" width="8" height="8" rx="1" fill="#E8EFFC" stroke="#2D6BE4" stroke-width="0.5" style="fill:#132E55;stroke:#F6C243;color:rgb(0, 0, 0);stroke-width:0.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+<text x="474" y="461" style="font-size:9px;opacity:0.5;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">problema critico</text>
+
+<!-- metriche in basso -->
+<text x="340" y="498" text-anchor="middle" style="font-size:9px;opacity:0.35;fill:#0D1F3C;stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.35;font-family:'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">completion rate non ottimizzato · tempo medio onboarding elevato · bassa differenziazione tra utenti</text>
+
+</svg>

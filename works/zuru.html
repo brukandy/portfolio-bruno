@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zuru Tech – Bruno Lorenzon</title>
+  <link rel="stylesheet" href="../css/style.css?v=8" />
+  <style>
+    /* ── Zuru prototype embeds ── */
+    .zuru-proto { display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 40px 0; }
+    .zuru-proto__toggle { display: flex; gap: 0; background: rgba(0,0,0,.06); border-radius: 10px; padding: 4px; }
+    .zuru-proto__btn { padding: 8px 20px; border: none; background: transparent; border-radius: 7px; font-size: 13px; font-weight: 600; color: #6C6C70; cursor: pointer; font-family: inherit; transition: all .15s; }
+    .zuru-proto__btn.on { background: #fff; color: #1C1C1E; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+    .zuru-proto__frame { position: relative; transition: width .4s cubic-bezier(.4,0,.2,1), height .4s cubic-bezier(.4,0,.2,1); }
+    .zuru-proto__frame iframe { border: none; display: block; background: transparent; border-radius: 4px; }
+    .zuru-proto--ipad { padding: 40px 20px; }
+    @media (max-width: 960px) {
+      .zuru-proto__frame { transform-origin: top center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <ul class="nav__links nav__left"><li><a href="../works.html" class="nav__link">← Works</a></li></ul>
+    <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
+    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
+  </nav>
+
+  <!-- 1. HERO -->
+  <div class="case-hero">
+    <p class="case-hero__eyebrow fade-up">Smart Home · UX/UI Design · Interactive Prototyping</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1">L'unica app smart home<br>con digital twin nativo</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2">Un'app di automazione domestica che parte dalla struttura fisica della casa — controllo granulare su finestre, luci e clima senza la complessità di Google Home o Apple Home</p>
+    <div class="case-hero__tags fade-up fade-up-delay-3">
+      <span class="tag">Competitive Research</span>
+      <span class="tag tag--outline">UX Strategy</span>
+      <span class="tag tag--outline">UI Design</span>
+      <span class="tag tag--outline">Interactive Prototyping</span>
+    </div>
+  </div>
+
+  <!-- Hero image -->
+  <div class="case-cover img-reveal">
+    <img src="../assets/images/hero-zuru.avif" alt="Zuru Tech — hero" />
+  </div>
+
+  <!-- Meta -->
+  <div class="case-body">
+    <div class="case-meta fade-up">
+      <div class="case-meta__item">
+        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__value">UX / Product Designer</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Durata</div>
+        <div class="case-meta__value">8 settimane</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Cliente</div>
+        <div class="case-meta__value">Zuru Tech</div>
+      </div>
+    </div>
+
+    <!-- 2. Il Brief -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Il Brief</p>
+      <h2 class="case-section__heading fade-up">Jared ha comprato una casa Zuru<br>e deve configurare le automazioni</h2>
+      <p class="case-section__text fade-up">Zuru Tech costruisce case tecnologiche all'avanguardia — finestre motorizzate con controllo angolo preciso, luci RGB programmabili, clima intelligente. Jared ha appena acquistato una di queste case e deve configurare le sue routine quotidiane tramite app.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Task 1:</strong> Aprire automaticamente le finestre della cucina alle 8:00 del mattino, con angolo di apertura specifico (30°) e durata limitata (15 minuti), per cambiare aria prima di andare al lavoro.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Task 2:</strong> Impostare automaticamente il colore delle luci del soggiorno alle 18:00 per creare un ambiente più caldo e accogliente (warm white).</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Il problema: le app smart home esistenti (Google Home, Apple Home) non offrono questo livello di controllo granulare — o lo nascondono dietro menu complessi e configurazioni tecniche.</p>
+    </div>
+
+    <!-- 3. La sfida -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">La sfida</p>
+      <h2 class="case-section__heading fade-up">Come rendere il controllo smart<br>immediato quanto un interruttore?</h2>
+      <p class="case-section__text fade-up">La sfida non era aggiungere funzionalità — era eliminare la complessità. Un'app smart home deve essere più veloce di alzarsi e premere un pulsante fisico. Altrimenti fallisce.</p>
+      <ul class="case-list fade-up">
+        <li><strong>Niente planimetrie obbligatorie</strong> — troppo cognitive load per setup iniziale</li>
+        <li><strong>Accesso diretto ai dispositivi</strong> — massimo 2 tap per qualsiasi azione</li>
+        <li><strong>Feedback visivo immediato</strong> — animazioni che mostrano lo stato reale (finestra che si apre, luce che cambia colore)</li>
+        <li><strong>Preset intelligenti</strong> — mood predefiniti invece di slider RGB complessi</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image: competitive analysis -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/zuru_competitor.svg" alt="Competitive analysis — 5 competitor" />
+  </div>
+
+  <div class="case-body">
+    <!-- 4. Competitive Research -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Competitive Research</p>
+      <h2 class="case-section__heading fade-up">5 competitor analizzati<br>per filosofia e pattern UX</h2>
+      <p class="case-section__text fade-up">Ho analizzato le principali app smart home per capire punti di forza, debolezze, e opportunità per Zuru:</p>
+      <ul class="case-list fade-up">
+        <li><strong>Tesla App</strong> — Ecosistema chiuso (auto + casa + energia). UI semplice per sistemi complessi, ma zero controllo granulare dispositivi e nessun digital twin casa.</li>
+        <li><strong>Loxone</strong> — Building automation integrata con HW+SW proprietario. Controllo granulare eccellente (angolo, posizione, schedule) e logica "se X allora Y" senza codice, ma richiede partner certificato per installazione.</li>
+        <li><strong>Josh.ai</strong> — Luxury home AI-first. Natural Language per descrivere automazioni a parole, context-aware per stanza, ma richiede installazione professionale costosa.</li>
+        <li><strong>Google Home</strong> — Ecosistema multi-brand con compatibilità universale. Lista dispositivi per stanza (pattern familiare) e routine semplici, ma nessun digital twin e controllo granulare limitato.</li>
+        <li><strong>Apple Home</strong> — HomeKit con focus privacy. Lista dispositivi per stanza/categoria e tutto on-device, ma ecosistema chiuso (solo HomeKit) e nessun digital twin casa.</li>
+      </ul>
+      <p class="case-section__text fade-up" style="margin-top: 24px;"><strong>Il vantaggio competitivo di Zuru:</strong> È l'unico che parte già con il digital twin della casa. Nessun competitor ha questa informazione nativa. La UI dovrebbe costruirsi sopra questo — rendere visibile e semplice ciò che è tecnicamente complesso.</p>
+    </div>
+
+    <!-- 5. Strategia UX -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Strategia UX</p>
+      <h2 class="case-section__heading fade-up">Punto di ingresso:<br>lista dispositivi per stanza</h2>
+      <p class="case-section__text fade-up">Per definire il punto di ingresso ottimale, ho considerato tre fattori:</p>
+      <ul class="case-list fade-up">
+        <li><strong>1. Pattern consolidati</strong> — Apple Home e Google Home usano liste di dispositivi organizzate per stanza. È un pattern familiare e immediato: l'utente vede subito cosa può controllare senza dover navigare una planimetria.</li>
+        <li><strong>2. Comportamento di Jared</strong> — Jared sta pensando "voglio configurare la finestra della cucina". Una lista chiara con "Kitchen Windows" come prima voce gli permette di arrivare subito al dispositivo target senza passaggi intermedi.</li>
+        <li><strong>3. Semplicità implementativa</strong> — Una lista di dispositivi è più semplice da implementare e mantenere rispetto a una planimetria interattiva, permettendo di concentrarsi sulla qualità delle automazioni e del controllo granulare.</li>
+      </ul>
+      <p class="case-section__text fade-up" style="margin-top: 24px; font-style: italic;">"Ho scelto la lista dispositivi come punto di ingresso per bilanciare familiarità del pattern, velocità di accesso, e semplicità implementativa. Permette a Jared di completare i task richiesti nel minor numero di tap possibile."</p>
+    </div>
+  </div>
+
+  <!-- Interactive Prototype: iPhone + iPad toggle -->
+  <div class="zuru-proto">
+    <div class="zuru-proto__toggle">
+      <button class="zuru-proto__btn on" onclick="zuruSwitch('iphone',this)">iPhone 15 Pro</button>
+      <button class="zuru-proto__btn" onclick="zuruSwitch('ipad',this)">iPad Pro 11"</button>
+    </div>
+    <div class="zuru-proto__frame" id="zuru-frame" style="width:460px;height:920px">
+      <iframe id="zuru-proto" src="../assets/zuru-flow.html" loading="lazy" allowtransparency="true" scrolling="no" title="Zuru Smart Home — Interactive Prototype" style="width:460px;height:920px"></iframe>
+    </div>
+  </div>
+
+  <div class="case-body">
+    <!-- 6. Interactive Components -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Interactive Components</p>
+      <h2 class="case-section__heading fade-up">Animazioni che mostrano<br>lo stato reale dei dispositivi</h2>
+      <p class="case-section__text fade-up">Ho progettato componenti interattivi ad alta fedeltà per i controlli principali:</p>
+      <ul class="case-list fade-up">
+        <li><strong>Window Slider</strong> — Vista isometrica della finestra che si apre progressivamente (0°, 30°, 60°, 90°) mentre l'utente trascina lo slider. Feedback visivo immediato dello stato reale.</li>
+        <li><strong>Light Mood Cards</strong> — Invece di slider RGB complessi, 4 preset predefiniti (Warm Evening, Focus, Cinema, Relax) con preview colore e descrizione. Tap per cambiare mood, slider brightness separato.</li>
+        <li><strong>Duration Pills</strong> — Selezione rapida della durata automazione (5m, 10m, 15m, 30m, 1h) con preview orario apertura/chiusura.</li>
+      </ul>
+    </div>
+
+    <!-- 7. User Flow Core -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">User Flow — Core</p>
+      <h2 class="case-section__heading fade-up">Flusso semplificato<br>per configurazione rapida</h2>
+      <p class="case-section__text fade-up">Ottimizzato per task singoli e veloci come quelli di Jared:</p>
+      <ul class="case-list fade-up">
+        <li><strong>1. Home Dashboard</strong> — Lista dispositivi organizzati per stanza. Tap su "Kitchen Windows" per accesso diretto.</li>
+        <li><strong>2. Device Control</strong> — Slider angolo apertura (0-90°), visualizzazione real-time finestra, pulsante "New Automation".</li>
+        <li><strong>3. Automation Setup</strong> — Form semplificato con 3 campi: Orario (8:00 AM), Durata (15 min), Angolo (30°). Giorni settimana selezionabili.</li>
+        <li><strong>4. Confirmation</strong> — Riepilogo automazione creata con possibilità di modificare o tornare alla home.</li>
+      </ul>
+    </div>
+
+    <!-- 8. User Flow Plus -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">User Flow — Plus</p>
+      <h2 class="case-section__heading fade-up">Flusso avanzato<br>per automazioni multi-dispositivo</h2>
+      <p class="case-section__text fade-up">Per utenti esperti che vogliono orchestrare scenari complessi:</p>
+      <ul class="case-list fade-up">
+        <li><strong>Scene Builder</strong> — Canvas per aggiungere più dispositivi e definire azioni simultanee. Es: "Good Morning" = Finestre cucina 30° + Luci soggiorno warm + Caffettiera ON.</li>
+        <li><strong>Advanced Scheduling</strong> — Calendario settimanale con timeline oraria. Drag & drop scene su giorni/orari specifici.</li>
+        <li><strong>Conditional Logic</strong> — Builder "If-Then" per regole condizionali. Es: "If temperatura > 25° Then apri finestre 60°".</li>
+      </ul>
+      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Motivazione separazione Core/Plus:</strong> Due flussi per diversi livelli di complessità. Il Core è ottimizzato per task singoli e veloci, mentre il Plus offre potenza per utenti che vogliono scenari multi-dispositivo complessi.</p>
+    </div>
+
+    <!-- 9. Design System -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Design System</p>
+      <h2 class="case-section__heading fade-up">Token system completo<br>con Manrope e spacing 4px</h2>
+      <p class="case-section__text fade-up">Ho creato un design system completo con variabili CSS per garantire coerenza e scalabilità:</p>
+      <ul class="case-list fade-up">
+        <li><strong>Typography</strong> — Font Manrope (Regular → ExtraBold). Scale da 10px (Caption/S) a 30px (Heading/XXL) per leggibilità ottimale su schermi digitali.</li>
+        <li><strong>Colors</strong> — Palette semantica con Background (#EDECEA), Card (#FFFFFF), Brand Red (#E5173F), Status colors (Green, Orange, Blue).</li>
+        <li><strong>Spacing</strong> — Sistema basato su multipli di 4px (4px, 8px, 12px, 16px, 20px, 24px, 32px) per allineamento pixel-perfect.</li>
+        <li><strong>Border Radius</strong> — Valori semantici: r-card (8px), r-pill (100px), r-input (6px) per coerenza tra componenti simili.</li>
+        <li><strong>Shadows</strong> — 3 livelli (sm, default, lg) per gerarchia visiva chiara.</li>
+      </ul>
+      <p class="case-section__text fade-up" style="margin-top: 16px;">Ogni componente è responsive e adattato per iPhone (393×852) e iPad (834×1194) con padding e font size specifici per device.</p>
+    </div>
+  </div>
+
+  <!-- Image: design system -->
+  <div class="case-full-image img-reveal">
+    <img src="../assets/images/ds zuru.png" alt="Design system tokens" />
+  </div>
+
+  <div class="case-body">
+    <!-- 10. Interactive Prototyping -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Interactive Prototyping</p>
+      <h2 class="case-section__heading fade-up">26 stati componenti<br>con Smart Animate</h2>
+      <p class="case-section__text fade-up">Ho creato prototipi interattivi ad alta fedeltà in Figma usando Component Sets e Smart Animate:</p>
+      <ul class="case-list fade-up">
+        <li><strong>Window Slider</strong> — 4 stati per iPhone + 4 per iPad (8 varianti totali)</li>
+        <li><strong>Light Mood</strong> — 4 mood × 2 device = 8 varianti</li>
+        <li><strong>Duration Pills</strong> — 5 stati × 2 device = 10 varianti</li>
+      </ul>
+      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Totale: 26 stati componenti</strong> con transizioni Smart Animate per feedback visivo immediato.</p>
+    </div>
+  </div>
+
+  <!-- iPad Prototype -->
+  <div class="zuru-proto zuru-proto--ipad">
+    <div class="zuru-proto__frame" style="width:900px;height:1270px">
+      <iframe src="../assets/zuru-flow.html?device=ipad" loading="lazy" allowtransparency="true" scrolling="no" title="Zuru Smart Home — iPad Prototype" style="width:900px;height:1270px"></iframe>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <!-- 11. Risultati -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Risultati</p>
+      <h2 class="case-section__heading fade-up">Controllo granulare<br>senza complessità</h2>
+      <ul class="case-list fade-up">
+        <li><strong>Accesso diretto ai dispositivi</strong> — lista per stanza invece di planimetria obbligatoria</li>
+        <li><strong>Feedback visivo immediato</strong> — animazioni che mostrano lo stato reale</li>
+        <li><strong>Setup semplificato</strong> — niente planimetrie obbligatorie, solo lista dispositivi per stanza</li>
+        <li><strong>Preset intelligenti</strong> — mood predefiniti invece di configurazioni complesse</li>
+      </ul>
+    </div>
+
+    <!-- 12. Next Steps -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Next Steps</p>
+      <h2 class="case-section__heading fade-up">Validazione, iterazione<br>e handoff sviluppo</h2>
+      <ul class="case-list fade-up">
+        <li><strong>User Testing</strong> — Test con 5-8 utenti per validare il flusso Core. Task: "Configura apertura automatica finestre cucina alle 8:00". Metriche: tempo completamento, errori, soddisfazione.</li>
+        <li><strong>Implementazione Slider Interattivo</strong> — Completare le varianti del componente finestra (0°, 30°, 60°, 90°) e collegare lo slider con Interactive Components per feedback visivo real-time.</li>
+        <li><strong>Espansione Flow Plus</strong> — Progettare Scene Builder e Advanced Scheduling per utenti avanzati. Validare con utenti che già usano sistemi di automazione complessi (es. Home Assistant, Loxone).</li>
+        <li><strong>Accessibilità</strong> — Audit WCAG 2.1 AA: contrasto colori, navigazione da tastiera, screen reader support. Particolare attenzione a slider e controlli granulari.</li>
+        <li><strong>Handoff Sviluppo</strong> — Documentare design system in Figma con variabili, componenti, e auto-layout. Preparare specifiche tecniche per API (formato dati automazioni, endpoint device control).</li>
+      </ul>
+    </div>
+
+    <!-- 13. Learnings -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Key Learnings</p>
+      <h2 class="case-section__heading fade-up">Quando togliere è meglio<br>che aggiungere</h2>
+      <ul class="case-list case-list--bold fade-up">
+        <li>La complessità non è una feature — è un bug</li>
+        <li>La planimetria interattiva è visivamente impressionante, ma per la maggior parte degli utenti è cognitive overhead inutile</li>
+        <li>Le animazioni non sono decorazione — sono feedback essenziale</li>
+        <li>Il vantaggio competitivo di Zuru (digital twin nativo) deve essere invisibile all'utente finale</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="treedom.html" class="case-next">
+    <p class="case-next__label">Prossimo progetto</p>
+    <h2 class="case-next__title">Treedom →</h2>
+  </a>
+
+  <footer class="footer">
+    <div class="footer__logo">Bruno Lorenzon</div>
+    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+  </footer>
+
+  <script src="../js/main.js?v=16"></script>
+  <script>
+    function zuruSwitch(type, btn) {
+      document.querySelectorAll('.zuru-proto__btn').forEach(b => b.classList.remove('on'));
+      btn.classList.add('on');
+      var iframe = document.getElementById('zuru-proto');
+      var frame  = document.getElementById('zuru-frame');
+      if (type === 'ipad') {
+        iframe.style.width  = frame.style.width  = '900px';
+        iframe.style.height = frame.style.height = '1270px';
+      } else {
+        iframe.style.width  = frame.style.width  = '460px';
+        iframe.style.height = frame.style.height = '920px';
+      }
+      iframe.contentWindow.postMessage(type, '*');
+    }
+  </script>
+</body>
+</html>

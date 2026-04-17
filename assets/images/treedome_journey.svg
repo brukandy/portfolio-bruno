@@ -1,0 +1,172 @@
+<svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="#3DD368" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <!-- Header gradients (horizontal) -->
+  <linearGradient id="gPrimaHd" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#D8E8F5"/><stop offset="100%" stop-color="#C4D8EE"/>
+  </linearGradient>
+  <linearGradient id="gDuranteHd" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#082010"/><stop offset="100%" stop-color="#163424"/>
+  </linearGradient>
+  <linearGradient id="gDopoHd" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#0B1E3C"/><stop offset="100%" stop-color="#183060"/>
+  </linearGradient>
+  <!-- Cell gradients (vertical) -->
+  <linearGradient id="gPC" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#EBF3FC"/>
+  </linearGradient>
+  <linearGradient id="gDC" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#0E2A1A"/><stop offset="100%" stop-color="#081610"/>
+  </linearGradient>
+  <linearGradient id="gDK" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1C5535"/><stop offset="100%" stop-color="#0E3320"/>
+  </linearGradient>
+  <linearGradient id="gAC" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#162E54"/><stop offset="100%" stop-color="#0C1F3C"/>
+  </linearGradient>
+</defs>
+
+<!-- TOP LABEL -->
+<text x="340" y="12" text-anchor="middle" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="9" opacity="0.32" fill="#0D1F3C">service blueprint — il journey di Lorenzo con Treedhome</text>
+
+<!-- PHASE HEADERS (y=18, h=32) -->
+<rect x="18" y="18" width="204" height="32" rx="6" fill="url(#gPrimaHd)" stroke="#B0C8E2" stroke-width="0.5"/>
+<text x="120" y="34" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="700" fill="#2A4E7A" letter-spacing="1.5">PRIMA</text>
+
+<rect x="228" y="18" width="228" height="32" rx="6" fill="url(#gDuranteHd)" stroke="#3DD368" stroke-width="1"/>
+<text x="342" y="34" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="700" fill="#3DD368" letter-spacing="1.5">DURANTE</text>
+
+<rect x="462" y="18" width="202" height="32" rx="6" fill="url(#gDopoHd)" stroke="#244876" stroke-width="0.5"/>
+<text x="563" y="34" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="700" fill="#8AAED4" letter-spacing="1.5">DOPO</text>
+
+<!-- PHASE BACKGROUND BANDS (y=52, h=376) -->
+<rect x="18" y="52" width="204" height="376" rx="4" fill="#EAF1FA" opacity="0.65"/>
+<rect x="228" y="52" width="228" height="376" rx="4" fill="#081610" opacity="0.94"/>
+<rect x="462" y="52" width="202" height="376" rx="4" fill="#0C1F3C" opacity="0.9"/>
+
+<!-- ROW SEPARATOR LINES -->
+<line x1="18" y1="140" x2="664" y2="140" stroke="#8899AA" stroke-opacity="0.12" stroke-width="0.5"/>
+<line x1="18" y1="288" x2="664" y2="288" stroke="#8899AA" stroke-opacity="0.12" stroke-width="0.5"/>
+<line x1="18" y1="352" x2="664" y2="352" stroke="#8899AA" stroke-opacity="0.12" stroke-width="0.5"/>
+
+<!-- VERTICAL DIVIDER within PRIMA -->
+<line x1="120" y1="52" x2="120" y2="428" stroke="#8899AA" stroke-opacity="0.1" stroke-width="0.5"/>
+<!-- VERTICAL DIVIDER within DURANTE -->
+<line x1="342" y1="52" x2="342" y2="428" stroke="#3DD368" stroke-opacity="0.07" stroke-width="0.5"/>
+
+<!-- ROW LABELS -->
+<text x="10" y="96" text-anchor="middle" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="7" opacity="0.28" fill="#0D1F3C" transform="rotate(-90,10,96)">BISOGNI</text>
+<text x="10" y="214" text-anchor="middle" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="7" opacity="0.28" fill="#0D1F3C" transform="rotate(-90,10,214)">AZIONI</text>
+<text x="10" y="320" text-anchor="middle" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="7" opacity="0.28" fill="#0D1F3C" transform="rotate(-90,10,320)">TOUCHPOINT</text>
+<text x="10" y="390" text-anchor="middle" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="7" opacity="0.28" fill="#0D1F3C" transform="rotate(-90,10,390)">FLOW</text>
+
+<!-- ── BISOGNI ROW  y=58 h=78 bottom=136 ── -->
+<rect x="22" y="60" width="92" height="74" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="68" y="88" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#0D1F3C">Ispirazione</text>
+<text x="68" y="106" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">e intrattenimento</text>
+
+<rect x="124" y="60" width="90" height="74" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="169" y="80" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#0D1F3C">Info per l'acquisto</text>
+<text x="169" y="97" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">e utilizzo app</text>
+<text x="169" y="114" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">Treedom</text>
+
+<rect x="232" y="60" width="106" height="74" rx="4" fill="url(#gDC)" stroke="rgba(61,211,104,0.18)" stroke-width="0.5"/>
+<text x="285" y="88" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#FFFFFF">Intrattenimento</text>
+<text x="285" y="106" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">personalizzato</text>
+
+<rect x="346" y="60" width="106" height="74" rx="4" fill="url(#gDK)" stroke="#3DD368" stroke-width="0.8"/>
+<text x="399" y="80" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#3DD368">Immersione</text>
+<text x="399" y="97" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#FFFFFF">e disconnessione</text>
+<text x="399" y="114" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">dalla routine</text>
+
+<rect x="466" y="60" width="194" height="74" rx="4" fill="url(#gAC)" stroke="#1E4A8C" stroke-width="0.5"/>
+<text x="563" y="80" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#90AECB">Ritrovare pace e isolamento</text>
+<text x="563" y="97" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">dai ritmi quotidiani</text>
+<text x="563" y="114" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">↑ personalizzazione</text>
+
+<!-- ── AZIONI ROW  y=148 h=136 bottom=284 ── -->
+<rect x="22" y="150" width="92" height="132" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="68" y="170" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#0D1F3C">Vede la cupola</text>
+<text x="68" y="188" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">in piazza</text>
+<text x="68" y="208" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">Nota contatore</text>
+<text x="68" y="226" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">CO₂ esterno</text>
+
+<rect x="124" y="150" width="90" height="132" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="169" y="170" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#0D1F3C">Scarica l'app</text>
+<text x="169" y="188" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">Riceve notifica</text>
+<text x="169" y="205" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">di benvenuto</text>
+<text x="169" y="222" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">Scopre come</text>
+<text x="169" y="240" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">usare la cupola</text>
+
+<rect x="232" y="150" width="106" height="132" rx="4" fill="url(#gDC)" stroke="rgba(61,211,104,0.18)" stroke-width="0.5"/>
+<text x="285" y="170" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#FFFFFF">Entra nella cupola</text>
+<text x="285" y="188" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">Prova gratuita</text>
+<text x="285" y="205" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">Modula i suoni</text>
+<text x="285" y="222" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">Video live</text>
+<text x="285" y="240" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">della foresta</text>
+
+<rect x="346" y="150" width="106" height="132" rx="4" fill="url(#gDK)" stroke="#3DD368" stroke-width="1"/>
+<text x="399" y="170" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="700" fill="#3DD368">CTA all'uscita</text>
+<text x="399" y="188" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#FFFFFF">Invitato ad</text>
+<text x="399" y="205" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#FFFFFF">abbonarsi</text>
+<text x="399" y="225" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">Decide di</text>
+<text x="399" y="243" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">abbonarsi ✓</text>
+
+<rect x="466" y="150" width="194" height="132" rx="4" fill="url(#gAC)" stroke="#1E4A8C" stroke-width="0.5"/>
+<text x="563" y="170" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" font-weight="500" fill="#90AECB">Apre l'app a casa</text>
+<text x="563" y="188" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">Ricrea l'atmosfera</text>
+<text x="563" y="205" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">con i suoni</text>
+<text x="563" y="222" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">della sua foresta</text>
+<text x="563" y="242" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">Consiglia la cupola</text>
+
+<!-- ── TOUCHPOINT ROW  y=294 h=54 bottom=348 ── -->
+<rect x="22" y="296" width="92" height="50" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="68" y="321" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">Spazio fisico</text>
+
+<rect x="124" y="296" width="90" height="50" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="169" y="312" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#0D1F3C">App Treedom</text>
+<text x="169" y="330" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">+ Notifica push</text>
+
+<rect x="232" y="296" width="106" height="50" rx="4" fill="url(#gDC)" stroke="rgba(61,211,104,0.18)" stroke-width="0.5"/>
+<text x="285" y="312" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">Cupola</text>
+<text x="285" y="330" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">App + Spazio fisico</text>
+
+<rect x="346" y="296" width="106" height="50" rx="4" fill="url(#gDK)" stroke="#3DD368" stroke-width="0.8"/>
+<text x="399" y="312" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">Spazio fisico</text>
+<text x="399" y="330" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">App (acquisto)</text>
+
+<rect x="466" y="296" width="194" height="50" rx="4" fill="url(#gAC)" stroke="#1E4A8C" stroke-width="0.5"/>
+<text x="563" y="312" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">App Treedom</text>
+<text x="563" y="330" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">Make Your Forest Play</text>
+
+<!-- ── FLOW ROW  y=360 h=58 bottom=418 ── -->
+<rect x="22" y="362" width="92" height="54" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="68" y="389" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#0D1F3C">Schermo cupola</text>
+
+<line x1="114" y1="389" x2="123" y2="389" stroke="#3DD368" stroke-opacity="0.55" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="124" y="362" width="90" height="54" rx="4" fill="url(#gPC)" stroke="#C2D6EC" stroke-width="0.5"/>
+<text x="169" y="380" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#0D1F3C">Notifica app</text>
+<text x="169" y="398" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#6B85A8">Pag. benvenuto</text>
+
+<line x1="214" y1="389" x2="231" y2="389" stroke="#3DD368" stroke-opacity="0.55" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="232" y="362" width="106" height="54" rx="4" fill="url(#gDC)" stroke="rgba(61,211,104,0.18)" stroke-width="0.5"/>
+<text x="285" y="380" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#FFFFFF">Fai suonare</text>
+<text x="285" y="398" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">la tua foresta</text>
+
+<line x1="338" y1="389" x2="345" y2="389" stroke="#3DD368" stroke-opacity="0.55" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="346" y="362" width="106" height="54" rx="4" fill="url(#gDK)" stroke="#3DD368" stroke-width="1"/>
+<text x="399" y="380" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#FFFFFF">Primo acquisto</text>
+<text x="399" y="398" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">CTA all'uscita</text>
+
+<line x1="452" y1="389" x2="465" y2="389" stroke="#3DD368" stroke-opacity="0.55" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<rect x="466" y="362" width="194" height="54" rx="4" fill="url(#gAC)" stroke="#1E4A8C" stroke-width="0.5"/>
+<text x="563" y="380" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#90AECB">Make Your Forest Play</text>
+<text x="563" y="398" text-anchor="middle" dominant-baseline="central" font-family="'Trebuchet MS',Helvetica,sans-serif" font-size="10" fill="#3DD368">a casa propria</text>
+
+</svg>

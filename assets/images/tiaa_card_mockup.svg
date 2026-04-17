@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1400 1560" width="1400" height="1560">
+  <!-- Browser chrome -->
+  <rect width="1400" height="1560" fill="#111111"/>
+
+  <!-- Top bar -->
+  <rect width="1400" height="52" fill="#1A1A1A"/>
+  <!-- Traffic lights -->
+  <circle cx="24" cy="26" r="7" fill="#FF5F57"/>
+  <circle cx="46" cy="26" r="7" fill="#FEBC2E"/>
+  <circle cx="68" cy="26" r="7" fill="#28C840"/>
+  <!-- Address bar -->
+  <rect x="140" y="14" width="820" height="26" rx="6" fill="#2C2C2C"/>
+  <text x="550" y="31" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#888">thereisanalternative.com</text>
+
+  <!-- Screenshot 1: TIA Home -->
+  <image href="tia home.png" x="0" y="52" width="1400" height="782" preserveAspectRatio="xMidYMin slice"/>
+
+  <!-- Thin separator -->
+  <rect x="0" y="834" width="1400" height="2" fill="#000"/>
+
+  <!-- Screenshot 2: TIA Azienda Dentro -->
+  <image href="tia azienda dentro.png" x="0" y="836" width="1400" height="724" preserveAspectRatio="xMidYMin slice"/>
+</svg>

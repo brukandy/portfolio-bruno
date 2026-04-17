@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adecco Gen Z – Bruno Lorenzon (Dark)</title>
+  <link rel="stylesheet" href="../css/style.css?v=8" />
+  <link rel="stylesheet" href="https://use.typekit.net/rhk6dpu.css" />
+  <style>
+    /* ══════════════════════════════════════
+       DARK VERSION — adecco-dark
+       ══════════════════════════════════════ */
+
+    html, body { overflow-x: hidden; max-width: 100%; }
+
+    :root {
+      --cream:   #0e0c18;
+      --cream-2: #16132a;
+      --cream-3: #1e1a32;
+      --navy:    #ffffff;
+      --black:   #f0ede8;
+      --gray:    #888884;
+      --accent:  #C6F135;
+    }
+
+    body {
+      background-color: #0e0c18;
+      background-image:
+        radial-gradient(ellipse 80% 55% at 50% -5%, rgba(97,53,241,0.45) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 30% at 80% 90%, rgba(97,53,241,0.18) 0%, transparent 60%);
+      color: #f0ede8;
+    }
+
+    h1, h2, h3 {
+      font-family: 'gunter', sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400;
+      color: #C6F135 !important;
+    }
+    h1 { letter-spacing: -0.01em; }
+
+    /* ── Nav ── */
+    .nav, .nav.scrolled {
+      background: rgba(14,12,24,0.95) !important;
+      border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+    }
+    .nav__link { color: #a0a09a; }
+    .nav__link:hover { color: #ffffff; }
+    .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .nav__logo-top    { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
+    .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
+
+    /* ── Case hero ── */
+    .case-hero { background: transparent; }
+    .case-hero__eyebrow { color: #C6F135 !important; }
+    .case-hero__title   { color: #ffffff !important; }
+    .case-hero__desc    { color: #888884 !important; }
+
+    /* ── Tags ── */
+    .tag          { background: rgba(198,241,53,0.10); color: #C6F135; }
+    .tag--outline { border-color: rgba(255,255,255,0.15); color: #888884; }
+
+    /* ── Body sections ── */
+    .case-body  { color: #f0ede8; }
+    .case-cover { background: #0e0c18; }
+    .case-meta__label { color: #555552; }
+    .case-meta__value { color: #ffffff; }
+    .case-section__title   { color: rgba(198,241,53,0.55) !important; }
+    .case-section__heading { color: #C6F135 !important; font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .case-section__text    { color: #888884 !important; }
+    .case-body p, .case-body li { color: #888884; }
+    .case-body strong { color: #f0ede8; }
+
+    /* ── Metrics ── */
+    .case-metric {
+      background: #16132a !important;
+      border-color: rgba(255,255,255,0.06) !important;
+    }
+    .case-metric__value { color: #C6F135 !important; background: transparent !important; background-color: transparent !important; }
+    .case-metric .case-metric__value,
+    .case-metrics .case-metric .case-metric__value { background: none !important; background-color: transparent !important; }
+    .case-metric__label { color: #888884 !important; }
+
+    /* ── Full image — fondo grigio chiarissimo ── */
+    .case-full-image {
+      background: #f2f1ed !important;
+      border: none !important;
+      border-radius: 24px !important;
+      overflow: hidden !important;
+      margin-left: 40px !important;
+      margin-right: 40px !important;
+    }
+    .case-full-image img,
+    .case-full-image picture img {
+      border-radius: 0 !important;
+      width: 100%;
+      display: block;
+    }
+
+    /* ── Monitor mockup — label dark ── */
+    .ad-monitor-label { color: rgba(255,255,255,0.25) !important; }
+
+    /* ── Next project + footer ── */
+    .case-next         { background: #16132a; border-color: rgba(255,255,255,0.06); display: block; }
+    .case-next:hover   { border-color: rgba(198,241,53,0.3); }
+    .case-next__label  { color: #555552 !important; }
+    .case-next__title  { color: #C6F135 !important; font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .footer            { background: #16132a !important; border-top: 1px solid rgba(255,255,255,0.06) !important; }
+    .footer__logo      { font-family: 'gunter', sans-serif !important; font-style: normal !important; font-size: 28px !important; color: #C6F135 !important; }
+    .footer__copy      { color: #555552 !important; }
+
+    @media (max-width: 768px) {
+      .case-full-image { margin-left: 16px !important; margin-right: 16px !important; }
+    }
+
+    /* ── Desktop monitor mockup ── */
+    .ad-monitor-wrap {
+      margin: 0 40px 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .ad-monitor-label {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.25);
+      align-self: flex-start;
+    }
+    .ad-desktop-mockup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: perspective(1200px) rotateY(-4deg) rotateX(2deg);
+      transition: transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+      cursor: default;
+      width: 100%;
+    }
+    .ad-desktop-mockup:hover {
+      transform: perspective(1200px) rotateY(0deg) rotateX(0deg);
+    }
+    .ad-desktop-frame {
+      width: min(780px, 90vw);
+      background: #1c1c1e;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px #a0a0a8,
+        0 0 0 7px #c8c8cc,
+        0 0 0 8px #8e8e93,
+        0 40px 80px -20px rgba(0,0,0,0.55),
+        0 0 80px -20px rgba(99,102,241,0.12);
+      transition: box-shadow 0.5s ease;
+    }
+    .ad-desktop-mockup:hover .ad-desktop-frame {
+      box-shadow:
+        0 0 0 1px #a0a0a8,
+        0 0 0 7px #c8c8cc,
+        0 0 0 8px #8e8e93,
+        0 60px 120px -20px rgba(0,0,0,0.45),
+        0 0 120px -20px rgba(99,102,241,0.22);
+    }
+    .ad-topbar {
+      height: 36px;
+      background: #2c2c2e;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .ad-dots { display: flex; gap: 6px; }
+    .ad-dot { width: 10px; height: 10px; border-radius: 50%; }
+    .ad-dot.red    { background: #ff5f57; }
+    .ad-dot.yellow { background: #febc2e; }
+    .ad-dot.green  { background: #28c840; }
+    .ad-url {
+      flex: 1;
+      background: #1c1c1e;
+      border-radius: 6px;
+      height: 22px;
+      font-size: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+      color: #71717a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.02em;
+    }
+    .ad-screen {
+      height: clamp(260px, 38vw, 460px);
+      overflow: hidden;
+      background: #fff;
+      position: relative;
+    }
+    .ad-screen img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transform: translateY(0);
+      transition: transform 5s cubic-bezier(0.25,0.1,0.25,1);
+    }
+    .ad-desktop-mockup:hover .ad-screen img {
+      transform: translateY(calc(-100% + clamp(260px, 38vw, 460px)));
+    }
+    .ad-stand { display: flex; flex-direction: column; align-items: center; }
+    .ad-neck {
+      width: 70px; height: 22px;
+      background: linear-gradient(to bottom, #2c2c2e, #1c1c1e);
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    }
+    .ad-base {
+      width: 160px; height: 8px;
+      background: #2c2c2e;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
+    <a href="../index-dark.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
+    <ul class="nav__links nav__right"><li><a href="../index-dark.html#contact" class="nav__link">Contact</a></li></ul>
+  </nav>
+
+  <!-- 1. HERO -->
+  <div class="case-hero">
+    <p class="case-hero__eyebrow fade-up">UX Research · Strategy · Content Design</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1">Riprogettare l'ingresso<br>nel mondo del lavoro</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2">Come si conquista la fiducia di una generazione che non si fida dei processi impersonali? Ricerca, strategia UX e contenuto al servizio della connessione.</p>
+    <div class="case-hero__tags fade-up fade-up-delay-3">
+      <span class="tag">UX Research</span>
+      <span class="tag tag--outline">Strategy</span>
+      <span class="tag tag--outline">Content Design</span>
+    </div>
+  </div>
+
+  <!-- Hero cover -->
+  <div class="case-cover img-reveal">
+    <img src="../assets/images/adeccogenzcard%20prject.png" alt="Adecco Gen Z — Cover" />
+  </div>
+
+  <!-- Meta -->
+  <div class="case-body">
+    <div class="case-meta fade-up">
+      <div class="case-meta__item">
+        <div class="case-meta__label">Cliente</div>
+        <div class="case-meta__value">Adecco Italia · Cerved</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__value">UX Designer & Strategist</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Anno</div>
+        <div class="case-meta__value">2023</div>
+      </div>
+      <div class="case-meta__item">
+        <div class="case-meta__label">Strumenti</div>
+        <div class="case-meta__value">Figma · Notion · Maze</div>
+      </div>
+    </div>
+
+    <!-- 2. Contesto -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Contesto</p>
+      <h2 class="case-section__heading fade-up">La Gen Z visita Adecco.<br>Ma non si registra.</h2>
+      <p class="case-section__text fade-up">La sfida non era tecnica — era relazionale. I giovani tra i 18 e i 26 anni arrivano sul sito, guardano, e vanno via. Non perché non cerchino lavoro, ma perché non si sentono nel posto giusto: il linguaggio è troppo formale, i processi sembrano pensati per qualcun altro, e il contatto umano è quasi assente.</p>
+      <p class="case-section__text fade-up" style="margin-top:16px;">Adecco gZ nasce per rispondere a questa distanza — ripensare l'esperienza digitale per un target spesso trascurato dalle piattaforme tradizionali, rendendo il primo approccio al mondo del lavoro più chiaro, coinvolgente e umano.</p>
+    </div>
+  </div>
+
+  <!-- Image: competitor analysis -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <img src="../assets/images/adecco_competitor.svg" alt="Benchmark competitor — Adecco gZ vs portali tradizionali" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 3. Ricerca -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Ricerca</p>
+      <h2 class="case-section__heading fade-up">Capire prima di progettare.<br>Ascoltare prima di costruire.</h2>
+      <p class="case-section__text fade-up">Ho condotto un'analisi approfondita del comportamento digitale della Gen Z e delle loro frizioni con il mondo del lavoro — non come segmento demografico, ma come persone con bisogni concreti e aspettative precise.</p>
+      <ul class="case-list fade-up">
+        <li>Analisi di <strong>4 competitor</strong>: Joinrs, Glassdoor, JobTech, Manpower — tono di voce, onboarding, contenuto visivo</li>
+        <li>Definizione di una <strong>persona realistica</strong> (Dani, 20 anni) costruita su comportamenti digitali reali, non stereotipi</li>
+        <li>Analisi qualitativa del <strong>blog Adecco esistente</strong>: contenuti generalisti, sbilanciati su un target 30–45</li>
+        <li>Ricerca quantitativa su <strong>keyword Gen Z</strong>: CV, colloqui, smart working, stipendio, equilibrio vita-lavoro</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image: persona -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <img src="../assets/images/adecco_persona.svg" alt="Persona — Dani, 20 anni, prima esperienza lavorativa" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 4. Insight -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Insight chiave</p>
+      <h2 class="case-section__heading fade-up">Non cercano solo lavoro.<br>Cercano un posto in cui riconoscersi.</h2>
+      <p class="case-section__text fade-up">La Gen Z non è difficile da ingaggiare — è difficile da ingannare. Vuole tono motivazionale ma autentico, contenuti brevi e visivi, e soprattutto la percezione di un contatto umano reale. L'utente ha bisogno di essere guidato passo dopo passo, non abbandonato in un sistema pensato per altri.</p>
+      <div class="case-metrics fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">↓</span>
+          <span class="case-metric__label">Tasso di registrazione under 25</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">↑</span>
+          <span class="case-metric__label">Bounce rate on boarding</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">—</span>
+          <span class="case-metric__label">Linguaggio non adatto al target</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Strategia -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Strategia UX</p>
+      <h2 class="case-section__heading fade-up">Un flusso che accompagna,<br>non che abbandona.</h2>
+      <p class="case-section__text fade-up">Ho progettato un'esperienza step-by-step che trasforma la candidatura da azione burocratica a percorso immersivo. Ogni momento del flusso è pensato per ridurre l'ansia, costruire fiducia e avvicinare l'utente all'azienda prima ancora del colloquio.</p>
+      <p class="case-section__text fade-up" style="margin-top: 24px;"><strong>Framework:</strong> Awareness → Onboarding → Candidatura → Matching → Fiducia</p>
+    </div>
+  </div>
+
+  <!-- Monitor: Onboarding -->
+  <div class="ad-monitor-wrap img-reveal">
+    <div class="ad-desktop-mockup">
+      <div class="ad-desktop-frame">
+        <div class="ad-topbar">
+          <div class="ad-dots"><span class="ad-dot red"></span><span class="ad-dot yellow"></span><span class="ad-dot green"></span></div>
+          <div class="ad-url">adecco.it/gen-z/onboarding</div>
+        </div>
+        <div class="ad-screen"><img src="../assets/images/adecco%20onboarding.png" alt="Adecco gZ — Onboarding" /></div>
+      </div>
+      <div class="ad-stand"><div class="ad-neck"></div><div class="ad-base"></div></div>
+    </div>
+  </div>
+
+  <!-- Image: UX flow -->
+  <div class="case-full-image img-reveal">
+    <picture>
+      <img src="../assets/images/adecco_flow.svg" alt="UX Flow — Onboarding · CV · Matching · Company Page" />
+    </picture>
+  </div>
+
+  <div class="case-body">
+    <!-- 6. Soluzione: Sistema editoriale -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Soluzione</p>
+      <h2 class="case-section__heading fade-up">Contenuto come UX.<br>48 pezzi. 3 mesi. 4 direzioni.</h2>
+      <p class="case-section__text fade-up">La soluzione non è stata solo una nuova interfaccia — è stato un sistema editoriale pensato in ottica UX. Un piano di 48 contenuti in 3 mesi, divisi in 4 aree tematiche: mondo del lavoro, valori aziendali, nuove tecnologie, formazione.</p>
+      <ul class="case-list fade-up">
+        <li>Articoli brevi, ottimizzati mobile, con call to action integrate nel flusso</li>
+        <li>Tone of voice motivazionale, serio, senza finto entusiasmo</li>
+        <li>Ogni contenuto era un touchpoint progettato — non riempitivo</li>
+        <li>4 aree tematiche: lavoro, valori aziendali, tecnologia, formazione</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Monitor: Articolo blog -->
+  <div class="ad-monitor-wrap img-reveal">
+    <div class="ad-desktop-mockup">
+      <div class="ad-desktop-frame">
+        <div class="ad-topbar">
+          <div class="ad-dots"><span class="ad-dot red"></span><span class="ad-dot yellow"></span><span class="ad-dot green"></span></div>
+          <div class="ad-url">adecco.it/gen-z/blog</div>
+        </div>
+        <div class="ad-screen"><img src="../assets/images/adecco%20articolo.png" alt="Adecco gZ — Articolo blog" /></div>
+      </div>
+      <div class="ad-stand"><div class="ad-neck"></div><div class="ad-base"></div></div>
+    </div>
+  </div>
+
+  <div class="case-body">
+    <!-- Candidatura e offerte -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Candidatura</p>
+      <h2 class="case-section__heading fade-up">Un'offerta di lavoro<br>che parla davvero alla Gen Z.</h2>
+      <p class="case-section__text fade-up">Ho riprogettato la pagina di offerta di lavoro per renderla meno burocratica e più umana. Meno requisiti in lista, più contesto sull'ambiente di lavoro. Il linguaggio è diretto, il tono inclusivo, la struttura pensata per chi legge da mobile in 30 secondi.</p>
+    </div>
+  </div>
+
+  <!-- Monitor: Offerta di lavoro -->
+  <div class="ad-monitor-wrap img-reveal">
+    <div class="ad-desktop-mockup">
+      <div class="ad-desktop-frame">
+        <div class="ad-topbar">
+          <div class="ad-dots"><span class="ad-dot red"></span><span class="ad-dot yellow"></span><span class="ad-dot green"></span></div>
+          <div class="ad-url">adecco.it/gen-z/offerta</div>
+        </div>
+        <div class="ad-screen"><img src="../assets/images/Offerta%20di%20lavoroadecco.png" alt="Adecco gZ — Offerta di lavoro" /></div>
+      </div>
+      <div class="ad-stand"><div class="ad-neck"></div><div class="ad-base"></div></div>
+    </div>
+  </div>
+
+  <div class="case-body">
+    <!-- Pagina azienda -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Pagina azienda</p>
+      <h2 class="case-section__heading fade-up">Non solo un'offerta.<br>Un posto dove vorresti stare.</h2>
+      <p class="case-section__text fade-up">Ho progettato la company page come uno spazio narrativo — non una lista di benefit, ma una finestra su come si lavora davvero. Contenuti generati dall'azienda stessa, recensioni reali, video di team. Fiducia costruita prima ancora del colloquio.</p>
+    </div>
+  </div>
+
+  <!-- Monitor: Pagina azienda -->
+  <div class="ad-monitor-wrap img-reveal">
+    <div class="ad-desktop-mockup">
+      <div class="ad-desktop-frame">
+        <div class="ad-topbar">
+          <div class="ad-dots"><span class="ad-dot red"></span><span class="ad-dot yellow"></span><span class="ad-dot green"></span></div>
+          <div class="ad-url">adecco.it/gen-z/azienda</div>
+        </div>
+        <div class="ad-screen"><img src="../assets/images/Pagina%20azienda%20adecco.png" alt="Adecco gZ — Pagina azienda" /></div>
+      </div>
+      <div class="ad-stand"><div class="ad-neck"></div><div class="ad-base"></div></div>
+    </div>
+  </div>
+
+  <div class="case-body">
+    <!-- Homepage -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Homepage</p>
+      <h2 class="case-section__heading fade-up">Una home che accoglie,<br>non che spaventa.</h2>
+      <p class="case-section__text fade-up">La nuova home di Adecco gZ è pensata per il primo impatto. Niente form subito, niente jargon HR. Solo un messaggio chiaro sul perché vale la pena restare — e un percorso guidato verso il primo passo.</p>
+    </div>
+  </div>
+
+  <!-- Monitor: Home -->
+  <div class="ad-monitor-wrap img-reveal">
+    <div class="ad-desktop-mockup">
+      <div class="ad-desktop-frame">
+        <div class="ad-topbar">
+          <div class="ad-dots"><span class="ad-dot red"></span><span class="ad-dot yellow"></span><span class="ad-dot green"></span></div>
+          <div class="ad-url">adecco.it/gen-z</div>
+        </div>
+        <div class="ad-screen"><img src="../assets/images/adecco%20home.png" alt="Adecco gZ — Home" /></div>
+      </div>
+      <div class="ad-stand"><div class="ad-neck"></div><div class="ad-base"></div></div>
+    </div>
+  </div>
+
+  <div class="case-body">
+    <!-- 7. Risultati -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Risultati</p>
+      <h2 class="case-section__heading fade-up">Numeri che parlano<br>di fiducia conquistata.</h2>
+      <div class="case-metrics case-metrics--grid fade-up">
+        <div class="case-metric">
+          <span class="case-metric__value">+20%</span>
+          <span class="case-metric__label">Registrazioni nella fascia under 25</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">+1.739</span>
+          <span class="case-metric__label">CV raccolti nel periodo</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">&gt;3 min</span>
+          <span class="case-metric__label">Tempo medio sul sito</span>
+        </div>
+        <div class="case-metric">
+          <span class="case-metric__value">48</span>
+          <span class="case-metric__label">Contenuti pubblicati entro settembre</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Learnings -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Learnings</p>
+      <h2 class="case-section__heading fade-up">Il contenuto non accompagna la UX.<br>Il contenuto è la UX.</h2>
+      <ul class="case-list case-list--bold fade-up">
+        <li>In certi contesti la scrittura e il tono sono tanto importanti quanto il layout</li>
+        <li>La fiducia di un utente si costruisce anche attraverso una parola scelta bene</li>
+        <li>Collaborare con marketer insegna a tradurre obiettivi editoriali in decisioni di design</li>
+        <li>Difendere scelte UX richiede argomenti che parlino anche a chi il design non lo fa</li>
+      </ul>
+    </div>
+
+    <!-- 9. Next Step -->
+    <div class="case-section">
+      <p class="case-section__title fade-up">Next Step</p>
+      <ul class="case-list fade-up">
+        <li>Sistema di matching basato su <strong>interessi e soft skill</strong>, non solo titolo di studio</li>
+        <li>Integrazione di <strong>eventi live e contenuti real-time</strong> nelle pagine aziendali</li>
+        <li>Area dedicata a chi è <strong>senza esperienza</strong>, con percorsi guidati e milestone progressive</li>
+      </ul>
+    </div>
+  </div>
+
+  <a href="treedom.html" class="case-next">
+    <p class="case-next__label">Prossimo progetto</p>
+    <h2 class="case-next__title">Treedom →</h2>
+  </a>
+
+  <footer class="footer">
+    <div class="footer__logo">Bruno Lorenzon</div>
+    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+  </footer>
+
+  <script src="../js/main.js?v=16"></script>
+</body>
+</html>

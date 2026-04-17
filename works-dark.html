@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works — Bruno Lorenzon</title>
+  <meta name="description" content="Tutti i progetti di Bruno Lorenzon — UX & Product Designer." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/rhk6dpu.css" />
+  <style>
+    /* ══════════════════════════════════════
+       DARK VERSION
+       ══════════════════════════════════════ */
+
+    html, body { overflow-x: hidden; max-width: 100%; }
+
+    :root {
+      --cream:     #0e0c18;
+      --cream-2:   #16132a;
+      --cream-3:   #1e1a32;
+      --navy:      #ffffff;
+      --black:     #f0ede8;
+      --gray:      #888884;
+      --gray-light:#333330;
+      --dark-bg:   #C6F135;
+      --accent:    #C6F135;
+    }
+
+    body {
+      background-color: #0e0c18;
+      background-image:
+        radial-gradient(ellipse 80% 55% at 50% -5%, rgba(97,53,241,0.45) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 30% at 80% 90%, rgba(97,53,241,0.18) 0%, transparent 60%);
+      color: #f0ede8;
+    }
+
+    h1, h2, h3 {
+      font-family: 'gunter', sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400;
+      color: #C6F135 !important;
+    }
+
+    /* Nav */
+    .nav, .nav.scrolled {
+      background: rgba(14,12,24,0.95) !important;
+      border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+    }
+    .nav__link { color: #a0a09a !important; }
+    .nav__link:hover { color: #fff !important; }
+    .nav__link[style] { color: #C6F135 !important; }
+    .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .nav__logo-top { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
+    .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
+
+    /* Page hero */
+    .page-hero { background: transparent !important; }
+    .page-hero__title { color: #C6F135 !important; font-family: 'gunter', sans-serif !important; font-style: normal !important; }
+    .page-hero__sub { color: #888884 !important; }
+
+    /* Filters */
+    .filter-btn {
+      border-color: rgba(255,255,255,0.22) !important;
+      color: #c8c8c4 !important;
+      background: transparent !important;
+    }
+    .filter-btn:hover {
+      border-color: rgba(198,241,53,0.5) !important;
+      color: #C6F135 !important;
+      background: transparent !important;
+    }
+    .filter-btn.active {
+      background: #C6F135 !important;
+      color: #0e0c18 !important;
+      border-color: #C6F135 !important;
+      font-weight: 700 !important;
+    }
+
+    /* Cards */
+    .project-card {
+      background: #2a2448 !important;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.10), 0 12px 40px rgba(0,0,0,0.5) !important;
+    }
+    .project-card:hover {
+      box-shadow: 0 0 0 1.5px rgba(198,241,53,0.45), 0 16px 48px rgba(0,0,0,0.6) !important;
+    }
+    .project-card__title {
+      font-family: var(--font-sans) !important;
+      font-style: normal !important;
+      color: #ffffff !important;
+    }
+    .project-card__desc { color: #888884 !important; }
+    .project-card__arrow { color: #C6F135 !important; }
+
+    /* Tags */
+    .tag {
+      background: rgba(198,241,53,0.10) !important;
+      color: #C6F135 !important;
+    }
+    .tag--outline {
+      background: transparent !important;
+      border-color: rgba(255,255,255,0.15) !important;
+      color: #555552 !important;
+    }
+
+    /* Footer */
+    .footer {
+      background: #0e0c18 !important;
+      border-top: 1px solid rgba(255,255,255,0.06) !important;
+    }
+    .footer__logo, .footer__copy { color: #888884 !important; }
+
+    /* Fade-up */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .55s ease, transform .55s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled" id="nav">
+    <ul class="nav__links nav__left">
+      <li><a href="works-dark.html" class="nav__link" style="color:var(--navy);font-weight:600;">Works</a></li>
+    </ul>
+    <a href="index-dark.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
+    <ul class="nav__links nav__right">
+      <li><a href="index-dark.html#about" class="nav__link">About</a></li>
+      <li><a href="index-dark.html#contact" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <h1 class="page-hero__title fade-up">Works</h1>
+    <p class="page-hero__sub fade-up fade-up-delay-1">Dal concept al lancio — progetti che hanno aiutato prodotti e piattaforme a crescere.</p>
+  </section>
+
+  <!-- FILTERS + GRID -->
+  <section class="works-section" style="padding-top: 0;">
+    <div class="container">
+      <div class="filters fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="product">Product Design</button>
+        <button class="filter-btn" data-filter="ux-research">UX Research</button>
+        <button class="filter-btn" data-filter="elearning">E-learning</button>
+        <button class="filter-btn" data-filter="ui">UI Design</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <a href="works/zuru-dark.html" class="project-card card-reveal card-reveal-delay-1 fade-up" data-categories="product ux-research ui">
+          <div class="project-card__image">
+            <img src="assets/images/herozuru.webp" alt="Zuru Tech — Smart Home App" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Zuru Tech – Smart Home App</h3>
+            <p class="project-card__desc">App di automazione domestica con digital twin nativo: controllo granulare finestre, luci e clima senza la complessità di Google Home.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">Product Design</span>
+                <span class="tag tag--outline">UX Research</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="works/rentall-dark.html" class="project-card card-reveal card-reveal-delay-2 fade-up" data-categories="product ux-research">
+          <div class="project-card__image">
+            <img src="assets/images/rentallhero.png" alt="RentAll — P2P Rental App" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">RentAll – P2P Rental App</h3>
+            <p class="project-card__desc">App di noleggio peer-to-peer progettata con design thinking: ricerca utenti, analisi competitor, prototipazione e test per validare il servizio.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">Product Design</span>
+                <span class="tag tag--outline">UX Research</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="works/leone-master-dark.html" class="project-card card-reveal card-reveal-delay-3 fade-up" data-categories="elearning product ui">
+          <div class="project-card__image">
+            <img src="assets/images/HERO.webp" alt="Leone Master School" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Leone Master School – Platform UX</h3>
+            <p class="project-card__desc">Redesign completo della piattaforma e-learning: onboarding, homepage personalizzata, architettura contenuti e UX mobile.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">E-learning</span>
+                <span class="tag tag--outline">Product Design</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="works/tiaa-dark.html" class="project-card card-reveal card-reveal-delay-3 fade-up" data-categories="product ui">
+          <div class="project-card__image">
+            <img src="assets/images/tiacard.avif" alt="There Is An Alternative — Career Platform" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">There Is An Alternative – Career Platform</h3>
+            <p class="project-card__desc">UX e layout di una piattaforma career media per esplorare aziende tramite contenuti immersivi e job discovery.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UI Design</span>
+                <span class="tag tag--outline">Product Design</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="works/colosseum-dark.html" class="project-card card-reveal card-reveal-delay-4 fade-up" data-categories="ui product">
+          <div class="project-card__image">
+            <img src="assets/images/herocolosseum.webp" alt="Colosseum Luxury Suite" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Colosseum Luxury Suite – Website</h3>
+            <p class="project-card__desc">Sito per affitti brevi ottimizzato per conversione: struttura, CTA, contenuti e miglioramenti di performance.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UI Design</span>
+                <span class="tag tag--outline">UX/CRO</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="works/adecco-dark.html" class="project-card card-reveal card-reveal-delay-5 fade-up" data-categories="ux-research product">
+          <div class="project-card__image">
+            <img src="assets/images/adeccogenzcard%20prject.png" alt="Adecco Gen Z" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Adecco Gen Z – Engagement Platform</h3>
+            <p class="project-card__desc">Progetto per aumentare l'engagement della Gen Z: ricerca utenti, persona, contenuti editoriali e strategia digitale.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UX Research</span>
+                <span class="tag tag--outline">Strategy</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="works/treedom-dark.html" class="project-card card-reveal card-reveal-delay-6 fade-up" data-categories="product ui">
+          <div class="project-card__image">
+            <img src="assets/images/hero treedom.avif" alt="Treedom — UX Concept" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Treedom – UX Concept & Experience</h3>
+            <p class="project-card__desc">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UX Concept</span>
+                <span class="tag tag--outline">Storytelling</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__logo">Bruno Lorenzon</div>
+    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+  </script>
+</body>
+</html>

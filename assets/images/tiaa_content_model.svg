@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 490" font-family="system-ui,-apple-system,'Helvetica Neue',sans-serif">
+
+  <!-- Header label -->
+  <text x="44" y="24" font-size="10" letter-spacing="3" fill="#AAA" font-weight="500">ANATOMIA COMPANY PAGE</text>
+
+  <!-- Connecting lines (drawn first, rects cover the interior portions) -->
+  <line x1="15" y1="81" x2="15" y2="171" stroke="#CCC" stroke-width="1.5"/>
+  <line x1="15" y1="171" x2="15" y2="261" stroke="#CCC" stroke-width="1.5"/>
+  <line x1="15" y1="261" x2="15" y2="351" stroke="#CCC" stroke-width="1.5"/>
+  <line x1="15" y1="351" x2="15" y2="441" stroke="#CCC" stroke-width="1.5"/>
+
+  <!-- Layer 1: Hero cover -->
+  <rect x="28" y="40" width="532" height="82" rx="8" fill="#132E55"/>
+  <!-- Layer 2: Video grid -->
+  <rect x="28" y="130" width="532" height="82" rx="8" fill="#1A3560"/>
+  <!-- Layer 3: Cultura -->
+  <rect x="28" y="220" width="532" height="82" rx="8" fill="#234A80"/>
+  <!-- Layer 4: Info + Social -->
+  <rect x="28" y="310" width="532" height="82" rx="8" fill="#2E5F9E"/>
+  <!-- Layer 5: Jobs -->
+  <rect x="28" y="400" width="532" height="82" rx="8" fill="#C8F53E"/>
+
+  <!-- Timeline dots (on top of rects) -->
+  <circle cx="15" cy="81"  r="4" fill="#132E55"/>
+  <circle cx="15" cy="171" r="4" fill="#1A3560"/>
+  <circle cx="15" cy="261" r="4" fill="#234A80"/>
+  <circle cx="15" cy="351" r="4" fill="#2E5F9E"/>
+  <circle cx="15" cy="441" r="4" fill="#C8F53E"/>
+
+  <!-- Layer 1 text -->
+  <text x="52" y="64"  font-size="10" letter-spacing="2.5" fill="#C8F53E" font-weight="600">01 — HERO COVER</text>
+  <text x="52" y="82"  font-size="13" fill="#FFFFFF">Immagine d'ambiente · Logo + nome + settore</text>
+  <text x="52" y="99"  font-size="12" fill="#FFFFFFAA">Identità visiva forte · Sede aziendale</text>
+  <text x="548" y="86" text-anchor="end" font-size="11" fill="#FFFFFF33">Impatto</text>
+
+  <!-- Layer 2 text -->
+  <text x="52" y="154" font-size="10" letter-spacing="2.5" fill="#C8F53E" font-weight="600">02 — VIDEO GRID</text>
+  <text x="52" y="172" font-size="13" fill="#FFFFFF">TIA Insider · Interviste dipendenti</text>
+  <text x="52" y="189" font-size="12" fill="#FFFFFFAA">Momenti di vita aziendale · Video in-page</text>
+  <text x="548" y="176" text-anchor="end" font-size="11" fill="#FFFFFF33">Autenticità</text>
+
+  <!-- Layer 3 text -->
+  <text x="52" y="244" font-size="10" letter-spacing="2.5" fill="#C8F53E" font-weight="600">03 — CULTURA E VALORI</text>
+  <text x="52" y="262" font-size="13" fill="#FFFFFF">Pillars aziendali · "Le nostre priorità"</text>
+  <text x="52" y="279" font-size="12" fill="#FFFFFFAA">Dati chiave: dipendenti, fondazione, età media</text>
+  <text x="548" y="266" text-anchor="end" font-size="11" fill="#FFFFFF33">Riconoscimento</text>
+
+  <!-- Layer 4 text -->
+  <text x="52" y="334" font-size="10" letter-spacing="2.5" fill="#C8F53E" font-weight="600">04 — INFO + SOCIAL</text>
+  <text x="52" y="352" font-size="13" fill="#FFFFFF">Sito web · Mappa + indirizzo · LinkedIn</text>
+  <text x="52" y="369" font-size="12" fill="#FFFFFFAA">Instagram · CTA "Esplora l'azienda"</text>
+  <text x="548" y="356" text-anchor="end" font-size="11" fill="#FFFFFF33">Approfondimento</text>
+
+  <!-- Layer 5 text -->
+  <text x="52" y="424" font-size="10" letter-spacing="2.5" fill="#132E55" font-weight="700">05 — OFFERTE DI LAVORO</text>
+  <text x="52" y="442" font-size="13" fill="#111111">Job listing contestuali · Tags tipologia</text>
+  <text x="52" y="459" font-size="12" fill="#132E5599">CTA "Candidati ora" · N posizioni aperte</text>
+  <text x="548" y="446" text-anchor="end" font-size="11" fill="#13335544">Conversione</text>
+
+</svg>

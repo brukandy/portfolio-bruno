@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" font-family="system-ui,-apple-system,'Helvetica Neue',sans-serif">
+  <!-- Background -->
+  <rect width="1600" height="1100" fill="#0D0F1A"/>
+
+  <!-- Nav bar -->
+  <rect width="1600" height="60" fill="#111320"/>
+  <rect x="56" y="18" width="26" height="26" rx="4" fill="#534AB7"/>
+  <text x="92" y="37" font-size="15" font-weight="700" fill="#FFF">Leone Master School</text>
+  <text x="420" y="37" font-size="13" fill="#666">Corsi</text>
+  <text x="510" y="37" font-size="13" fill="#666">Dashboard</text>
+  <text x="620" y="37" font-size="13" fill="#666">Community</text>
+  <rect x="1440" y="16" width="32" height="32" rx="16" fill="#534AB7"/>
+  <text x="1456" y="37" text-anchor="middle" font-size="13" font-weight="700" fill="#FFF">BL</text>
+
+  <!-- Welcome banner -->
+  <rect x="56" y="84" width="1488" height="120" rx="14" fill="#181C30"/>
+  <text x="96" y="130" font-size="14" letter-spacing="2" fill="#534AB7" font-weight="600">BENTORNATO</text>
+  <text x="96" y="165" font-size="26" font-weight="700" fill="#FFF">Ciao Bruno, riprendi da dove hai lasciato 👋</text>
+  <!-- Progress bar -->
+  <rect x="96" y="180" width="400" height="6" rx="3" fill="#2A2E45"/>
+  <rect x="96" y="180" width="280" height="6" rx="3" fill="#534AB7"/>
+  <text x="504" y="188" font-size="12" fill="#534AB7" font-weight="600">70% completato</text>
+
+  <!-- Section label -->
+  <text x="56" y="240" font-size="12" letter-spacing="2" fill="#888" font-weight="500">I TUOI CORSI ATTIVI</text>
+
+  <!-- Course cards row 1 -->
+  <!-- Card 1 -->
+  <rect x="56" y="256" width="360" height="220" rx="14" fill="#181C30"/>
+  <rect x="56" y="256" width="360" height="100" rx="14" fill="#2A2040"/>
+  <rect x="56" y="316" width="360" height="40" fill="#2A2040"/>
+  <text x="80" y="296" font-size="13" font-weight="600" fill="#FFF">Marketing Digitale</text>
+  <text x="80" y="316" font-size="12" fill="#AAA">Lezione 12 di 24</text>
+  <rect x="80" y="376" width="200" height="5" rx="2.5" fill="#2A2E45"/>
+  <rect x="80" y="376" width="100" height="5" rx="2.5" fill="#534AB7"/>
+  <text x="80" y="412" font-size="12" fill="#666">50% completato</text>
+  <rect x="240" y="398" width="140" height="36" rx="8" fill="#534AB7"/>
+  <text x="310" y="421" text-anchor="middle" font-size="13" font-weight="600" fill="#FFF">Continua →</text>
+
+  <!-- Card 2 -->
+  <rect x="436" y="256" width="360" height="220" rx="14" fill="#181C30"/>
+  <rect x="436" y="256" width="360" height="100" rx="14" fill="#1C2A40"/>
+  <rect x="436" y="316" width="360" height="40" fill="#1C2A40"/>
+  <text x="460" y="296" font-size="13" font-weight="600" fill="#FFF">Brand Identity</text>
+  <text x="460" y="316" font-size="12" fill="#AAA">Lezione 7 di 18</text>
+  <rect x="460" y="376" width="200" height="5" rx="2.5" fill="#2A2E45"/>
+  <rect x="460" y="376" width="78" height="5" rx="2.5" fill="#4A7FD4"/>
+  <text x="460" y="412" font-size="12" fill="#666">39% completato</text>
+  <rect x="620" y="398" width="140" height="36" rx="8" fill="#4A7FD4"/>
+  <text x="690" y="421" text-anchor="middle" font-size="13" font-weight="600" fill="#FFF">Continua →</text>
+
+  <!-- Card 3 -->
+  <rect x="816" y="256" width="360" height="220" rx="14" fill="#181C30"/>
+  <rect x="816" y="256" width="360" height="100" rx="14" fill="#2A1A40"/>
+  <rect x="816" y="316" width="360" height="40" fill="#2A1A40"/>
+  <text x="840" y="296" font-size="13" font-weight="600" fill="#FFF">Copywriting</text>
+  <text x="840" y="316" font-size="12" fill="#AAA">Lezione 3 di 20</text>
+  <rect x="840" y="376" width="200" height="5" rx="2.5" fill="#2A2E45"/>
+  <rect x="840" y="376" width="30" height="5" rx="2.5" fill="#C8A53E"/>
+  <text x="840" y="412" font-size="12" fill="#666">15% completato</text>
+  <rect x="1000" y="398" width="140" height="36" rx="8" fill="#C8A53E"/>
+  <text x="1070" y="421" text-anchor="middle" font-size="13" font-weight="600" fill="#111">Inizia →</text>
+
+  <!-- Card 4 (new) -->
+  <rect x="1196" y="256" width="348" height="220" rx="14" fill="#181C30"/>
+  <rect x="1196" y="256" width="348" height="100" rx="14" fill="#0E2020"/>
+  <rect x="1196" y="316" width="348" height="40" fill="#0E2020"/>
+  <text x="1220" y="296" font-size="13" font-weight="600" fill="#FFF">Growth Strategy</text>
+  <text x="1220" y="316" font-size="12" fill="#AAA">Nuovo corso</text>
+  <rect x="1220" y="376" width="200" height="5" rx="2.5" fill="#2A2E45"/>
+  <text x="1220" y="412" font-size="12" fill="#666">Non iniziato</text>
+  <rect x="1364" y="398" width="144" height="36" rx="8" fill="#1C3030" stroke="#4CAF50" stroke-width="1"/>
+  <text x="1436" y="421" text-anchor="middle" font-size="13" font-weight="600" fill="#4CAF50">Scopri →</text>
+
+  <!-- Section label 2 -->
+  <text x="56" y="530" font-size="12" letter-spacing="2" fill="#888" font-weight="500">CONSIGLIATI PER TE</text>
+
+  <!-- Recommended row (mini cards) -->
+  <rect x="56" y="546" width="230" height="120" rx="10" fill="#181C30"/>
+  <text x="78" y="578" font-size="13" font-weight="600" fill="#FFF">SEO Avanzato</text>
+  <text x="78" y="598" font-size="12" fill="#666">12 lezioni · 4h</text>
+  <rect x="78" y="618" width="56" height="22" rx="5" fill="#534AB720"/>
+  <text x="106" y="634" text-anchor="middle" font-size="11" fill="#534AB7" font-weight="600">SEO</text>
+
+  <rect x="306" y="546" width="230" height="120" rx="10" fill="#181C30"/>
+  <text x="328" y="578" font-size="13" font-weight="600" fill="#FFF">Analytics Pro</text>
+  <text x="328" y="598" font-size="12" fill="#666">8 lezioni · 3h</text>
+  <rect x="328" y="618" width="72" height="22" rx="5" fill="#4A7FD420"/>
+  <text x="364" y="634" text-anchor="middle" font-size="11" fill="#4A7FD4" font-weight="600">DATA</text>
+
+  <rect x="556" y="546" width="230" height="120" rx="10" fill="#181C30"/>
+  <text x="578" y="578" font-size="13" font-weight="600" fill="#FFF">Social Media Ads</text>
+  <text x="578" y="598" font-size="12" fill="#666">16 lezioni · 6h</text>
+  <rect x="578" y="618" width="72" height="22" rx="5" fill="#C8A53E20"/>
+  <text x="614" y="634" text-anchor="middle" font-size="11" fill="#C8A53E" font-weight="600">ADS</text>
+
+  <!-- Stats panel -->
+  <rect x="820" y="546" width="828" height="120" rx="10" fill="#181C30"/>
+  <text x="880" y="580" text-anchor="middle" font-size="28" font-weight="700" fill="#534AB7">12</text>
+  <text x="880" y="602" text-anchor="middle" font-size="11" fill="#666">ore questa settimana</text>
+  <line x1="960" y1="566" x2="960" y2="646" stroke="#2A2E45" stroke-width="1"/>
+  <text x="1060" y="580" text-anchor="middle" font-size="28" font-weight="700" fill="#4A7FD4">87%</text>
+  <text x="1060" y="602" text-anchor="middle" font-size="11" fill="#666">quiz superati</text>
+  <line x1="1160" y1="566" x2="1160" y2="646" stroke="#2A2E45" stroke-width="1"/>
+  <text x="1260" y="580" text-anchor="middle" font-size="28" font-weight="700" fill="#4CAF50">3</text>
+  <text x="1260" y="602" text-anchor="middle" font-size="11" fill="#666">certificati ottenuti</text>
+  <line x1="1360" y1="566" x2="1360" y2="646" stroke="#2A2E45" stroke-width="1"/>
+  <text x="1480" y="580" text-anchor="middle" font-size="28" font-weight="700" fill="#C8A53E">🔥 14</text>
+  <text x="1480" y="602" text-anchor="middle" font-size="11" fill="#666">giorni di streak</text>
+
+  <!-- Community section -->
+  <text x="56" y="720" font-size="12" letter-spacing="2" fill="#888" font-weight="500">COMMUNITY</text>
+  <rect x="56" y="736" width="1488" height="90" rx="10" fill="#181C30"/>
+  <rect x="80" y="756" width="40" height="40" rx="20" fill="#534AB7"/>
+  <text x="100" y="781" text-anchor="middle" font-size="15" font-weight="700" fill="#FFF">M</text>
+  <rect x="134" y="756" width="40" height="40" rx="20" fill="#4A7FD4"/>
+  <text x="154" y="781" text-anchor="middle" font-size="15" font-weight="700" fill="#FFF">A</text>
+  <rect x="188" y="756" width="40" height="40" rx="20" fill="#C8A53E"/>
+  <text x="208" y="781" text-anchor="middle" font-size="15" font-weight="700" fill="#111">F</text>
+  <text x="248" y="778" font-size="13" fill="#AAA">Marco e altri 2.400 studenti sono online ora</text>
+  <rect x="1360" y="754" width="160" height="36" rx="8" fill="#534AB7"/>
+  <text x="1440" y="777" text-anchor="middle" font-size="13" font-weight="600" fill="#FFF">Entra in Community</text>
+
+  <!-- Bottom course strip -->
+  <text x="56" y="890" font-size="12" letter-spacing="2" fill="#888" font-weight="500">CATALOGO COMPLETO</text>
+  <rect x="56" y="906" width="170" height="100" rx="10" fill="#181C30"/>
+  <rect x="56" y="906" width="170" height="50" rx="10" fill="#1A2040"/>
+  <text x="141" y="936" text-anchor="middle" font-size="11" font-weight="600" fill="#FFF">Email Marketing</text>
+  <text x="141" y="976" text-anchor="middle" font-size="11" fill="#666">10 lezioni</text>
+  <rect x="246" y="906" width="170" height="100" rx="10" fill="#181C30"/>
+  <rect x="246" y="906" width="170" height="50" rx="10" fill="#201A40"/>
+  <text x="331" y="936" text-anchor="middle" font-size="11" font-weight="600" fill="#FFF">Design Thinking</text>
+  <text x="331" y="976" text-anchor="middle" font-size="11" fill="#666">14 lezioni</text>
+  <rect x="436" y="906" width="170" height="100" rx="10" fill="#181C30"/>
+  <rect x="436" y="906" width="170" height="50" rx="10" fill="#1A2820"/>
+  <text x="521" y="936" text-anchor="middle" font-size="11" font-weight="600" fill="#FFF">Video Production</text>
+  <text x="521" y="976" text-anchor="middle" font-size="11" fill="#666">20 lezioni</text>
+  <rect x="626" y="906" width="170" height="100" rx="10" fill="#181C30"/>
+  <rect x="626" y="906" width="170" height="50" rx="10" fill="#282010"/>
+  <text x="711" y="936" text-anchor="middle" font-size="11" font-weight="600" fill="#FFF">E-commerce</text>
+  <text x="711" y="976" text-anchor="middle" font-size="11" fill="#666">18 lezioni</text>
+</svg>

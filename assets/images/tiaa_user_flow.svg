@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 524" font-family="system-ui,-apple-system,'Helvetica Neue',sans-serif">
+
+  <!-- Header -->
+  <text x="280" y="24" text-anchor="middle" font-size="9" letter-spacing="3" fill="#AAA" font-weight="500">USER FLOW</text>
+  <text x="280" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#132E55">Il percorso di scoperta su TIA</text>
+
+  <!-- Track labels -->
+  <text x="8" y="66" font-size="8" letter-spacing="2" fill="#BBB" font-weight="600">PORTALI TRADIZIONALI</text>
+  <text x="292" y="66" font-size="8" letter-spacing="2" fill="#132E55" font-weight="600" opacity="0.6">CON TIA</text>
+
+  <!-- === ROW 1 === -->
+  <!-- Traditional node 1 -->
+  <rect x="8" y="74" width="260" height="60" rx="8" fill="#EDECEA" stroke="#DDD" stroke-width="1"/>
+  <text x="138" y="100" text-anchor="middle" font-size="12" fill="#999">Apre il portale</text>
+  <text x="138" y="118" text-anchor="middle" font-size="11" fill="#BBB">cerca posizione</text>
+  <!-- TIA node 1 -->
+  <rect x="292" y="74" width="260" height="60" rx="8" fill="#132E55"/>
+  <text x="422" y="96" text-anchor="middle" font-size="12" font-weight="600" fill="#FFF">Scopre TIA</text>
+  <text x="422" y="112" text-anchor="middle" font-size="10" fill="#FFFFFF99">home content-first</text>
+  <text x="422" y="126" text-anchor="middle" font-size="10" fill="#FFFFFF99">dark + search</text>
+
+  <!-- Arrows row 1→2 -->
+  <line x1="138" y1="136" x2="138" y2="146" stroke="#CCC" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+  <line x1="422" y1="136" x2="422" y2="146" stroke="#1E3F6E" stroke-width="1.5" marker-end="url(#arrow-navy)"/>
+
+  <!-- === ROW 2 === -->
+  <rect x="8" y="148" width="260" height="60" rx="8" fill="#EDECEA" stroke="#DDD" stroke-width="1"/>
+  <text x="138" y="174" text-anchor="middle" font-size="12" fill="#999">Filtra annunci</text>
+  <text x="138" y="192" text-anchor="middle" font-size="11" fill="#BBB">per ruolo / città</text>
+
+  <rect x="292" y="148" width="260" height="60" rx="8" fill="#132E55"/>
+  <text x="422" y="170" text-anchor="middle" font-size="12" font-weight="600" fill="#FFF">Esplora aziende</text>
+  <text x="422" y="186" text-anchor="middle" font-size="10" fill="#FFFFFF99">company grid</text>
+  <text x="422" y="200" text-anchor="middle" font-size="10" fill="#FFFFFF99">curata editorialmente</text>
+
+  <!-- Arrows row 2→3 -->
+  <line x1="138" y1="210" x2="138" y2="220" stroke="#CCC" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+  <line x1="422" y1="210" x2="422" y2="220" stroke="#1E3F6E" stroke-width="1.5" marker-end="url(#arrow-navy)"/>
+
+  <!-- === ROW 3 === -->
+  <rect x="8" y="222" width="260" height="60" rx="8" fill="#EDECEA" stroke="#DDD" stroke-width="1"/>
+  <text x="138" y="248" text-anchor="middle" font-size="12" fill="#999">Legge descrizione</text>
+  <text x="138" y="266" text-anchor="middle" font-size="11" fill="#BBB">ruolo generico</text>
+
+  <rect x="292" y="222" width="260" height="60" rx="8" fill="#132E55"/>
+  <text x="422" y="244" text-anchor="middle" font-size="12" font-weight="600" fill="#FFF">Guarda video</text>
+  <text x="422" y="260" text-anchor="middle" font-size="10" fill="#FFFFFF99">TIA Insider</text>
+  <text x="422" y="274" text-anchor="middle" font-size="10" fill="#FFFFFF99">dipendenti reali</text>
+
+  <!-- Arrows row 3→4 -->
+  <line x1="138" y1="284" x2="138" y2="294" stroke="#CCC" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+  <line x1="422" y1="284" x2="422" y2="294" stroke="#1E3F6E" stroke-width="1.5" marker-end="url(#arrow-navy)"/>
+
+  <!-- === ROW 4 === -->
+  <rect x="8" y="296" width="260" height="60" rx="8" fill="#EDECEA" stroke="#DDD" stroke-width="1"/>
+  <text x="138" y="322" text-anchor="middle" font-size="12" fill="#999">Nessun contesto</text>
+  <text x="138" y="340" text-anchor="middle" font-size="11" fill="#BBB">aziendale reale</text>
+
+  <rect x="292" y="296" width="260" height="60" rx="8" fill="#132E55"/>
+  <text x="422" y="318" text-anchor="middle" font-size="12" font-weight="600" fill="#FFF">Legge cultura</text>
+  <text x="422" y="334" text-anchor="middle" font-size="10" fill="#FFFFFF99">valori, team</text>
+  <text x="422" y="348" text-anchor="middle" font-size="10" fill="#FFFFFF99">pillars aziendali</text>
+
+  <!-- Arrows row 4→5 -->
+  <line x1="138" y1="358" x2="138" y2="368" stroke="#CCC" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+  <line x1="422" y1="358" x2="422" y2="368" stroke="#1E3F6E" stroke-width="1.5" marker-end="url(#arrow-navy)"/>
+
+  <!-- === ROW 5 === -->
+  <rect x="8" y="370" width="260" height="60" rx="8" fill="#EDECEA" stroke="#DDD" stroke-width="1"/>
+  <text x="138" y="396" text-anchor="middle" font-size="12" fill="#999">Candidatura</text>
+  <text x="138" y="414" text-anchor="middle" font-size="11" fill="#BBB">al buio</text>
+
+  <rect x="292" y="370" width="260" height="60" rx="8" fill="#132E55"/>
+  <text x="422" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#FFF">Vede offerte</text>
+  <text x="422" y="408" text-anchor="middle" font-size="10" fill="#FFFFFF99">job listing</text>
+  <text x="422" y="422" text-anchor="middle" font-size="10" fill="#FFFFFF99">contestuali</text>
+
+  <!-- Arrows row 5→6 -->
+  <line x1="138" y1="432" x2="138" y2="442" stroke="#CCC" stroke-width="1.5" marker-end="url(#arrow-gray)"/>
+  <line x1="422" y1="432" x2="422" y2="442" stroke="#C8F53E" stroke-width="2" marker-end="url(#arrow-lime)"/>
+
+  <!-- === ROW 6 === -->
+  <rect x="8" y="444" width="260" height="60" rx="8" fill="#F0E0E0" stroke="#E0BBBB" stroke-width="1"/>
+  <text x="138" y="470" text-anchor="middle" font-size="12" fill="#CC6666">Drop-off</text>
+  <text x="138" y="488" text-anchor="middle" font-size="11" fill="#E09090">o candidatura motivata?</text>
+
+  <rect x="292" y="444" width="260" height="60" rx="8" fill="#C8F53E"/>
+  <text x="422" y="468" text-anchor="middle" font-size="12" font-weight="700" fill="#111">Si candida</text>
+  <text x="422" y="484" text-anchor="middle" font-size="11" fill="#333">motivato · consapevole</text>
+
+  <defs>
+    <marker id="arrow-gray" markerWidth="8" markerHeight="8" refX="4" refY="0" orient="90">
+      <path d="M0,0 L4,6 L8,0 z" fill="#CCC"/>
+    </marker>
+    <marker id="arrow-navy" markerWidth="8" markerHeight="8" refX="4" refY="0" orient="90">
+      <path d="M0,0 L4,6 L8,0 z" fill="#1E3F6E"/>
+    </marker>
+    <marker id="arrow-lime" markerWidth="8" markerHeight="8" refX="4" refY="0" orient="90">
+      <path d="M0,0 L4,6 L8,0 z" fill="#C8F53E"/>
+    </marker>
+  </defs>
+
+</svg>

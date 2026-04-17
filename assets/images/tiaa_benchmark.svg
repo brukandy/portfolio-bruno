@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 370" font-family="system-ui,-apple-system,'Helvetica Neue',sans-serif">
+
+  <!-- Header -->
+  <text x="280" y="24" text-anchor="middle" font-size="9" letter-spacing="3" fill="#AAA" font-weight="500">BENCHMARK</text>
+  <text x="280" y="46" text-anchor="middle" font-size="15" font-weight="700" fill="#132E55">Job Board Tradizionale vs There Is An Alternative</text>
+
+  <!-- Left panel -->
+  <rect x="8" y="58" width="260" height="298" rx="10" fill="#EDECEA"/>
+  <!-- Right panel -->
+  <rect x="276" y="58" width="276" height="298" rx="10" fill="#132E55"/>
+
+  <!-- Panel headers -->
+  <text x="138" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#888">Job Board Tradizionale</text>
+  <text x="414" y="82" text-anchor="middle" font-size="11" font-weight="600" fill="#C8F53E">There Is An Alternative</text>
+
+  <!-- Header dividers -->
+  <line x1="24" y1="92" x2="252" y2="92" stroke="#CCC" stroke-width="0.8" opacity="0.6"/>
+  <line x1="292" y1="92" x2="536" y2="92" stroke="#FFF" stroke-width="0.8" opacity="0.15"/>
+
+  <!-- Row 1 -->
+  <text x="24" y="110" font-size="8" letter-spacing="2" fill="#BBB" font-weight="600">TIPO DI PIATTAFORMA</text>
+  <text x="24" y="128" font-size="12" fill="#666">Motore di ricerca di annunci</text>
+  <text x="292" y="110" font-size="8" letter-spacing="2" fill="#C8F53E" font-weight="600" opacity="0.7">TIPO DI PIATTAFORMA</text>
+  <text x="292" y="128" font-size="12" font-weight="600" fill="#FFF">Media platform editoriale</text>
+
+  <!-- Row 2 -->
+  <line x1="24" y1="140" x2="252" y2="140" stroke="#CCC" stroke-width="0.8" opacity="0.35"/>
+  <line x1="292" y1="140" x2="536" y2="140" stroke="#FFF" stroke-width="0.8" opacity="0.1"/>
+  <text x="24" y="158" font-size="8" letter-spacing="2" fill="#BBB" font-weight="600">SCOPERTA AZIENDE</text>
+  <text x="24" y="176" font-size="12" fill="#666">Lista filtri — annunci generici</text>
+  <text x="292" y="158" font-size="8" letter-spacing="2" fill="#C8F53E" font-weight="600" opacity="0.7">SCOPERTA AZIENDE</text>
+  <text x="292" y="176" font-size="12" font-weight="600" fill="#FFF">Video, storie, contenuti autentici</text>
+
+  <!-- Row 3 -->
+  <line x1="24" y1="188" x2="252" y2="188" stroke="#CCC" stroke-width="0.8" opacity="0.35"/>
+  <line x1="292" y1="188" x2="536" y2="188" stroke="#FFF" stroke-width="0.8" opacity="0.1"/>
+  <text x="24" y="206" font-size="8" letter-spacing="2" fill="#BBB" font-weight="600">FOCUS UTENTE</text>
+  <text x="24" y="224" font-size="12" fill="#666">Trovare una posizione aperta</text>
+  <text x="292" y="206" font-size="8" letter-spacing="2" fill="#C8F53E" font-weight="600" opacity="0.7">FOCUS UTENTE</text>
+  <text x="292" y="224" font-size="12" font-weight="600" fill="#FFF">Scegliere dove lavorare</text>
+
+  <!-- Row 4 -->
+  <line x1="24" y1="236" x2="252" y2="236" stroke="#CCC" stroke-width="0.8" opacity="0.35"/>
+  <line x1="292" y1="236" x2="536" y2="236" stroke="#FFF" stroke-width="0.8" opacity="0.1"/>
+  <text x="24" y="254" font-size="8" letter-spacing="2" fill="#BBB" font-weight="600">CONTENUTO AZIENDALE</text>
+  <text x="24" y="272" font-size="12" fill="#666">Descrizione corporate del ruolo</text>
+  <text x="292" y="254" font-size="8" letter-spacing="2" fill="#C8F53E" font-weight="600" opacity="0.7">CONTENUTO AZIENDALE</text>
+  <text x="292" y="272" font-size="12" font-weight="600" fill="#FFF">Video, interviste, cultura reale</text>
+
+  <!-- Row 5 -->
+  <line x1="24" y1="284" x2="252" y2="284" stroke="#CCC" stroke-width="0.8" opacity="0.35"/>
+  <line x1="292" y1="284" x2="536" y2="284" stroke="#FFF" stroke-width="0.8" opacity="0.1"/>
+  <text x="24" y="302" font-size="8" letter-spacing="2" fill="#BBB" font-weight="600">ENGAGEMENT E FIDUCIA</text>
+  <text x="24" y="320" font-size="12" fill="#666">Basso — filtra, clicca, candidati</text>
+  <text x="292" y="302" font-size="8" letter-spacing="2" fill="#C8F53E" font-weight="600" opacity="0.7">ENGAGEMENT E FIDUCIA</text>
+  <text x="292" y="320" font-size="12" font-weight="600" fill="#FFF">Alto — esplora, si fida, si candida</text>
+
+</svg>

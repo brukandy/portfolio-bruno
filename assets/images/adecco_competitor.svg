@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" font-family="'Trebuchet MS', 'Segoe UI', Helvetica, sans-serif">
+
+  <!-- Background -->
+  <rect width="680" height="360" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="20" y="22" font-size="13" font-weight="700" fill="#1A0A0A">Benchmark Competitivo — Adecco gZ vs Competitor</text>
+
+  <!-- Column headers background -->
+  <rect x="0"   y="30" width="120" height="34" fill="#F7F7F7"/>
+  <rect x="120" y="30" width="108" height="34" fill="#F7F7F7"/>
+  <rect x="228" y="30" width="108" height="34" fill="#F7F7F7"/>
+  <rect x="336" y="30" width="108" height="34" fill="#F7F7F7"/>
+  <rect x="444" y="30" width="108" height="34" fill="#F7F7F7"/>
+  <rect x="552" y="30" width="128" height="34" fill="#EC2227"/>
+
+  <!-- Column header text -->
+  <text x="60"  y="51" text-anchor="middle" font-size="12" font-weight="700" fill="#1A0A0A">Criterio</text>
+  <text x="174" y="51" text-anchor="middle" font-size="12" font-weight="700" fill="#1A0A0A">Joinrs</text>
+  <text x="282" y="51" text-anchor="middle" font-size="12" font-weight="700" fill="#1A0A0A">Glassdoor</text>
+  <text x="390" y="51" text-anchor="middle" font-size="12" font-weight="700" fill="#1A0A0A">JobTech</text>
+  <text x="498" y="51" text-anchor="middle" font-size="12" font-weight="700" fill="#1A0A0A">Manpower</text>
+  <text x="616" y="51" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">Adecco gZ</text>
+
+  <!-- ROW 1 — Tone of voice -->
+  <rect x="0"   y="64" width="120" height="46" fill="#F7F7F7"/>
+  <rect x="120" y="64" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="228" y="64" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="336" y="64" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="444" y="64" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="552" y="64" width="128" height="46" fill="#FFF0F0"/>
+  <text x="8"   y="83"  font-size="11" font-weight="700" fill="#1A0A0A">Tone of</text>
+  <text x="8"   y="97"  font-size="11" font-weight="700" fill="#1A0A0A">voice</text>
+  <text x="174" y="83"  text-anchor="middle" font-size="11" fill="#555">○ Formale</text>
+  <text x="174" y="97"  text-anchor="middle" font-size="10" fill="#888">generico</text>
+  <text x="282" y="83"  text-anchor="middle" font-size="11" fill="#555">◐ Semi-inf.</text>
+  <text x="282" y="97"  text-anchor="middle" font-size="10" fill="#888">misto</text>
+  <text x="390" y="83"  text-anchor="middle" font-size="11" fill="#555">○ Neutro</text>
+  <text x="390" y="97"  text-anchor="middle" font-size="10" fill="#888">tecnico</text>
+  <text x="498" y="83"  text-anchor="middle" font-size="11" fill="#555">○ Corporate</text>
+  <text x="498" y="97"  text-anchor="middle" font-size="10" fill="#888">formale</text>
+  <text x="616" y="83"  text-anchor="middle" font-size="11" font-weight="700" fill="#EC2227">● Empatico</text>
+  <text x="616" y="97"  text-anchor="middle" font-size="10" font-weight="700" fill="#EC2227">Gen Z</text>
+
+  <!-- ROW 2 — Contenuto visivo -->
+  <rect x="0"   y="110" width="120" height="46" fill="#F7F7F7"/>
+  <rect x="120" y="110" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="228" y="110" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="336" y="110" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="444" y="110" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="552" y="110" width="128" height="46" fill="#FFF0F0"/>
+  <text x="8"   y="129" font-size="11" font-weight="700" fill="#1A0A0A">Contenuto</text>
+  <text x="8"   y="143" font-size="11" font-weight="700" fill="#1A0A0A">visivo</text>
+  <text x="174" y="129" text-anchor="middle" font-size="11" fill="#555">◐ Foto</text>
+  <text x="174" y="143" text-anchor="middle" font-size="10" fill="#888">stock</text>
+  <text x="282" y="129" text-anchor="middle" font-size="11" fill="#555">◐ Review</text>
+  <text x="282" y="143" text-anchor="middle" font-size="10" fill="#888">testuali</text>
+  <text x="390" y="129" text-anchor="middle" font-size="11" fill="#555">○ Minimal</text>
+  <text x="390" y="143" text-anchor="middle" font-size="10" fill="#888">freddo</text>
+  <text x="498" y="129" text-anchor="middle" font-size="11" fill="#555">○ Istituz.</text>
+  <text x="498" y="143" text-anchor="middle" font-size="10" fill="#888">statico</text>
+  <text x="616" y="129" text-anchor="middle" font-size="11" font-weight="700" fill="#EC2227">● Video</text>
+  <text x="616" y="143" text-anchor="middle" font-size="10" font-weight="700" fill="#EC2227">dinamico</text>
+
+  <!-- ROW 3 — Orientamento Gen Z -->
+  <rect x="0"   y="156" width="120" height="46" fill="#F7F7F7"/>
+  <rect x="120" y="156" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="228" y="156" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="336" y="156" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="444" y="156" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="552" y="156" width="128" height="46" fill="#FFF0F0"/>
+  <text x="8"   y="175" font-size="11" font-weight="700" fill="#1A0A0A">Orientam.</text>
+  <text x="8"   y="189" font-size="11" font-weight="700" fill="#1A0A0A">Gen Z</text>
+  <text x="174" y="175" text-anchor="middle" font-size="11" fill="#555">◐ Parziale</text>
+  <text x="174" y="189" text-anchor="middle" font-size="10" fill="#888">adattato</text>
+  <text x="282" y="175" text-anchor="middle" font-size="11" fill="#555">○ Nessuno</text>
+  <text x="282" y="189" text-anchor="middle" font-size="10" fill="#888">specifico</text>
+  <text x="390" y="175" text-anchor="middle" font-size="11" fill="#555">◐ Filtri</text>
+  <text x="390" y="189" text-anchor="middle" font-size="10" fill="#888">solo età</text>
+  <text x="498" y="175" text-anchor="middle" font-size="11" fill="#555">○ Solo</text>
+  <text x="498" y="189" text-anchor="middle" font-size="10" fill="#888">generico</text>
+  <text x="616" y="175" text-anchor="middle" font-size="11" font-weight="700" fill="#EC2227">● Nativo</text>
+  <text x="616" y="189" text-anchor="middle" font-size="10" font-weight="700" fill="#EC2227">progettato</text>
+
+  <!-- ROW 4 — Processo registrazione -->
+  <rect x="0"   y="202" width="120" height="46" fill="#F7F7F7"/>
+  <rect x="120" y="202" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="228" y="202" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="336" y="202" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="444" y="202" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="552" y="202" width="128" height="46" fill="#FFF0F0"/>
+  <text x="8"   y="221" font-size="11" font-weight="700" fill="#1A0A0A">Processo</text>
+  <text x="8"   y="235" font-size="11" font-weight="700" fill="#1A0A0A">registraz.</text>
+  <text x="174" y="221" text-anchor="middle" font-size="11" fill="#555">○ Lungo</text>
+  <text x="174" y="235" text-anchor="middle" font-size="10" fill="#888">form</text>
+  <text x="282" y="221" text-anchor="middle" font-size="11" fill="#555">◐ Medio</text>
+  <text x="282" y="235" text-anchor="middle" font-size="10" fill="#888">SSO</text>
+  <text x="390" y="221" text-anchor="middle" font-size="11" fill="#555">◐ Guidato</text>
+  <text x="390" y="235" text-anchor="middle" font-size="10" fill="#888">discreto</text>
+  <text x="498" y="221" text-anchor="middle" font-size="11" fill="#555">○ Lungo</text>
+  <text x="498" y="235" text-anchor="middle" font-size="10" fill="#888">tradiz.</text>
+  <text x="616" y="221" text-anchor="middle" font-size="11" font-weight="700" fill="#EC2227">● Rapido</text>
+  <text x="616" y="235" text-anchor="middle" font-size="10" font-weight="700" fill="#EC2227">modulare</text>
+
+  <!-- ROW 5 — Pagine aziendali -->
+  <rect x="0"   y="248" width="120" height="46" fill="#F7F7F7"/>
+  <rect x="120" y="248" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="228" y="248" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="336" y="248" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="444" y="248" width="108" height="46" fill="#FAFAFA"/>
+  <rect x="552" y="248" width="128" height="46" fill="#FFF0F0"/>
+  <text x="8"   y="267" font-size="11" font-weight="700" fill="#1A0A0A">Pagine</text>
+  <text x="8"   y="281" font-size="11" font-weight="700" fill="#1A0A0A">aziendali</text>
+  <text x="174" y="267" text-anchor="middle" font-size="11" fill="#555">○ Schede</text>
+  <text x="174" y="281" text-anchor="middle" font-size="10" fill="#888">piatte</text>
+  <text x="282" y="267" text-anchor="middle" font-size="11" fill="#555">◐ Review</text>
+  <text x="282" y="281" text-anchor="middle" font-size="10" fill="#888">utenti</text>
+  <text x="390" y="267" text-anchor="middle" font-size="11" fill="#555">○ Solo</text>
+  <text x="390" y="281" text-anchor="middle" font-size="10" fill="#888">dati</text>
+  <text x="498" y="267" text-anchor="middle" font-size="11" fill="#555">○ Logo +</text>
+  <text x="498" y="281" text-anchor="middle" font-size="10" fill="#888">testo</text>
+  <text x="616" y="267" text-anchor="middle" font-size="11" font-weight="700" fill="#EC2227">● Video +</text>
+  <text x="616" y="281" text-anchor="middle" font-size="10" font-weight="700" fill="#EC2227">tour imm.</text>
+
+  <!-- Vertical dividers -->
+  <line x1="120" y1="30" x2="120" y2="294" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="228" y1="30" x2="228" y2="294" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="336" y1="30" x2="336" y2="294" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="444" y1="30" x2="444" y2="294" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="552" y1="30" x2="552" y2="294" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Horizontal dividers -->
+  <line x1="0" y1="64"  x2="680" y2="64"  stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="0" y1="110" x2="680" y2="110" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="0" y1="156" x2="680" y2="156" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="0" y1="202" x2="680" y2="202" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="0" y1="248" x2="680" y2="248" stroke="#E0E0E0" stroke-width="1"/>
+  <line x1="0" y1="294" x2="680" y2="294" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- Footer bar -->
+  <rect x="0" y="308" width="680" height="44" rx="4" fill="#EC2227"/>
+  <text x="340" y="327" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">Adecco gZ — progettato per la Gen Z, non adattato</text>
+  <text x="340" y="344" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">● = ottimo  ◐ = parziale  ○ = assente / critico</text>
+
+</svg>

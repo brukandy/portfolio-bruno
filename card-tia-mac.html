@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIA - MacBook Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background: #f8f6f3;
+      font-family: 'DM Sans', system-ui, sans-serif;
+    }
+    
+    .container {
+      max-width: 420px;
+      width: 100%;
+    }
+    
+    /* Project Card */
+    .project-card {
+      display: block;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      transform: translateY(-4px);
+    }
+    
+    /* MacBook Image Container */
+    .project-card__image--mac {
+      background: #e8f0f5;
+      border-radius: 8px 8px 0 0;
+      overflow: hidden;
+      aspect-ratio: 16/10;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    /* Zoom on mockup */
+    .project-card:hover .project-card__image--mac .mockup-mac {
+      transform: scale(1.05);
+    }
+    
+    /* MacBook Mockup */
+    .mockup-mac {
+      width: 85%;
+      max-height: 90%;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    .mockup-mac__screen {
+      background: #000;
+      border-radius: 3% 3% 0.5% 0.5% / 5%;
+      margin: 0 auto;
+      position: relative;
+      width: 80%;
+    }
+    
+    .mockup-mac__screen::before {
+      border: 2px solid #cacacc;
+      border-radius: 3% 3% 0.5% 0.5% / 5%;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.8) inset, 0 0 1px 2px rgba(255,255,255,0.3) inset;
+      content: "";
+      display: block;
+      padding-top: 67%;
+    }
+    
+    .mockup-mac__viewport {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: 4.3% 3.2%;
+      background: #f5f5f5;
+      overflow: hidden;
+    }
+    
+    /* Scrollable content */
+    .project-card__image--mac .project-card__image-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 155%;
+      transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+    
+    .project-card__image--mac .project-card__image-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    
+    /* Scroll on hover */
+    .project-card:hover .project-card__image--mac .project-card__image-inner {
+      transform: translateY(-35%);
+    }
+    
+    .mockup-mac__base {
+      position: relative;
+      width: 100%;
+    }
+    
+    .mockup-mac__base::before {
+      content: "";
+      display: block;
+      padding-top: 3.3%;
+      background: linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0,0,0,.01) 98%);
+      border-radius: 0 0 10% 10% / 0 0 50% 50%;
+    }
+    
+    .mockup-mac__notch {
+      position: relative;
+      background: #ddd;
+      border-radius: 0 0 7% 7% / 0 0 95% 95%;
+      box-shadow: -5px -1px 3px rgba(0,0,0,0.2) inset, 5px -1px 3px rgba(0,0,0,0.2) inset;
+      margin: -3.5% auto 0;
+      z-index: 2;
+      width: 14%;
+    }
+    
+    .mockup-mac__notch::before {
+      content: "";
+      display: block;
+      padding-top: 10%;
+    }
+    
+    /* Card Body */
+    .project-card__body {
+      padding: 24px;
+    }
+    
+    .project-card__title {
+      font-family: 'Libre Baskerville', Georgia, serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+    
+    .project-card__desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    
+    .project-card__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .project-card__tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      background: #f0f0f0;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #555;
+    }
+    
+    .project-card__arrow {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+      border-radius: 50%;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    
+    .project-card:hover .project-card__arrow {
+      background: #001666;
+      transform: translateX(4px);
+    }
+    
+    .project-card:hover .project-card__arrow svg {
+      stroke: #fff;
+    }
+    
+    .project-card__arrow svg {
+      width: 16px;
+      height: 16px;
+      stroke: #333;
+      stroke-width: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- TIA CARD - MacBook -->
+    <a href="works/tiaa.html" class="project-card">
+      <div class="project-card__image--mac">
+        <div class="mockup-mac">
+          <div class="mockup-mac__screen">
+            <div class="mockup-mac__viewport">
+              <div class="project-card__image-inner">
+                <img src="assets/images/tia%20home.png" alt="There Is An Alternative — Career Platform" />
+              </div>
+            </div>
+          </div>
+          <div class="mockup-mac__base"></div>
+          <div class="mockup-mac__notch"></div>
+        </div>
+      </div>
+      <div class="project-card__body">
+        <h3 class="project-card__title">There Is An Alternative – Career Platform</h3>
+        <p class="project-card__desc">UX e layout per piattaforma career media: esplorazione aziende con contenuti immersivi e job discovery.</p>
+        <div class="project-card__bottom">
+          <div class="project-card__tags">
+            <span class="tag">UI Design</span>
+            <span class="tag">Product Design</span>
+          </div>
+          <div class="project-card__arrow">
+            <svg viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+  </div>
+</body>
+</html>

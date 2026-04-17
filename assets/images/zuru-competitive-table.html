@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zuru Competitive Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #EDECEA;
+      --card: #FFFFFF;
+      --card2: #F6F5F3;
+      --red: #E5173F;
+      --green: #34C759;
+      --yellow: #FF9F0A;
+      --t1: #1C1C1E;
+      --t2: #6C6C70;
+      --t3: #AEAEB2;
+      --border: rgba(0,0,0,0.08);
+      --shadow: 0 2px 12px rgba(0,0,0,0.07);
+      --font: 'Manrope', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      padding: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: var(--shadow);
+      max-width: 1400px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--t1);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--t2);
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 500;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+
+    th, td {
+      padding: 18px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      font-weight: 700;
+      color: var(--t1);
+      background: var(--card2);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    th:first-child {
+      border-radius: 12px 0 0 0;
+    }
+
+    th:last-child {
+      border-radius: 0 12px 0 0;
+    }
+
+    td {
+      font-size: 15px;
+      color: var(--t2);
+      font-weight: 500;
+    }
+
+    td:first-child {
+      font-weight: 700;
+      color: var(--t1);
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+      min-width: 80px;
+    }
+
+    .tag.yes {
+      background: rgba(52,199,89,0.15);
+      color: var(--green);
+    }
+
+    .tag.no {
+      background: rgba(229,23,63,0.09);
+      color: var(--red);
+    }
+
+    .tag.partial {
+      background: rgba(255,159,10,0.15);
+      color: var(--yellow);
+    }
+
+    /* Highlight Zuru column */
+    th:last-child,
+    td:last-child {
+      background: rgba(229,23,63,0.03);
+      font-weight: 700;
+    }
+
+    th:last-child {
+      color: var(--red);
+      background: rgba(229,23,63,0.08);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vantaggio Competitivo di Zuru</h1>
+    <p class="subtitle">L'unico che parte già con il digital twin della casa</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Tesla</th>
+          <th>Loxone</th>
+          <th>Josh.ai</th>
+          <th>Google Home</th>
+          <th>Apple Home</th>
+          <th>Zuru</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Digital twin casa</td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag partial">Parziale</span></td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag yes">Nativo</span></td>
+        </tr>
+        <tr>
+          <td>Lista dispositivi UI</td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag partial">Secondaria</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag yes">Sì</span></td>
+        </tr>
+        <tr>
+          <td>Controllo angolo/%</td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag partial">Dipende HW</span></td>
+          <td><span class="tag partial">Dipende HW</span></td>
+          <td><span class="tag partial">Dipende HW</span></td>
+          <td><span class="tag yes">HW proprio</span></td>
+        </tr>
+        <tr>
+          <td>Timer durata limitata</td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag partial">Workaround</span></td>
+          <td><span class="tag partial">Workaround</span></td>
+          <td><span class="tag yes">Progettato</span></td>
+        </tr>
+        <tr>
+          <td>Setup senza tecnico</td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag yes">Core</span></td>
+        </tr>
+        <tr>
+          <td>Ecosistema aperto</td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag partial">Parziale</span></td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag yes">Sì</span></td>
+          <td><span class="tag no">No</span></td>
+          <td><span class="tag yes">Opportunità</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
