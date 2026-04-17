@@ -1323,16 +1323,16 @@ p {
 }
 
 @media (max-width: 768px) {
-  :root { --gap: 80px; }
+  :root { --gap: 48px; --gap-md: 64px; --gap-sm: 32px; }
   .container { padding: 0 24px; }
   .nav { padding: 20px 24px; }
   .nav__right li:first-child { display: none; }
-  .hero { padding: 100px 24px 60px; }
+  .hero { padding: 80px 24px 40px; }
   .hero__float--1, .hero__float--2 { width: 140px; height: 170px; }
   .hero__float--3, .hero__float--4 { display: none; }
   .projects-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
-  .about { margin: 0 16px; padding: 48px 32px; }
+  .about { margin: 0 16px; padding: 32px 24px; }
   .case-meta { grid-template-columns: repeat(2, 1fr); }
   .case-body { padding: var(--gap-sm) 24px; }
   .case-cover { margin: 0 16px; }
