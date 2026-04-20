@@ -121,6 +121,20 @@
     .footer            { background: #16132a !important; border-top: 1px solid rgba(255,255,255,0.06) !important; }
     .footer__logo      { font-family: 'gunter', sans-serif !important; font-style: normal !important; font-size: 28px !important; color: #C6F135 !important; }
     .footer__copy      { color: #555552 !important; }
+
+    /* Desktop mockup */
+    .lms-mockup-wrap { display:flex; justify-content:center; align-items:flex-end; padding:0 24px; margin:40px 40px 0; overflow:visible; }
+    .lms-desktop { display:flex; flex-direction:column; align-items:center; transform:perspective(1200px) rotateY(-4deg) rotateX(2deg); transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .lms-desktop:hover { transform:perspective(1200px) rotateY(0deg) rotateX(0deg); }
+    .lms-frame { width:min(780px,90vw); background:#1c1c1e; border-radius:14px; overflow:hidden; box-shadow:0 0 0 1px #a0a0a8,0 0 0 7px #c8c8cc,0 0 0 8px #8e8e93,0 40px 80px -20px rgba(0,0,0,0.55); }
+    .lms-topbar { background:#2a2a2e; padding:10px 16px; display:flex; align-items:center; gap:12px; }
+    .lms-dots { display:flex; gap:6px; }
+    .lms-dot { width:12px; height:12px; border-radius:50%; }
+    .lms-dot.red { background:#ff5f57; } .lms-dot.yellow { background:#febc2e; } .lms-dot.green { background:#28c840; }
+    .lms-url { flex:1; background:#1c1c1e; border-radius:6px; padding:4px 12px; font-size:12px; color:#888; text-align:center; }
+    .lms-screen img { width:100%; display:block; }
+    .lms-stand-neck { width:80px; height:40px; background:linear-gradient(to bottom,#c8c8cc,#a0a0a8); margin:0 auto; clip-path:polygon(20% 0%,80% 0%,100% 100%,0% 100%); }
+    .lms-stand-base { width:200px; height:12px; background:linear-gradient(to bottom,#c0c0c4,#a0a0a4); border-radius:6px; margin:0 auto; }
   </style>
 </head>
 <body>
@@ -266,6 +280,23 @@
   <!-- Image: home logout -->
   <div class="case-full-image img-reveal">
     <img src="../assets/images/home log out.png" alt="Screenshot — Home logout Leone Master School" />
+  </div>
+
+  <!-- Desktop mockup: home logout -->
+  <div class="lms-mockup-wrap img-reveal">
+    <div class="lms-desktop">
+      <div class="lms-frame">
+        <div class="lms-topbar">
+          <div class="lms-dots"><span class="lms-dot red"></span><span class="lms-dot yellow"></span><span class="lms-dot green"></span></div>
+          <div class="lms-url">leonemasterschool.com</div>
+        </div>
+        <div class="lms-screen">
+          <img src="../assets/images/mockuplmsscreen.webp" alt="Leone Master School — Home" loading="lazy" draggable="false" />
+        </div>
+      </div>
+      <div class="lms-stand-neck"></div>
+      <div class="lms-stand-base"></div>
+    </div>
   </div>
 
   <div class="case-body">
