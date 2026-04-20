@@ -2,9 +2,573 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0;url=index-dark.html" />
-  <script>window.location.replace('index-dark.html')</script>
-  <title>Bruno Lorenzon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruno Lorenzon — UX & Product Designer</title>
+  <meta name="description" content="Bruno Lorenzon — Mid-level UX & Product Designer. Esperienze digitali e prodotti educativi." />
+  <link rel="stylesheet" href="css/style.css?v=9" />
+  <!-- Adobe Fonts — sostituisci KITID con il tuo codice da fonts.adobe.com/web_projects -->
+  <link rel="stylesheet" href="https://use.typekit.net/rhk6dpu.css" />
+  <style>
+    /* ══════════════════════════════════════
+       DARK VERSION — proof of concept
+       ══════════════════════════════════════ */
+
+    /* Override variabili globali */
+    :root {
+      --cream:     #0e0c18;
+      --cream-2:   #16132a;
+      --cream-3:   #1e1a32;
+      --navy:      #ffffff;
+      --black:     #f0ede8;
+      --gray:      #888884;
+      --gray-light:#333330;
+      --dark-bg:   #C6F135;
+      --font-display: 'gunter', sans-serif;
+      --accent:       #C6F135;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    body {
+      background-color: #0e0c18;
+      background-image:
+        radial-gradient(ellipse 80% 55% at 50% -5%, rgba(97,53,241,0.45) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 30% at 80% 90%, rgba(97,53,241,0.18) 0%, transparent 60%);
+      color: #f0ede8;
+    }
+
+    /* h1 → Gunter + lime */
+    h1 {
+      font-family: 'gunter', sans-serif !important;
+      color: #C6F135 !important;
+      font-style: normal !important;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+    /* h2, h3 → Gunter + lime */
+    h2, h3 {
+      font-family: 'gunter', sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400;
+      color: #C6F135 !important;
+    }
+    /* card progetto — sfondo che risalta */
+    .project-card {
+      background: #2a2448 !important;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.10), 0 12px 40px rgba(0,0,0,0.5) !important;
+      transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+    }
+    .project-card:hover {
+      box-shadow: 0 0 0 1.5px rgba(198,241,53,0.45), 0 16px 48px rgba(0,0,0,0.6) !important;
+    }
+    .project-card__desc { color: #888884 !important; }
+
+    /* card progetto → DM Sans originale */
+    .project-card__title {
+      font-family: var(--font-sans) !important;
+      font-style: normal !important;
+      color: #ffffff !important;
+    }
+
+    /* Nav */
+    .nav {
+      background: rgba(10, 10, 10, 0.85);
+      border-bottom-color: rgba(255,255,255,0.08);
+    }
+    .nav.scrolled {
+      background: rgba(10, 10, 10, 0.95);
+    }
+    .nav__link { color: #a0a09a; }
+    .nav__link:hover { color: #ffffff; }
+    .nav__logo {
+      font-family: 'gunter', sans-serif !important;
+      font-style: normal !important;
+    }
+    .nav__logo-top {
+      font-weight: 700 !important;
+      font-style: normal !important;
+      color: #C6F135;
+    }
+    .nav__logo-bottom {
+      font-weight: 400 !important;
+      font-style: normal !important;
+      color: #C6F135;
+      opacity: 0.6;
+    }
+
+    /* Hero */
+    .hero {
+      background:
+        radial-gradient(ellipse 100% 80% at 50% 0%, rgba(97,53,241,0.42) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 50% 50%, rgba(97,53,241,0.12) 0%, transparent 70%),
+        #0e0c18;
+    }
+    .hero__title { color: #ffffff; }
+    .hero__subtitle {
+      color: #888884;
+    }
+    .hero__subtitle em,
+    .hero__subtitle strong {
+      color: #ffffff;
+      font-style: normal;
+    }
+    .hero__eyebrow { fill: none; }
+    .hero__eyebrow text { fill: #ffffff !important; }
+    .hero__eyebrow textPath { fill: #ffffff !important; }
+    .hero__cta {
+      background: #C6F135;
+      color: #0a0a0a;
+    }
+    .hero__cta:hover {
+      background: #d4ff50;
+    }
+
+    /* Floating cards */
+    .hero__float { background: #1a1a1a; border-color: rgba(255,255,255,0.08); }
+
+    /* Sneak track */
+    .sneak { background: #0e0c18; }
+    .sneak__title { color: #ffffff; }
+    .sneak__item { background: #16132a; }
+
+    /* Section headers / labels */
+    .section-label,
+    .section__eyebrow,
+    .projects__label { color: #555552; }
+
+    /* Works section — gradient lungo la sezione */
+    .works-section {
+      background:
+        radial-gradient(ellipse 100% 60% at 50% 30%, rgba(97,53,241,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 50% at 50% 80%, rgba(97,53,241,0.14) 0%, transparent 60%),
+        #0e0c18;
+    }
+    .works-section__title { color: #C6F135 !important; }
+    .works-section__sub   { color: #888884 !important; }
+
+    /* About card — "Ciao, sono Bruno" */
+    .about {
+      background: #16132a !important;
+      border: 1px solid rgba(97,53,241,0.3) !important;
+      box-shadow: 0 0 60px rgba(97,53,241,0.12) !important;
+    }
+    .about__eyebrow { color: #C6F135 !important; }
+    .about__title   { color: #ffffff !important; }
+    .about__text    { color: #888884 !important; }
+    .about__cta {
+      background: rgba(198,241,53,0.12) !important;
+      color: #C6F135 !important;
+      border: 1px solid rgba(198,241,53,0.25) !important;
+    }
+    .about__cta:hover {
+      background: rgba(198,241,53,0.20) !important;
+    }
+
+    /* Cosa porto al tavolo */
+    .value {
+      background:
+        radial-gradient(ellipse 80% 70% at 50% 50%, rgba(97,53,241,0.22) 0%, transparent 65%),
+        #0e0c18;
+    }
+    .value__title { color: #C6F135 !important; }
+    .value__sub   { color: #888884 !important; }
+    .value__tag   {
+      background: rgba(198,241,53,0.08) !important;
+      color: #C6F135 !important;
+      border: 1px solid rgba(198,241,53,0.2);
+    }
+
+    /* Costruiamo qualcosa di straordinario */
+    .contact {
+      background:
+        radial-gradient(ellipse 90% 60% at 50% 100%, rgba(97,53,241,0.28) 0%, transparent 65%),
+        #0e0c18;
+    }
+    .contact__label { color: #555552; }
+    .contact__title { color: #ffffff !important; }
+    .contact__sub   { color: #888884 !important; }
+    .contact__link-item {
+      background: #16132a !important;
+      border-color: rgba(255,255,255,0.08) !important;
+      color: #f0ede8 !important;
+    }
+    .contact__link-item:hover {
+      background: rgba(198,241,53,0.10) !important;
+      border-color: rgba(198,241,53,0.3) !important;
+      color: #C6F135 !important;
+    }
+
+    /* Filters */
+    .filter-btn {
+      border-color: rgba(255,255,255,0.22) !important;
+      color: #c8c8c4 !important;
+      background: transparent !important;
+    }
+    .filter-btn:hover {
+      border-color: rgba(198,241,53,0.5) !important;
+      color: #C6F135 !important;
+      background: transparent !important;
+    }
+    .filter-btn.active {
+      background: #C6F135 !important;
+      color: #0e0c18 !important;
+      border-color: #C6F135 !important;
+      font-weight: 700 !important;
+    }
+
+    /* Tag outline */
+    .tag--outline {
+      border-color: rgba(255,255,255,0.15);
+      color: #555552;
+      color: #888884;
+    }
+
+    /* Scroll indicator */
+    .scroll-line { background: rgba(255,255,255,0.15); }
+
+    /* Footer logo — identico al nav */
+    .footer__logo { font-family: 'gunter', sans-serif !important; font-size: 17px !important; font-style: normal !important; color: #C6F135 !important; }
+    .footer__logo-top { display: block; font-weight: 700 !important; font-style: normal !important; color: #C6F135 !important; }
+    .footer__logo-bottom { display: block; font-weight: 400 !important; font-style: normal !important; color: #C6F135 !important; opacity: 0.6; }
+    .footer__copy { color: #555552 !important; }
+
+    /* Project cards — miglioro contrasto */
+    .project-card {
+      background: #16132a;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .project-card:hover {
+      border-color: rgba(198,241,53,0.3);
+    }
+    /* (già gestito sopra) */
+    .project-card__desc {
+      color: #888884 !important;
+    }
+    .project-card__arrow {
+      color: #C6F135;
+    }
+    .tag {
+      background: rgba(198,241,53,0.10);
+      color: #C6F135;
+    }
+    .tag--outline {
+      border-color: rgba(255,255,255,0.15);
+      color: #555552;
+    }
+  </style>
 </head>
-<body></body>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="nav">
+    <ul class="nav__links nav__left">
+      <li><a href="works-dark.html" class="nav__link">Works</a></li>
+    </ul>
+
+    <a href="index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
+
+    <ul class="nav__links nav__right">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__floats">
+      <div class="hero__float hero__float--1">
+        <div class="float-pulse">
+          <img src="assets/images/brunoherohome.webp" alt="" onerror="this.closest('.hero__float').style.background='#e0deda'" />
+        </div>
+      </div>
+      <div class="hero__float hero__float--2">
+        <div class="float-pulse">
+          <img src="assets/images/floathero2.webp" alt="" onerror="this.closest('.hero__float').style.background='#cadcfc'" />
+        </div>
+      </div>
+      <div class="hero__float hero__float--3">
+        <div class="float-pulse">
+          <img src="assets/images/float3.webp" alt="" onerror="this.closest('.hero__float').style.background='#ebe9e4'" />
+        </div>
+      </div>
+      <div class="hero__float hero__float--4">
+        <div class="float-pulse">
+          <img src="assets/images/lmspalariccione.webp" alt="" onerror="this.closest('.hero__float').style.background='#1a1830'" />
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__copy">
+      <svg class="hero__eyebrow" viewBox="0 0 300 82" xmlns="http://www.w3.org/2000/svg" aria-label="This is Bruno">
+        <defs>
+          <path id="eyebrow-curve" d="M 10,75 A 310,310 0 0,1 290,75" fill="none"/>
+        </defs>
+        <text fill="#ffffff" style="fill: #ffffff !important;">
+          <textPath fill="#ffffff" style="fill: #ffffff !important;" href="#eyebrow-curve" startOffset="50%" text-anchor="middle">This is Bruno</textPath>
+        </text>
+      </svg>
+      <h1 class="hero__title fade-up fade-up-delay-1">UX &amp;<br>Product Designer</h1>
+      <p class="hero__subtitle fade-up fade-up-delay-2">Design sistemico + AI workflow — dalla ricerca al prodotto scalabile.</p>
+      <a href="works-dark.html" class="hero__cta fade-up fade-up-delay-3">
+        Vedi i progetti
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== SNEAK PEAK ===================== -->
+  <section class="sneak">
+    <div class="sneak__label">
+      <div class="sneak__icon">🔭</div>
+      <h2 class="sneak__title">Sneak peak dei miei lavori</h2>
+    </div>
+    <div class="sneak__track-wrapper">
+      <div class="sneak__track">
+        <!-- First set -->
+        <div class="sneak__item"><img src="assets/images/herozuru.webp" alt="Zuru Smart Home" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/HERO.webp" alt="Leone Master School" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/herocolosseum.webp" alt="Colosseum Luxury Suite" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/hero treedom.avif" alt="Treedom" style="width:100%;height:100%;object-fit:cover;object-position:top center;" /></div>
+        <div class="sneak__item"><img src="assets/images/tiacard.avif" alt="There Is An Alternative" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/dszuru.avif" alt="Zuru Design System" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/rentallhero.webp" alt="RentAll" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/mockup suite.webp" alt="Colosseum Suite" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <!-- Duplicate for infinite loop -->
+        <div class="sneak__item"><img src="assets/images/herozuru.webp" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/HERO.webp" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/herocolosseum.webp" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/hero treedom.avif" alt="" style="width:100%;height:100%;object-fit:contain;background:#0e1a0e;" /></div>
+        <div class="sneak__item"><img src="assets/images/tiacard.avif" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/dszuru.avif" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/rentallhero.webp" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+        <div class="sneak__item"><img src="assets/images/mockup suite.webp" alt="" style="width:100%;height:100%;object-fit:cover;" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORKS PREVIEW ===================== -->
+  <section class="works-section">
+    <div class="container">
+      <div class="works-section__header">
+        <h2 class="works-section__title">Design in azione</h2>
+        <p class="works-section__sub fade-up fade-up-delay-1">Piattaforme digitali, app, e-learning e strategie UX che producono risultati reali.</p>
+      </div>
+
+      <div class="filters fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="product">Product Design</button>
+        <button class="filter-btn" data-filter="ux-research">UX Research</button>
+        <button class="filter-btn" data-filter="elearning">E-learning</button>
+        <button class="filter-btn" data-filter="ui">UI Design</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 1. Zuru Tech -->
+        <a href="works/zuru-dark.html" class="project-card card-reveal card-reveal-delay-1" data-categories="product ux-research ui">
+          <div class="project-card__image">
+            <img src="assets/images/herozuru.webp" alt="Zuru Tech — Smart Home App" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Zuru Tech – Smart Home App</h3>
+            <p class="project-card__desc">App di automazione domestica con digital twin nativo: controllo granulare finestre, luci e clima senza la complessità di Google Home.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">UX Research</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. RentAll -->
+        <a href="works/rentall-dark.html" class="project-card card-reveal card-reveal-delay-2" data-categories="product ux-research">
+          <div class="project-card__image">
+            <img src="assets/images/rentallhero.webp" alt="RentAll — P2P Rental App" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">RentAll – P2P Rental App</h3>
+            <p class="project-card__desc">App di noleggio peer-to-peer progettata con design thinking: ricerca utenti, analisi competitor, prototipazione e test.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">Product Design</span>
+                <span class="tag">UX Research</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. Leone Master -->
+        <a href="works/leone-master-dark.html" class="project-card card-reveal card-reveal-delay-3" data-categories="elearning product ui">
+          <div class="project-card__image">
+            <img src="assets/images/HERO.webp" alt="Leone Master School" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Leone Master School – Platform UX</h3>
+            <p class="project-card__desc">Redesign completo della piattaforma e-learning: onboarding, homepage personalizzata, architettura contenuti e UX mobile.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">E-learning</span>
+                <span class="tag">Product Design</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. There Is An Alternative -->
+        <a href="works/tiaa-dark.html" class="project-card card-reveal card-reveal-delay-3" data-categories="product ui">
+          <div class="project-card__image">
+            <img src="assets/images/tiacard.avif" alt="There Is An Alternative — Career Platform" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">There Is An Alternative – Career Platform</h3>
+            <p class="project-card__desc">UX e layout per piattaforma career media: esplorazione aziende con contenuti immersivi e job discovery.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UI Design</span>
+                <span class="tag">Product Design</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4. Colosseum -->
+        <a href="works/colosseum-dark.html" class="project-card card-reveal card-reveal-delay-4" data-categories="ui product">
+          <div class="project-card__image">
+            <img src="assets/images/herocolosseum.webp" alt="Colosseum Luxury Suite" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Colosseum Luxury Suite – Website</h3>
+            <p class="project-card__desc">Sito per affitti brevi ottimizzato per conversione: struttura, CTA, contenuti e miglioramenti di performance.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UI Design</span>
+                <span class="tag">UX/CRO</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5. Adecco Gen Z -->
+        <a href="works/adecco-dark.html" class="project-card card-reveal card-reveal-delay-5" data-categories="ux-research product">
+          <div class="project-card__image">
+            <img src="assets/images/adeccogenzcard.webp" alt="Adecco Gen Z" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Adecco Gen Z – Engagement Platform</h3>
+            <p class="project-card__desc">Engagement Gen Z: ricerca utenti, persona, contenuti editoriali e strategia digitale per registrazioni e upload CV.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UX Research</span>
+                <span class="tag">Strategy</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6. Treedom -->
+        <a href="works/treedom-dark.html" class="project-card card-reveal card-reveal-delay-6" data-categories="product ui">
+          <div class="project-card__image">
+            <img src="assets/images/hero treedom.avif" alt="Treedom — UX Concept" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;" />
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Treedom – UX Concept & Experience</h3>
+            <p class="project-card__desc">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità.</p>
+            <div class="project-card__bottom">
+              <div class="project-card__tags">
+                <span class="tag">UX Concept</span>
+                <span class="tag">Storytelling</span>
+              </div>
+              <div class="project-card__arrow">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALUE ===================== -->
+  <section class="value" id="value">
+    <!-- Floating tags injected by JS -->
+    <div class="value__floats" aria-hidden="true"></div>
+    <!-- Center content -->
+    <div class="value__center">
+      <div class="value__icon">🛸</div>
+      <h2 class="value__title">Cosa metto<br>in tavola</h2>
+      <p class="value__sub">Esperienze digitali che coinvolgono gli utenti<br>e aiutano i prodotti a crescere davvero.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" style="padding: 0 0 var(--gap);">
+    <div class="about fade-up">
+      <div class="about__content">
+        <p class="about__eyebrow">Behind the canvas</p>
+        <h2 class="about__title">Ciao,<br>sono Bruno</h2>
+        <p class="about__text">
+          Sono il tipo che ferma la riunione quando si salta la ricerca. Lavoro su prodotti complessi — dall'architettura al visual — con un processo sistematico e workflow AI che tagliano i tempi senza tagliare la qualità del pensiero.
+          Ho imparato che i problemi di design più difficili non sono mai di design. Sono di chiarezza, di contesto, di chi parla con chi. Il mio lavoro è capire tutto questo prima di aprire Figma.
+        </p>
+        <a href="#contact" class="about__cta">
+          Parliamo
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="about__photo">
+        <img src="assets/images/brunoherohome.webp" alt="Bruno Lorenzon" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact__icon fade-up">📬</div>
+      <h2 class="contact__title">Costruiamo qualcosa<br>di straordinario?</h2>
+      <p class="contact__sub fade-up fade-up-delay-1">Sono disponibile per collaborazioni, freelance e opportunità full-time.</p>
+
+      <div class="contact__links fade-up fade-up-delay-2">
+        <a href="mailto:lorenzonbruno93@gmail.com" class="contact__link-item">
+          <span class="contact__link-label">Email</span>
+          <span class="contact__link-value">lorenzonbruno93@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/lorenzonstudio/" target="_blank" class="contact__link-item">
+          <span class="contact__link-label">LinkedIn</span>
+          <span class="contact__link-value">linkedin.com/in/lorenzonstudio</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__logo"><span class="footer__logo-top">Bruno</span><span class="footer__logo-bottom">Lorenzon</span></div>
+    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+  </footer>
+
+  <script src="js/main.js?v=6"></script>
+</body>
 </html>
