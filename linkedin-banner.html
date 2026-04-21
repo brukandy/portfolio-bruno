@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Banner — Bruno Lorenzon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/rhk6dpu.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .banner {
+      width: 1584px;
+      height: 396px;
+      background: #2a3132;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    /* ── Background texture dots ── */
+    .banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, #f8f6f3 1px, transparent 1px);
+      background-size: 28px 28px;
+      opacity: 0.04;
+    }
+
+    /* ── Left accent bar ── */
+    .banner__accent {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 6px;
+      background: #C6F135;
+    }
+
+    /* ── Main content ── */
+    .banner__content {
+      position: relative;
+      z-index: 2;
+      padding: 0 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    /* ── Left: name block ── */
+    .banner__left {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .banner__eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C6F135;
+      margin-bottom: 12px;
+    }
+
+    .banner__name {
+      font-family: 'gunter', sans-serif;
+      font-style: normal;
+      font-size: 96px;
+      line-height: 0.95;
+      color: #C6F135;
+      letter-spacing: -2px;
+    }
+
+    .banner__name span {
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    /* ── Divider ── */
+    .banner__divider {
+      width: 1px;
+      height: 200px;
+      background: rgba(255,255,255,0.12);
+      flex-shrink: 0;
+    }
+
+    /* ── Right: info block ── */
+    .banner__right {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      max-width: 480px;
+    }
+
+    .banner__role {
+      font-family: 'gunter', sans-serif;
+      font-style: normal;
+      font-size: 32px;
+      color: #f8f6f3;
+      line-height: 1.2;
+    }
+
+    .banner__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .banner__tag {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #f8f6f3;
+      background: rgba(255,255,255,0.08);
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .banner__tag--accent {
+      color: #2a3132;
+      background: #C6F135;
+      border-color: #C6F135;
+    }
+
+    .banner__url {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(248,246,243,0.5);
+      letter-spacing: 0.3px;
+    }
+
+    .banner__url strong {
+      color: #C6F135;
+      font-weight: 700;
+    }
+
+    /* ── Decorative circle ── */
+    .banner__deco {
+      position: absolute;
+      right: -60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.06);
+      pointer-events: none;
+    }
+    .banner__deco-2 {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.04);
+      pointer-events: none;
+    }
+
+    /* ── Curved "This is Bruno" SVG ── */
+    .banner__curved {
+      position: absolute;
+      bottom: 24px;
+      left: 72px;
+    }
+
+    .banner__curved text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: rgba(255,255,255,0.2);
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div class="banner__accent"></div>
+
+    <!-- Decorative circles -->
+    <div class="banner__deco"></div>
+    <div class="banner__deco-2"></div>
+
+    <!-- Curved label bottom-left -->
+    <svg class="banner__curved" width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <path id="curve" d="M 10,50 A 200,200 0 0,1 190,50" fill="none"/>
+      </defs>
+      <text>
+        <textPath href="#curve" startOffset="50%" text-anchor="middle">This is Bruno · 2026</textPath>
+      </text>
+    </svg>
+
+    <div class="banner__content">
+      <!-- LEFT -->
+      <div class="banner__left">
+        <h1 class="banner__name">Bruno<br>Lorenzon</h1>
+      </div>
+
+      <!-- DIVIDER -->
+      <div class="banner__divider"></div>
+
+      <!-- RIGHT -->
+      <div class="banner__right">
+        <p class="banner__role">UX Designer + AI workflow<br>Dalla ricerca al prodotto scalabile.</p>
+
+        <div class="banner__tags">
+          <span class="banner__tag">UX Research</span>
+          <span class="banner__tag">Product Design</span>
+          <span class="banner__tag">UI Design</span>
+          <span class="banner__tag">E-learning</span>
+          <span class="banner__tag banner__tag--accent">CRO</span>
+        </div>
+
+        <p class="banner__url">brunolorenzon.com &nbsp;·&nbsp; <strong>AI workflow + Design sistemico</strong></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
