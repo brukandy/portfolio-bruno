@@ -45,6 +45,8 @@
     .nav, .nav.scrolled { background: rgba(14,12,24,0.95) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
     .nav__link { color: #a0a09a; }
     .nav__link:hover { color: #ffffff; }
+    .lang-toggle { border-color: rgba(255,255,255,0.2) !important; color: #a0a09a !important; }
+    .lang-toggle:hover { border-color: #C6F135 !important; color: #C6F135 !important; }
     .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
     .nav__logo-top { color: #C6F135; font-weight: 700 !important; font-style: normal !important; }
     .nav__logo-bottom { color: #C6F135; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
@@ -611,14 +613,15 @@
   <nav class="nav scrolled" id="nav">
     <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
     <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
-    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
+    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li><li><button id="lang-toggle" class="nav__link lang-toggle" aria-label="Switch language">EN</button></li></ul>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- ── HERO ── -->
   <div class="case-hero">
-    <p class="case-hero__eyebrow fade-up">UX/UI Design · CRO · Web Optimization</p>
-    <h1 class="case-hero__title fade-up fade-up-delay-1">Da sito vetrina<br>a macchina di conversione</h1>
-    <p class="case-hero__desc fade-up fade-up-delay-2">Ottimizzazione completa di un property website per affitti brevi di lusso a Roma: architettura informativa, conversion rate optimization e analisi comportamentale con dati reali.</p>
+    <p class="case-hero__eyebrow fade-up" data-i18n="cls.hero.eyebrow">UX/UI Design · CRO · Web Optimization</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1" data-i18n="cls.hero.title">Da sito vetrina<br>a macchina di conversione</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2" data-i18n="cls.hero.desc">Ottimizzazione completa di un property website per affitti brevi di lusso a Roma: architettura informativa, conversion rate optimization e analisi comportamentale con dati reali.</p>
     <div class="case-hero__tags fade-up fade-up-delay-3">
       <span class="tag">UX/UI Design</span>
       <span class="tag tag--outline">CRO</span>
@@ -636,29 +639,29 @@
   <div class="case-body">
     <div class="case-meta fade-up">
       <div class="case-meta__item">
-        <div class="case-meta__label">Cliente</div>
+        <div class="case-meta__label" data-i18n="cs.client">Cliente</div>
         <div class="case-meta__value">Colosseum Luxury Suite</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__label" data-i18n="cs.role">Ruolo</div>
         <div class="case-meta__value">UX/UI Designer · Developer</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Anno</div>
+        <div class="case-meta__label" data-i18n="cs.year">Anno</div>
         <div class="case-meta__value">2024</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Strumenti</div>
+        <div class="case-meta__label" data-i18n="cs.tools">Strumenti</div>
         <div class="case-meta__value">Figma · Framer · React JSX · GA4 · Clarity</div>
       </div>
     </div>
 
     <!-- ── 01 — IL CONTESTO ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">01 — Il Contesto</p>
-      <h2 class="case-section__heading fade-up">Un sito di lusso senza<br>una strategia di conversione</h2>
-      <p class="case-section__text fade-up">Colosseum Luxury Suite è una struttura ricettiva di lusso situata a pochi passi dal Colosseo, con due appartamenti distinti: <strong>Suite 26</strong> e <strong>Suite 41</strong>. Il sito era costruito su un template Framer e funzionava come semplice vetrina, senza una strategia di conversione definita.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">Il problema principale: i potenziali ospiti arrivavano sul sito ma non avevano abbastanza informazioni per prendere una decisione d'acquisto. Non esistevano pagine dedicate alle singole suite, mancavano elementi di trust, e i call to action erano generici e poco visibili.</p>
+      <p class="case-section__title fade-up" data-i18n="cls.ctx.t">01 — Il Contesto</p>
+      <h2 class="case-section__heading fade-up" data-i18n="cls.ctx.h">Un sito di lusso senza<br>una strategia di conversione</h2>
+      <p class="case-section__text fade-up" data-i18n="cls.ctx.p1">Colosseum Luxury Suite è una struttura ricettiva di lusso situata a pochi passi dal Colosseo, con due appartamenti distinti: <strong>Suite 26</strong> e <strong>Suite 41</strong>. Il sito era costruito su un template Framer e funzionava come semplice vetrina, senza una strategia di conversione definita.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="cls.ctx.p2">Il problema principale: i potenziali ospiti arrivavano sul sito ma non avevano abbastanza informazioni per prendere una decisione d'acquisto. Non esistevano pagine dedicate alle singole suite, mancavano elementi di trust, e i call to action erano generici e poco visibili.</p>
     </div>
   </div>
 
@@ -670,9 +673,9 @@
   <div class="case-body">
     <!-- ── 02 — ANALISI & RICERCA ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">02 — Analisi & Ricerca</p>
-      <h2 class="case-section__heading fade-up">Tre strumenti, una diagnosi chiara</h2>
-      <p class="case-section__text fade-up">Prima di toccare il design, ho analizzato il comportamento reale degli utenti attraverso tre strumenti in combinazione: <strong>Google Search Console</strong>, <strong>GA4</strong> e <strong>Microsoft Clarity</strong>.</p>
+      <p class="case-section__title fade-up" data-i18n="cls.ana.t">02 — Analisi & Ricerca</p>
+      <h2 class="case-section__heading fade-up" data-i18n="cls.ana.h">Tre strumenti, una diagnosi chiara</h2>
+      <p class="case-section__text fade-up" data-i18n="cls.ana.p">Prima di toccare il design, ho analizzato il comportamento reale degli utenti attraverso tre strumenti in combinazione: <strong>Google Search Console</strong>, <strong>GA4</strong> e <strong>Microsoft Clarity</strong>.</p>
 
       <div class="cls-stats fade-up">
         <div class="cls-stat">
@@ -712,8 +715,8 @@
         </div>
       </div>
 
-      <p class="case-section__text fade-up" style="margin-top: 40px;"><strong>Gli utenti cercavano le suite ma non le trovavano.</strong> La heatmap Clarity mostrava che l'elemento con più clic in assoluto (8,89% del totale) era il titolo "Colosseum Luxury Suites" — gli utenti cliccavano cercando una pagina dedicata che non esisteva.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">Clarity rilevava anche un rage click del <strong>1,49%</strong> e clic non recapitabili al <strong>6,93%</strong> — segnali di frustrazione nell'interfaccia. Lo scroll depth medio si fermava al 52% con un tempo di attività di 51 secondi.</p>
+      <p class="case-section__text fade-up" style="margin-top: 40px;" data-i18n="cls.ana.p2"><strong>Gli utenti cercavano le suite ma non le trovavano.</strong> La heatmap Clarity mostrava che l'elemento con più clic in assoluto (8,89% del totale) era il titolo "Colosseum Luxury Suites" — gli utenti cliccavano cercando una pagina dedicata che non esisteva.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="cls.ana.p3">Clarity rilevava anche un rage click del <strong>1,49%</strong> e clic non recapitabili al <strong>6,93%</strong> — segnali di frustrazione nell'interfaccia. Lo scroll depth medio si fermava al 52% con un tempo di attività di 51 secondi.</p>
     </div>
   </div>
 
@@ -743,65 +746,65 @@
 
     <!-- ── 03 — PROBLEMI IDENTIFICATI ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">03 — Problemi Identificati</p>
-      <h2 class="case-section__heading fade-up">Quattro blocchi sistemici<br>alla conversione</h2>
+      <p class="case-section__title fade-up" data-i18n="cls.prob.t">03 — Problemi Identificati</p>
+      <h2 class="case-section__heading fade-up" data-i18n="cls.prob.h">Quattro blocchi sistemici<br>alla conversione</h2>
 
       <div class="cls-problems fade-up">
         <div class="cls-problem">
           <div class="cls-problem__num">01</div>
-          <div class="cls-problem__title">Nessuna pagina dedicata per le suite</div>
-          <div class="cls-problem__desc">Gli utenti cercavano una destinazione, trovavano una sezione. Nessun contesto approfondito, nessuna gallery completa, nessun pricing visibile. Il click più frequente era un link che non portava da nessuna parte.</div>
+          <div class="cls-problem__title" data-i18n="cls.prob.t1">Nessuna pagina dedicata per le suite</div>
+          <div class="cls-problem__desc" data-i18n="cls.prob.d1">Gli utenti cercavano una destinazione, trovavano una sezione. Nessun contesto approfondito, nessuna gallery completa, nessun pricing visibile. Il click più frequente era un link che non portava da nessuna parte.</div>
         </div>
         <div class="cls-problem">
           <div class="cls-problem__num">02</div>
-          <div class="cls-problem__title">Trust signals assenti o nascosti</div>
-          <div class="cls-problem__desc">Il badge Airbnb Superhost era presente ma non prominente. In hospitality di lusso la fiducia precede l'interesse — non può essere un dettaglio secondario. L'ospite deve vedere le credenziali prima ancora di leggere.</div>
+          <div class="cls-problem__title" data-i18n="cls.prob.t2">Trust signals assenti o nascosti</div>
+          <div class="cls-problem__desc" data-i18n="cls.prob.d2">Il badge Airbnb Superhost era presente ma non prominente. In hospitality di lusso la fiducia precede l'interesse — non può essere un dettaglio secondario. L'ospite deve vedere le credenziali prima ancora di leggere.</div>
         </div>
         <div class="cls-problem">
           <div class="cls-problem__num">03</div>
-          <div class="cls-problem__title">CTA generici e mal posizionati</div>
-          <div class="cls-problem__desc">I pulsanti di prenotazione non comunicavano valore e non comparivano nei momenti giusti del funnel di lettura. Un ospite che finiva di leggere non aveva un'azione ovvia da compiere.</div>
+          <div class="cls-problem__title" data-i18n="cls.prob.t3">CTA generici e mal posizionati</div>
+          <div class="cls-problem__desc" data-i18n="cls.prob.d3">I pulsanti di prenotazione non comunicavano valore e non comparivano nei momenti giusti del funnel di lettura. Un ospite che finiva di leggere non aveva un'azione ovvia da compiere.</div>
         </div>
         <div class="cls-problem">
           <div class="cls-problem__num">04</div>
-          <div class="cls-problem__title">Nessuna differenziazione tra le suite</div>
-          <div class="cls-problem__desc">Suite 26 e Suite 41 venivano presentate come varianti intercambiabili. Un ospite non aveva strumenti per capire quale fosse più adatta alle proprie esigenze — e le visite erano quasi identiche (30 vs 29).</div>
+          <div class="cls-problem__title" data-i18n="cls.prob.t4">Nessuna differenziazione tra le suite</div>
+          <div class="cls-problem__desc" data-i18n="cls.prob.d4">Suite 26 e Suite 41 venivano presentate come varianti intercambiabili. Un ospite non aveva strumenti per capire quale fosse più adatta alle proprie esigenze — e le visite erano quasi identiche (30 vs 29).</div>
         </div>
       </div>
     </div>
 
     <!-- ── 04 — LE OTTIMIZZAZIONI ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">04 — Le Ottimizzazioni</p>
-      <h2 class="case-section__heading fade-up">Quattro interventi,<br>un sistema coerente</h2>
+      <p class="case-section__title fade-up" data-i18n="cls.opt.t">04 — Le Ottimizzazioni</p>
+      <h2 class="case-section__heading fade-up" data-i18n="cls.opt.h">Quattro interventi,<br>un sistema coerente</h2>
 
       <div class="cls-opts fade-up">
         <div class="cls-opt cls-opt--dark">
           <div class="cls-opt__num">01</div>
           <div>
-            <div class="cls-opt__title">Pagine suite dedicate</div>
-            <div class="cls-opt__desc">Ho progettato e sviluppato pagine dedicate per <strong style="color:#C6F135">/suite-26</strong> e <strong style="color:#C6F135">/suite-41</strong> come componenti React JSX custom in Framer. Ogni pagina include gallery con navigazione, lista completa dei servizi, pricing, recensioni reali e doppio CTA per intercettare utenti in momenti diversi del processo decisionale.</div>
+            <div class="cls-opt__title" data-i18n="cls.opt.t1">Pagine suite dedicate</div>
+            <div class="cls-opt__desc" data-i18n="cls.opt.d1">Ho progettato e sviluppato pagine dedicate per <strong style="color:#C6F135">/suite-26</strong> e <strong style="color:#C6F135">/suite-41</strong> come componenti React JSX custom in Framer. Ogni pagina include gallery con navigazione, lista completa dei servizi, pricing, recensioni reali e doppio CTA per intercettare utenti in momenti diversi del processo decisionale.</div>
           </div>
         </div>
         <div class="cls-opt">
           <div class="cls-opt__num">02</div>
           <div>
-            <div class="cls-opt__title">Trust signals above the fold</div>
-            <div class="cls-opt__desc">Riposizionamento del badge Airbnb Superhost nella hero section con stelle e numero di recensioni visibili immediatamente. Aggiunta di una sezione posizione con mappa e distanze dai punti d'interesse principali — perché la location è il primo motivo di scelta.</div>
+            <div class="cls-opt__title" data-i18n="cls.opt.t2">Trust signals above the fold</div>
+            <div class="cls-opt__desc" data-i18n="cls.opt.d2">Riposizionamento del badge Airbnb Superhost nella hero section con stelle e numero di recensioni visibili immediatamente. Aggiunta di una sezione posizione con mappa e distanze dai punti d'interesse principali — perché la location è il primo motivo di scelta.</div>
           </div>
         </div>
         <div class="cls-opt cls-opt--dark">
           <div class="cls-opt__num">03</div>
           <div>
-            <div class="cls-opt__title">Doppio CTA strategico</div>
-            <div class="cls-opt__desc">Prenotazione diretta via <strong style="color:#C6F135">Airbnb</strong> per chi è pronto, contatto <strong style="color:#C6F135">WhatsApp</strong> per chi è ancora in fase di valutazione. I due canali intercettano momenti diversi del processo decisionale senza forzare una scelta prematura.</div>
+            <div class="cls-opt__title" data-i18n="cls.opt.t3">Doppio CTA strategico</div>
+            <div class="cls-opt__desc" data-i18n="cls.opt.d3">Prenotazione diretta via <strong style="color:#C6F135">Airbnb</strong> per chi è pronto, contatto <strong style="color:#C6F135">WhatsApp</strong> per chi è ancora in fase di valutazione. I due canali intercettano momenti diversi del processo decisionale senza forzare una scelta prematura.</div>
           </div>
         </div>
         <div class="cls-opt">
           <div class="cls-opt__num">04</div>
           <div>
-            <div class="cls-opt__title">SEO on-page</div>
-            <div class="cls-opt__desc">Ottimizzazione di meta title e description per entrambe le suite con keyword specifiche per la nicchia <em>luxury short-term rental Roma</em>. Le pagine suite dedicate creano anche superficie indicizzabile aggiuntiva che il sito precedente non aveva.</div>
+            <div class="cls-opt__title" data-i18n="cls.opt.t4">SEO on-page</div>
+            <div class="cls-opt__desc" data-i18n="cls.opt.d4">Ottimizzazione di meta title e description per entrambe le suite con keyword specifiche per la nicchia <em>luxury short-term rental Roma</em>. Le pagine suite dedicate creano anche superficie indicizzabile aggiuntiva che il sito precedente non aveva.</div>
           </div>
         </div>
       </div>
@@ -816,9 +819,9 @@
   <div class="case-body">
     <!-- ── 05 — RISULTATI ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">05 — Risultati</p>
-      <h2 class="case-section__heading fade-up">+50,9% di engagement<br>a una settimana dal lancio</h2>
-      <p class="case-section__text fade-up">A una settimana dal lancio delle ottimizzazioni i primi segnali sono positivi. I dati GA4 mostrano crescita su tutti i fronti, mentre i segnali di frustrazione rilevati da Clarity sono scomparsi completamente.</p>
+      <p class="case-section__title fade-up" data-i18n="cls.res.t">05 — Risultati</p>
+      <h2 class="case-section__heading fade-up" data-i18n="cls.res.h">+50,9% di engagement<br>a una settimana dal lancio</h2>
+      <p class="case-section__text fade-up" data-i18n="cls.res.p">A una settimana dal lancio delle ottimizzazioni i primi segnali sono positivi. I dati GA4 mostrano crescita su tutti i fronti, mentre i segnali di frustrazione rilevati da Clarity sono scomparsi completamente.</p>
 
       <!-- GA4 results -->
       <div class="cls-results fade-up">
@@ -880,7 +883,7 @@
         </div>
       </div>
 
-      <div class="cls-note fade-up">
+      <div class="cls-note fade-up" data-i18n="cls.res.note">
         <strong>Nota sui dati:</strong> i risultati sono rilevati a 7 giorni dal lancio. Google impiega 4–8 settimane per rivalutare le pagine ottimizzate — i risultati organici saranno più leggibili nel prossimo aggiornamento.
       </div>
     </div>
@@ -894,12 +897,12 @@
   <div class="case-body">
     <!-- ── 06 — RIFLESSIONI ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">06 — Riflessioni</p>
-      <h2 class="case-section__heading fade-up">L'ospite di lusso<br>non prenota d'impulso</h2>
-      <p class="case-section__text fade-up">Questo progetto ha confermato quanto l'hospitality di lusso abbia dinamiche di conversione specifiche: l'utente non prenota impulsivamente, costruisce fiducia prima ancora di raccogliere informazioni. Ogni scelta di design — dalla posizione del badge Superhost alla struttura della gallery — era orientata a supportare quel processo.</p>
+      <p class="case-section__title fade-up" data-i18n="cls.ref.t">06 — Riflessioni</p>
+      <h2 class="case-section__heading fade-up" data-i18n="cls.ref.h">L'ospite di lusso<br>non prenota d'impulso</h2>
+      <p class="case-section__text fade-up" data-i18n="cls.ref.p">Questo progetto ha confermato quanto l'hospitality di lusso abbia dinamiche di conversione specifiche: l'utente non prenota impulsivamente, costruisce fiducia prima ancora di raccogliere informazioni. Ogni scelta di design — dalla posizione del badge Superhost alla struttura della gallery — era orientata a supportare quel processo.</p>
 
       <div class="cls-quote fade-up">
-        <div class="cls-quote__text">A volte il lavoro del designer non è inventare nuovi pattern, ma ascoltare quello che gli utenti stanno già cercando di fare. Gli 8,89% di clic sul titolo erano una richiesta chiara: "dammi una pagina dedicata."</div>
+        <div class="cls-quote__text" data-i18n="cls.ref.q">A volte il lavoro del designer non è inventare nuovi pattern, ma ascoltare quello che gli utenti stanno già cercando di fare. Gli 8,89% di clic sul titolo erano una richiesta chiara: "dammi una pagina dedicata."</div>
         <div class="cls-quote__author">— Insight dalla heatmap Clarity</div>
       </div>
 
@@ -917,7 +920,7 @@
 
   <!-- ── NEXT PROJECT ── -->
   <a href="adecco-dark.html" class="case-next">
-    <p class="case-next__label">Prossimo progetto</p>
+    <p class="case-next__label" data-i18n="cs.next">Prossimo progetto</p>
     <h2 class="case-next__title">Adecco Gen Z →</h2>
   </a>
 
@@ -928,6 +931,7 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script src="../js/i18n.js"></script>
   <script>
     // Animazione staggered per cls-opt al scroll
     const opts = document.querySelectorAll('.cls-opt');

@@ -47,6 +47,8 @@
     }
     .nav__link { color: #a0a09a; }
     .nav__link:hover { color: #ffffff; }
+    .lang-toggle { border-color: rgba(255,255,255,0.2) !important; color: #a0a09a !important; }
+    .lang-toggle:hover { border-color: #C6F135 !important; color: #C6F135 !important; }
     .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
     .nav__logo-top  { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
     .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
@@ -160,14 +162,15 @@
   <nav class="nav scrolled" id="nav">
     <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
     <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
-    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
+    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li><li><button id="lang-toggle" class="nav__link lang-toggle" aria-label="Switch language">EN</button></li></ul>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- 1. HERO -->
   <div class="case-hero">
-    <p class="case-hero__eyebrow fade-up">E-learning · Product Design · UX Research</p>
-    <h1 class="case-hero__title fade-up fade-up-delay-1">Progettare un'esperienza<br>e-learning scalabile</h1>
-    <p class="case-hero__desc fade-up fade-up-delay-2">Design di una piattaforma formativa per supportare contenuti complessi, personalizzazione e crescita nel tempo</p>
+    <p class="case-hero__eyebrow fade-up" data-i18n="lm.hero.eyebrow">E-learning · Product Design · UX Research</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1" data-i18n="lm.hero.title">Progettare un'esperienza<br>e-learning scalabile</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2" data-i18n="lm.hero.desc">Design di una piattaforma formativa per supportare contenuti complessi, personalizzazione e crescita nel tempo</p>
     <div class="case-hero__tags fade-up fade-up-delay-3">
       <span class="tag">UX Research</span>
       <span class="tag tag--outline">Product Design</span>
@@ -185,7 +188,7 @@
   <div class="case-body">
     <div class="case-meta fade-up">
       <div class="case-meta__item">
-        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__label" data-i18n="cs.role">Ruolo</div>
         <div class="case-meta__value">UX / Product Designer</div>
       </div>
       <div class="case-meta__item">
@@ -193,7 +196,7 @@
         <div class="case-meta__value">Product design, UX, UI, Content architecture</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Tipo</div>
+        <div class="case-meta__label" data-i18n="cs.type">Tipo</div>
         <div class="case-meta__value">E-learning — 0 → sistema scalabile</div>
       </div>
       <div class="case-meta__item">
@@ -204,9 +207,9 @@
 
     <!-- 2. Contesto -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Contesto</p>
-      <h2 class="case-section__heading fade-up">Un ecosistema complesso<br>da rendere chiaro</h2>
-      <p class="case-section__text fade-up">Ho lavorato alla progettazione di Leone Master School, una piattaforma formativa digitale con percorsi di affiancamento tenuti da imprenditori e professionisti reali. Il progetto richiedeva di gestire un ecosistema complesso — contenuti, docenti, percorsi, utenti free e a pagamento — mantenendo chiarezza e scalabilità nel tempo.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.ctx.t">Contesto</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.ctx.h">Un ecosistema complesso<br>da rendere chiaro</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.ctx.p">Ho lavorato alla progettazione di Leone Master School, una piattaforma formativa digitale con percorsi di affiancamento tenuti da imprenditori e professionisti reali. Il progetto richiedeva di gestire un ecosistema complesso — contenuti, docenti, percorsi, utenti free e a pagamento — mantenendo chiarezza e scalabilità nel tempo.</p>
     </div>
   </div>
 
@@ -221,28 +224,28 @@
   <div class="case-body">
     <!-- 3. Problema -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Problema</p>
-      <h2 class="case-section__heading fade-up">Non un problema di UI —<br>un problema di sistema</h2>
-      <p class="case-section__text fade-up">La home logout mostrava tutti i corsi indistintamente, senza differenziare gratuito da pagamento, senza un percorso guidato, senza un onboarding attivo. Gli utenti di ritorno non avevano un punto di ripresa immediato.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.prob.t">Problema</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.prob.h">Non un problema di UI —<br>un problema di sistema</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.prob.p">La home logout mostrava tutti i corsi indistintamente, senza differenziare gratuito da pagamento, senza un percorso guidato, senza un onboarding attivo. Gli utenti di ritorno non avevano un punto di ripresa immediato.</p>
       <ul class="case-list fade-up">
-        <li>Corsi gratuiti e a pagamento non differenziati visivamente</li>
-        <li>Nessun onboarding guidato — no video, no test, no percorso assegnato</li>
-        <li>Nessuna progressione chiara per il nuovo utente</li>
-        <li>Alto drop-off iniziale e bassa attivazione</li>
-        <li>Utenti di ritorno senza punto di ripresa immediato</li>
+        <li data-i18n="lm.prob.li1">Corsi gratuiti e a pagamento non differenziati visivamente</li>
+        <li data-i18n="lm.prob.li2">Nessun onboarding guidato — no video, no test, no percorso assegnato</li>
+        <li data-i18n="lm.prob.li3">Nessuna progressione chiara per il nuovo utente</li>
+        <li data-i18n="lm.prob.li4">Alto drop-off iniziale e bassa attivazione</li>
+        <li data-i18n="lm.prob.li5">Utenti di ritorno senza punto di ripresa immediato</li>
       </ul>
       <div class="case-metrics fade-up">
         <div class="case-metric">
           <span class="case-metric__value">—</span>
-          <span class="case-metric__label">Completion rate non ottimizzato</span>
+          <span class="case-metric__label" data-i18n="lm.prob.m1">Completion rate non ottimizzato</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Tempo medio di onboarding elevato</span>
+          <span class="case-metric__label" data-i18n="lm.prob.m2">Tempo medio di onboarding elevato</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">—</span>
-          <span class="case-metric__label">Bassa differenziazione tra utenti</span>
+          <span class="case-metric__label" data-i18n="lm.prob.m3">Bassa differenziazione tra utenti</span>
         </div>
       </div>
     </div>
@@ -259,13 +262,13 @@
   <div class="case-body">
     <!-- 4. Approccio -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Approccio / Strategia</p>
-      <h2 class="case-section__heading fade-up">Esperienze diverse<br>per stati utente diversi</h2>
-      <p class="case-section__text fade-up">Ho affrontato il progetto come un problema di sistema, non di interfaccia. Ogni fase del framework ha un obiettivo strategico preciso — conversione, attivazione, orientamento, engagement, retention — e logiche invisibili che operano in background.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.app.t">Approccio / Strategia</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.app.h">Esperienze diverse<br>per stati utente diversi</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.app.p">Ho affrontato il progetto come un problema di sistema, non di interfaccia. Ogni fase del framework ha un obiettivo strategico preciso — conversione, attivazione, orientamento, engagement, retention — e logiche invisibili che operano in background.</p>
       <ul class="case-list fade-up">
-        <li>Il nuovo utente ha bisogno di orientamento</li>
-        <li>L'utente attivo ha bisogno di continuità</li>
-        <li>L'utente di ritorno ha bisogno di riprendere senza frizione</li>
+        <li data-i18n="lm.app.li1">Il nuovo utente ha bisogno di orientamento</li>
+        <li data-i18n="lm.app.li2">L'utente attivo ha bisogno di continuità</li>
+        <li data-i18n="lm.app.li3">L'utente di ritorno ha bisogno di riprendere senza frizione</li>
       </ul>
       <p class="case-section__text fade-up" style="margin-top: 24px;"><strong>Framework:</strong> Accesso → Onboarding → Home → Consumo → Ritorno</p>
     </div>
@@ -282,15 +285,15 @@
   <div class="case-body">
     <!-- 5.1 Home logout -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Soluzione 01</p>
-      <h2 class="case-section__heading fade-up">Home logout:<br>conversione progressiva</h2>
-      <p class="case-section__text fade-up">Ho progettato la home logout come un funnel di conversione progressiva, dove ogni elemento riduce l'incertezza e abbassa la barriera d'ingresso.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.sol1.t">Soluzione 01</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.sol1.h">Home logout:<br>conversione progressiva</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.sol1.p">Ho progettato la home logout come un funnel di conversione progressiva, dove ogni elemento riduce l'incertezza e abbassa la barriera d'ingresso.</p>
       <ul class="case-list fade-up">
-        <li>Video di benvenuto che spiega la piattaforma e riduce l'incertezza</li>
-        <li>Anteprima dei corsi per categoria (management, real estate, crescita personale, AI)</li>
-        <li>Sezione docenti imprenditori per costruire credibilità</li>
-        <li>CTA "Iscriviti gratuitamente" che abbassa la barriera d'ingresso</li>
-        <li>Form di registrazione in fondo pagina</li>
+        <li data-i18n="lm.sol1.li1">Video di benvenuto che spiega la piattaforma e riduce l'incertezza</li>
+        <li data-i18n="lm.sol1.li2">Anteprima dei corsi per categoria (management, real estate, crescita personale, AI)</li>
+        <li data-i18n="lm.sol1.li3">Sezione docenti imprenditori per costruire credibilità</li>
+        <li data-i18n="lm.sol1.li4">CTA "Iscriviti gratuitamente" che abbassa la barriera d'ingresso</li>
+        <li data-i18n="lm.sol1.li5">Form di registrazione in fondo pagina</li>
       </ul>
     </div>
   </div>
@@ -320,26 +323,26 @@
   <div class="case-body">
     <!-- 5.2 Onboarding -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Soluzione 02</p>
-      <h2 class="case-section__heading fade-up">Onboarding guidato:<br>non un tutorial, un sistema</h2>
-      <p class="case-section__text fade-up">Ho progettato un onboarding che combina contenuto guidato e raccolta di preferenze, trasformando il primo accesso in un momento attivo e rilevante. Non "ti mostro contenuti": ti costruisco un percorso.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.sol2.t">Soluzione 02</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.sol2.h">Onboarding guidato:<br>non un tutorial, un sistema</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.sol2.p">Ho progettato un onboarding che combina contenuto guidato e raccolta di preferenze, trasformando il primo accesso in un momento attivo e rilevante. Non "ti mostro contenuti": ti costruisco un percorso.</p>
       <ul class="case-list fade-up">
-        <li><strong>Video hero</strong> — riduce l'incertezza e crea contesto prima di qualsiasi scelta</li>
-        <li><strong>Test preferenze</strong> — raccolta di obiettivi e interessi (Duolingo-style)</li>
-        <li><strong>Assegnazione corsi gratuiti</strong> — percorso personalizzato in base alle risposte</li>
+        <li data-i18n="lm.sol2.li1"><strong>Video hero</strong> — riduce l'incertezza e crea contesto prima di qualsiasi scelta</li>
+        <li data-i18n="lm.sol2.li2"><strong>Test preferenze</strong> — raccolta di obiettivi e interessi (Duolingo-style)</li>
+        <li data-i18n="lm.sol2.li3"><strong>Assegnazione corsi gratuiti</strong> — percorso personalizzato in base alle risposte</li>
       </ul>
       <div class="case-metrics fade-up">
         <div class="case-metric">
           <span class="case-metric__value">↓</span>
-          <span class="case-metric__label">Drop-off onboarding</span>
+          <span class="case-metric__label" data-i18n="lm.sol2.m1">Drop-off onboarding</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">First content interaction</span>
+          <span class="case-metric__label" data-i18n="lm.sol2.m2">First content interaction</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Activation rate</span>
+          <span class="case-metric__label" data-i18n="lm.sol2.m3">Activation rate</span>
         </div>
       </div>
     </div>
@@ -356,22 +359,22 @@
   <div class="case-body">
     <!-- 5.3 Home personalizzata -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Soluzione 03</p>
-      <h2 class="case-section__heading fade-up">Home adattiva:<br>il componente Continua</h2>
-      <p class="case-section__text fade-up">Ho progettato una home basata sullo stato dell'utente. Il componente "Continua il tuo affiancamento" elimina la frizione del riorientamento — l'utente vede esattamente il corso, la sezione e la lezione da cui riprendere, con un singolo click.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">Il calendario sessioni live mantiene l'engagement nel tempo, mostrando le prossime lezioni in diretta con data, orario e CTA di accesso diretto.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.sol3.t">Soluzione 03</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.sol3.h">Home adattiva:<br>il componente Continua</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.sol3.p1">Ho progettato una home basata sullo stato dell'utente. Il componente "Continua il tuo affiancamento" elimina la frizione del riorientamento — l'utente vede esattamente il corso, la sezione e la lezione da cui riprendere, con un singolo click.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="lm.sol3.p2">Il calendario sessioni live mantiene l'engagement nel tempo, mostrando le prossime lezioni in diretta con data, orario e CTA di accesso diretto.</p>
       <div class="case-metrics fade-up">
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Continuità d'uso</span>
+          <span class="case-metric__label" data-i18n="lm.sol3.m1">Continuità d'uso</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Retention</span>
+          <span class="case-metric__label" data-i18n="lm.sol3.m2">Retention</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Session depth</span>
+          <span class="case-metric__label" data-i18n="lm.sol3.m3">Session depth</span>
         </div>
       </div>
     </div>
@@ -385,15 +388,15 @@
   <div class="case-body">
     <!-- 5.4 Sales page -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Soluzione 04</p>
-      <h2 class="case-section__heading fade-up">Sales page strutturata<br>per convertire</h2>
-      <p class="case-section__text fade-up">Ho strutturato la sell page di ogni percorso per comunicare valore prima dell'accesso, riducendo l'incertezza attraverso informazione, credibilità e navigazione guidata.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.sol4.t">Soluzione 04</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.sol4.h">Sales page strutturata<br>per convertire</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.sol4.p">Ho strutturato la sell page di ogni percorso per comunicare valore prima dell'accesso, riducendo l'incertezza attraverso informazione, credibilità e navigazione guidata.</p>
       <ul class="case-list fade-up">
-        <li>Hero con 4 box info chiave: Formazione, Durata, Format, Full Time</li>
-        <li>Video introduttivo con docente dedicato per quel modulo</li>
-        <li>Mappa interattiva con tooltip che guida l'utente attraverso i moduli</li>
-        <li>Programma accordion laterale con i moduli numerati</li>
-        <li>Sezione docenti del percorso con card foto + ruolo</li>
+        <li data-i18n="lm.sol4.li1">Hero con 4 box info chiave: Formazione, Durata, Format, Full Time</li>
+        <li data-i18n="lm.sol4.li2">Video introduttivo con docente dedicato per quel modulo</li>
+        <li data-i18n="lm.sol4.li3">Mappa interattiva con tooltip che guida l'utente attraverso i moduli</li>
+        <li data-i18n="lm.sol4.li4">Programma accordion laterale con i moduli numerati</li>
+        <li data-i18n="lm.sol4.li5">Sezione docenti del percorso con card foto + ruolo</li>
       </ul>
     </div>
   </div>
@@ -406,10 +409,10 @@
   <div class="case-body">
     <!-- 5.5 Architettura docenti -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Soluzione 05</p>
-      <h2 class="case-section__heading fade-up">Architettura docenti:<br>esperti dalla pratica</h2>
-      <p class="case-section__text fade-up">Ogni modulo è associato a un docente esperto reale — imprenditori e manager attivi che insegnano dalla pratica quotidiana. Nessun teorico, nessun professore di ruolo.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">Ho progettato le pagine docente con 6 card: Ruolo e specializzazione, Competenze chiave, Citazione, Formazione, Valori, Missione formativa.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.sol5.t">Soluzione 05</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.sol5.h">Architettura docenti:<br>esperti dalla pratica</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.sol5.p1">Ogni modulo è associato a un docente esperto reale — imprenditori e manager attivi che insegnano dalla pratica quotidiana. Nessun teorico, nessun professore di ruolo.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="lm.sol5.p2">Ho progettato le pagine docente con 6 card: Ruolo e specializzazione, Competenze chiave, Citazione, Formazione, Valori, Missione formativa.</p>
     </div>
   </div>
 
@@ -421,25 +424,25 @@
   <div class="case-body">
     <!-- 5.6 Personalizzazione -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Soluzione 06</p>
-      <h2 class="case-section__heading fade-up">Personalizzazione<br>e logiche di sistema</h2>
-      <p class="case-section__text fade-up">Ho introdotto logiche di personalizzazione per adattare l'esperienza in base al comportamento e allo stato dell'utente.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.sol6.t">Soluzione 06</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.sol6.h">Personalizzazione<br>e logiche di sistema</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.sol6.p">Ho introdotto logiche di personalizzazione per adattare l'esperienza in base al comportamento e allo stato dell'utente.</p>
       <div class="case-system-box fade-up">
         <div class="case-system-box__row">
           <span class="case-system-box__label">Input</span>
           <span class="case-system-box__value">Test preferenze · Comportamento utente · Stato avanzamento · Tipo utente (nuovo / attivo / ritorno)</span>
         </div>
         <div class="case-system-box__row">
-          <span class="case-system-box__label">Motore</span>
-          <span class="case-system-box__value">Stato utente + progress tracking invisibile</span>
+          <span class="case-system-box__label" data-i18n="lm.sol6.l2">Motore</span>
+          <span class="case-system-box__value" data-i18n="lm.sol6.v2">Stato utente + progress tracking invisibile</span>
         </div>
         <div class="case-system-box__row">
           <span class="case-system-box__label">Output</span>
           <span class="case-system-box__value">Corsi gratuiti assegnati · Home adattata · Componente Continua · Upsell progressivo gratuito → pagamento</span>
         </div>
         <div class="case-system-box__row">
-          <span class="case-system-box__label">Principi</span>
-          <span class="case-system-box__value">Progressiva — non invasiva · Rilevante — basata su dati reali · Scalabile — adatta nel tempo</span>
+          <span class="case-system-box__label" data-i18n="lm.sol6.l4">Principi</span>
+          <span class="case-system-box__value" data-i18n="lm.sol6.v4">Progressiva — non invasiva · Rilevante — basata su dati reali · Scalabile — adatta nel tempo</span>
         </div>
       </div>
     </div>
@@ -456,16 +459,16 @@
   <div class="case-body">
     <!-- 6. Design System -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Design System</p>
-      <h2 class="case-section__heading fade-up">Componenti riutilizzabili<br>per un sistema scalabile</h2>
-      <p class="case-section__text fade-up">Ho progettato componenti riutilizzabili per garantire coerenza e scalabilità del sistema.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.ds.t">Design System</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.ds.h">Componenti riutilizzabili<br>per un sistema scalabile</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.ds.p">Ho progettato componenti riutilizzabili per garantire coerenza e scalabilità del sistema.</p>
       <ul class="case-list fade-up">
-        <li>Card corso (con badge gratuito / pagamento e progress bar integrata)</li>
-        <li>Componente Continua (thumbnail + sezione + lezione + CTA riprendi)</li>
-        <li>Lista moduli (stati: completato / in corso / da iniziare + docente dedicato)</li>
-        <li>Card docente (avatar + nome + ruolo)</li>
-        <li>CTA (primario scuro, verde gratuito, secondario)</li>
-        <li>Progress bar (0% / parziale / 100%)</li>
+        <li data-i18n="lm.ds.li1">Card corso (con badge gratuito / pagamento e progress bar integrata)</li>
+        <li data-i18n="lm.ds.li2">Componente Continua (thumbnail + sezione + lezione + CTA riprendi)</li>
+        <li data-i18n="lm.ds.li3">Lista moduli (stati: completato / in corso / da iniziare + docente dedicato)</li>
+        <li data-i18n="lm.ds.li4">Card docente (avatar + nome + ruolo)</li>
+        <li data-i18n="lm.ds.li5">CTA (primario scuro, verde gratuito, secondario)</li>
+        <li data-i18n="lm.ds.li6">Progress bar (0% / parziale / 100%)</li>
       </ul>
     </div>
   </div>
@@ -478,54 +481,54 @@
   <div class="case-body">
     <!-- 7. Risultati -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Risultati</p>
-      <h2 class="case-section__heading fade-up">Chiarezza, attivazione<br>e scalabilità del sistema</h2>
+      <p class="case-section__title fade-up" data-i18n="lm.res.t">Risultati</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.res.h">Chiarezza, attivazione<br>e scalabilità del sistema</h2>
       <div class="case-metrics case-metrics--grid fade-up">
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Engagement contenuti</span>
+          <span class="case-metric__label" data-i18n="lm.res.m1">Engagement contenuti</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Completamento onboarding</span>
+          <span class="case-metric__label" data-i18n="lm.res.m2">Completamento onboarding</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↓</span>
-          <span class="case-metric__label">Tempo orientamento iniziale</span>
+          <span class="case-metric__label" data-i18n="lm.res.m3">Tempo orientamento iniziale</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">First content interaction</span>
+          <span class="case-metric__label" data-i18n="lm.res.m4">First content interaction</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Retention e session depth</span>
+          <span class="case-metric__label" data-i18n="lm.res.m5">Retention e session depth</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Continuità d'uso</span>
+          <span class="case-metric__label" data-i18n="lm.res.m6">Continuità d'uso</span>
         </div>
       </div>
     </div>
 
     <!-- 8. Learnings -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Learnings</p>
-      <h2 class="case-section__heading fade-up">Quello che ho imparato<br>progettando il sistema</h2>
+      <p class="case-section__title fade-up" data-i18n="lm.learn.t">Learnings</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.learn.h">Quello che ho imparato<br>progettando il sistema</h2>
       <ul class="case-list case-list--bold fade-up">
-        <li>Progettare piattaforme significa progettare sistemi</li>
-        <li>L'onboarding non è un tutorial — è il primo momento di personalizzazione</li>
-        <li>La home deve adattarsi allo stato dell'utente, non essere uguale per tutti</li>
-        <li>Il componente Continua è più potente di qualsiasi raccomandazione algoritmica</li>
-        <li>Differenziare gratuito e pagamento non è solo commerciale — è un principio di UX</li>
+        <li data-i18n="lm.learn.li1">Progettare piattaforme significa progettare sistemi</li>
+        <li data-i18n="lm.learn.li2">L'onboarding non è un tutorial — è il primo momento di personalizzazione</li>
+        <li data-i18n="lm.learn.li3">La home deve adattarsi allo stato dell'utente, non essere uguale per tutti</li>
+        <li data-i18n="lm.learn.li4">Il componente Continua è più potente di qualsiasi raccomandazione algoritmica</li>
+        <li data-i18n="lm.learn.li5">Differenziare gratuito e pagamento non è solo commerciale — è un principio di UX</li>
       </ul>
     </div>
 
     <!-- 9. ICMD PalaRiccione -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Presentazione</p>
-      <h2 class="case-section__heading fade-up">1.500 persone.<br>PalaRiccione. ICMD.</h2>
-      <p class="case-section__text fade-up">Il progetto è stato presentato sul palco dell'ICMD — uno degli eventi più grandi del settore formazione in Italia — davanti a 1.500 professionisti. Un momento che ha validato non solo il lavoro di design, ma l'intero approccio sistemico alla piattaforma.</p>
+      <p class="case-section__title fade-up" data-i18n="lm.pres.t">Presentazione</p>
+      <h2 class="case-section__heading fade-up" data-i18n="lm.pres.h">1.500 persone.<br>PalaRiccione. ICMD.</h2>
+      <p class="case-section__text fade-up" data-i18n="lm.pres.p">Il progetto è stato presentato sul palco dell'ICMD — uno degli eventi più grandi del settore formazione in Italia — davanti a 1.500 professionisti. Un momento che ha validato non solo il lavoro di design, ma l'intero approccio sistemico alla piattaforma.</p>
     </div>
   </div>
 
@@ -536,18 +539,18 @@
   <div class="case-body">
     <!-- 10. Next Step -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Next Step</p>
+      <p class="case-section__title fade-up" data-i18n="lm.nexts.t">Next Step</p>
       <ul class="case-list fade-up">
-        <li>A/B test onboarding</li>
-        <li>Personalizzazione predittiva basata sul comportamento</li>
-        <li>Tracking avanzato per modulo</li>
-        <li>Ottimizzazione mobile</li>
+        <li data-i18n="lm.nexts.li1">A/B test onboarding</li>
+        <li data-i18n="lm.nexts.li2">Personalizzazione predittiva basata sul comportamento</li>
+        <li data-i18n="lm.nexts.li3">Tracking avanzato per modulo</li>
+        <li data-i18n="lm.nexts.li4">Ottimizzazione mobile</li>
       </ul>
     </div>
   </div>
 
   <a href="tiaa-dark.html" class="case-next">
-    <p class="case-next__label">Prossimo progetto</p>
+    <p class="case-next__label" data-i18n="cs.next">Prossimo progetto</p>
     <h2 class="case-next__title">There Is An Alternative →</h2>
   </a>
 
@@ -557,5 +560,6 @@
   </footer>
 
   <script src="../js/main.js?v=16"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>

@@ -278,6 +278,70 @@ if (nav && !nav.classList.contains('scrolled')) {
   onScroll();
 }
 
+// ── HAMBURGER MOBILE MENU ──────────────────────────────────────
+(function () {
+  const hamburger = document.getElementById('nav-hamburger');
+  if (!hamburger) return;
+
+  // Detect dark page by checking for dark nav override in inline styles
+  const isDark = Array.from(document.querySelectorAll('style')).some(s =>
+    s.textContent.includes('rgba(14,12,24') || s.textContent.includes('rgba(10, 10, 10')
+  );
+
+  // Build mobile menu
+  const menu = document.createElement('div');
+  menu.className = 'nav-mobile' + (isDark ? ' nav-mobile--dark' : '');
+  menu.id = 'nav-mobile';
+
+  // Collect all nav links
+  document.querySelectorAll('.nav__links a').forEach(link => {
+    const a = document.createElement('a');
+    a.href = link.getAttribute('href');
+    a.className = 'nav-mobile__link';
+    a.textContent = link.textContent.trim();
+    if (link.dataset.i18n) a.dataset.i18n = link.dataset.i18n;
+    menu.appendChild(a);
+  });
+
+  // Lang toggle in footer
+  const langToggle = document.getElementById('lang-toggle');
+  if (langToggle) {
+    const footer = document.createElement('div');
+    footer.className = 'nav-mobile__footer';
+    const btn = document.createElement('button');
+    btn.className = 'nav__link lang-toggle';
+    btn.setAttribute('aria-label', 'Switch language');
+    btn.textContent = langToggle.textContent;
+    btn.addEventListener('click', () => {
+      langToggle.click();
+      setTimeout(() => { btn.textContent = langToggle.textContent; }, 50);
+    });
+    // Keep label in sync
+    new MutationObserver(() => { btn.textContent = langToggle.textContent; })
+      .observe(langToggle, { childList: true, subtree: true, characterData: true });
+    footer.appendChild(btn);
+    menu.appendChild(footer);
+  }
+
+  document.body.insertBefore(menu, document.body.firstChild);
+
+  // Toggle open/close
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('is-open');
+    menu.classList.toggle('is-open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+
+  // Close on link click
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('is-open');
+      menu.classList.remove('is-open');
+      document.body.style.overflow = '';
+    });
+  });
+}());
+
 // Project cards: only image zoom on hover (handled via CSS)
 
 // ── VALUE SECTION — floating skill tags explosion ──────────────

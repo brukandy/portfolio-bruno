@@ -42,6 +42,8 @@
     .nav, .nav.scrolled { background: rgba(14,12,24,0.95) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
     .nav__link { color: #a0a09a !important; }
     .nav__link:hover { color: #fff !important; }
+    .lang-toggle { border-color: rgba(255,255,255,0.2) !important; color: #a0a09a !important; }
+    .lang-toggle:hover { border-color: #C6F135 !important; color: #C6F135 !important; }
     .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
     .nav__logo-top { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
     .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
@@ -121,14 +123,15 @@
   <nav class="nav scrolled" id="nav">
     <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
     <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
-    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
+    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li><li><button id="lang-toggle" class="nav__link lang-toggle" aria-label="Switch language">EN</button></li></ul>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- 1. HERO -->
   <div class="case-hero">
-    <p class="case-hero__eyebrow fade-up">Smart Home · UX/UI Design · Interactive Prototyping</p>
-    <h1 class="case-hero__title fade-up fade-up-delay-1">L'unica app smart home<br>con digital twin nativo</h1>
-    <p class="case-hero__desc fade-up fade-up-delay-2">Un'app di automazione domestica che parte dalla struttura fisica della casa — controllo granulare su finestre, luci e clima senza la complessità di Google Home o Apple Home</p>
+    <p class="case-hero__eyebrow fade-up" data-i18n="zu.hero.eyebrow">Smart Home · UX/UI Design · Interactive Prototyping</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1" data-i18n="zu.hero.title">L'unica app smart home<br>con digital twin nativo</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2" data-i18n="zu.hero.desc">Un'app di automazione domestica che parte dalla struttura fisica della casa — controllo granulare su finestre, luci e clima senza la complessità di Google Home o Apple Home</p>
     <div class="case-hero__tags fade-up fade-up-delay-3">
       <span class="tag">Competitive Research</span>
       <span class="tag tag--outline">UX Strategy</span>
@@ -146,39 +149,39 @@
   <div class="case-body">
     <div class="case-meta fade-up">
       <div class="case-meta__item">
-        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__label" data-i18n="cs.role">Ruolo</div>
         <div class="case-meta__value">UX / Product Designer</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Durata</div>
+        <div class="case-meta__label" data-i18n="cs.duration">Durata</div>
         <div class="case-meta__value">Design Sprint</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Cliente</div>
+        <div class="case-meta__label" data-i18n="cs.client">Cliente</div>
         <div class="case-meta__value">Zuru Tech</div>
       </div>
     </div>
 
     <!-- 2. Il Brief -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Il Brief</p>
-      <h2 class="case-section__heading fade-up">Jared ha comprato una casa Zuru<br>e deve configurare le automazioni</h2>
-      <p class="case-section__text fade-up">Zuru Tech costruisce case tecnologiche all'avanguardia — finestre motorizzate con controllo angolo preciso, luci RGB programmabili, clima intelligente. Jared ha appena acquistato una di queste case e deve configurare le sue routine quotidiane tramite app.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Task 1:</strong> Aprire automaticamente le finestre della cucina alle 8:00 del mattino, con angolo di apertura specifico (30°) e durata limitata (15 minuti), per cambiare aria prima di andare al lavoro.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Task 2:</strong> Impostare automaticamente il colore delle luci del soggiorno alle 18:00 per creare un ambiente più caldo e accogliente (warm white).</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">Il problema: le app smart home esistenti (Google Home, Apple Home) non offrono questo livello di controllo granulare — o lo nascondono dietro menu complessi e configurazioni tecniche.</p>
+      <p class="case-section__title fade-up" data-i18n="zu.brief.t">Il Brief</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.brief.h">Jared ha comprato una casa Zuru<br>e deve configurare le automazioni</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.brief.p1">Zuru Tech costruisce case tecnologiche all'avanguardia — finestre motorizzate con controllo angolo preciso, luci RGB programmabili, clima intelligente. Jared ha appena acquistato una di queste case e deve configurare le sue routine quotidiane tramite app.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="zu.brief.p2"><strong>Task 1:</strong> Aprire automaticamente le finestre della cucina alle 8:00 del mattino, con angolo di apertura specifico (30°) e durata limitata (15 minuti), per cambiare aria prima di andare al lavoro.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="zu.brief.p3"><strong>Task 2:</strong> Impostare automaticamente il colore delle luci del soggiorno alle 18:00 per creare un ambiente più caldo e accogliente (warm white).</p>
+      <p class="case-section__text fade-up" data-i18n="zu.brief.p4">Il problema: le app smart home esistenti (Google Home, Apple Home) non offrono questo livello di controllo granulare — o lo nascondono dietro menu complessi e configurazioni tecniche.</p>
     </div>
 
     <!-- 3. La sfida -->
     <div class="case-section">
-      <p class="case-section__title fade-up">La sfida</p>
-      <h2 class="case-section__heading fade-up">Come rendere il controllo smart<br>immediato quanto un interruttore?</h2>
-      <p class="case-section__text fade-up">La sfida non era aggiungere funzionalità — era eliminare la complessità. Un'app smart home deve essere più veloce di alzarsi e premere un pulsante fisico. Altrimenti fallisce.</p>
+      <p class="case-section__title fade-up" data-i18n="zu.sfida.t">La sfida</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.sfida.h">Come rendere il controllo smart<br>immediato quanto un interruttore?</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.sfida.p">La sfida non era aggiungere funzionalità — era eliminare la complessità. Un'app smart home deve essere più veloce di alzarsi e premere un pulsante fisico. Altrimenti fallisce.</p>
       <ul class="case-list fade-up">
-        <li><strong>Niente planimetrie obbligatorie</strong> — troppo cognitive load per setup iniziale</li>
-        <li><strong>Accesso diretto ai dispositivi</strong> — massimo 2 tap per qualsiasi azione</li>
-        <li><strong>Feedback visivo immediato</strong> — animazioni che mostrano lo stato reale (finestra che si apre, luce che cambia colore)</li>
-        <li><strong>Preset intelligenti</strong> — mood predefiniti invece di slider RGB complessi</li>
+        <li data-i18n="zu.sfida.li1"><strong>Niente planimetrie obbligatorie</strong> — troppo cognitive load per setup iniziale</li>
+        <li data-i18n="zu.sfida.li2"><strong>Accesso diretto ai dispositivi</strong> — massimo 2 tap per qualsiasi azione</li>
+        <li data-i18n="zu.sfida.li3"><strong>Feedback visivo immediato</strong> — animazioni che mostrano lo stato reale (finestra che si apre, luce che cambia colore)</li>
+        <li data-i18n="zu.sfida.li4"><strong>Preset intelligenti</strong> — mood predefiniti invece di slider RGB complessi</li>
       </ul>
     </div>
   </div>
@@ -191,30 +194,30 @@
   <div class="case-body">
     <!-- 4. Competitive Research -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Competitive Research</p>
-      <h2 class="case-section__heading fade-up">5 competitor analizzati<br>per filosofia e pattern UX</h2>
-      <p class="case-section__text fade-up">Ho analizzato le principali app smart home per capire punti di forza, debolezze, e opportunità per Zuru:</p>
+      <p class="case-section__title fade-up" data-i18n="zu.comp.t">Competitive Research</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.comp.h">5 competitor analizzati<br>per filosofia e pattern UX</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.comp.p1">Ho analizzato le principali app smart home per capire punti di forza, debolezze, e opportunità per Zuru:</p>
       <ul class="case-list fade-up">
-        <li><strong>Tesla App</strong> — Ecosistema chiuso (auto + casa + energia). UI semplice per sistemi complessi, ma zero controllo granulare dispositivi e nessun digital twin casa.</li>
-        <li><strong>Loxone</strong> — Building automation integrata con HW+SW proprietario. Controllo granulare eccellente (angolo, posizione, schedule) e logica "se X allora Y" senza codice, ma richiede partner certificato per installazione.</li>
-        <li><strong>Josh.ai</strong> — Luxury home AI-first. Natural Language per descrivere automazioni a parole, context-aware per stanza, ma richiede installazione professionale costosa.</li>
-        <li><strong>Google Home</strong> — Ecosistema multi-brand con compatibilità universale. Lista dispositivi per stanza (pattern familiare) e routine semplici, ma nessun digital twin e controllo granulare limitato.</li>
-        <li><strong>Apple Home</strong> — HomeKit con focus privacy. Lista dispositivi per stanza/categoria e tutto on-device, ma ecosistema chiuso (solo HomeKit) e nessun digital twin casa.</li>
+        <li data-i18n="zu.comp.li1"><strong>Tesla App</strong> — Ecosistema chiuso (auto + casa + energia). UI semplice per sistemi complessi, ma zero controllo granulare dispositivi e nessun digital twin casa.</li>
+        <li data-i18n="zu.comp.li2"><strong>Loxone</strong> — Building automation integrata con HW+SW proprietario. Controllo granulare eccellente (angolo, posizione, schedule) e logica "se X allora Y" senza codice, ma richiede partner certificato per installazione.</li>
+        <li data-i18n="zu.comp.li3"><strong>Josh.ai</strong> — Luxury home AI-first. Natural Language per descrivere automazioni a parole, context-aware per stanza, ma richiede installazione professionale costosa.</li>
+        <li data-i18n="zu.comp.li4"><strong>Google Home</strong> — Ecosistema multi-brand con compatibilità universale. Lista dispositivi per stanza (pattern familiare) e routine semplici, ma nessun digital twin e controllo granulare limitato.</li>
+        <li data-i18n="zu.comp.li5"><strong>Apple Home</strong> — HomeKit con focus privacy. Lista dispositivi per stanza/categoria e tutto on-device, ma ecosistema chiuso (solo HomeKit) e nessun digital twin casa.</li>
       </ul>
-      <p class="case-section__text fade-up" style="margin-top: 24px;"><strong>Il vantaggio competitivo di Zuru:</strong> È l'unico che parte già con il digital twin della casa. Nessun competitor ha questa informazione nativa. La UI dovrebbe costruirsi sopra questo — rendere visibile e semplice ciò che è tecnicamente complesso.</p>
+      <p class="case-section__text fade-up" style="margin-top: 24px;" data-i18n="zu.comp.p2"><strong>Il vantaggio competitivo di Zuru:</strong> È l'unico che parte già con il digital twin della casa. Nessun competitor ha questa informazione nativa. La UI dovrebbe costruirsi sopra questo — rendere visibile e semplice ciò che è tecnicamente complesso.</p>
     </div>
 
     <!-- 5. Strategia UX -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Strategia UX</p>
-      <h2 class="case-section__heading fade-up">Punto di ingresso:<br>lista dispositivi per stanza</h2>
-      <p class="case-section__text fade-up">Per definire il punto di ingresso ottimale, ho considerato tre fattori:</p>
+      <p class="case-section__title fade-up" data-i18n="zu.ux.t">Strategia UX</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.ux.h">Punto di ingresso:<br>lista dispositivi per stanza</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.ux.p1">Per definire il punto di ingresso ottimale, ho considerato tre fattori:</p>
       <ul class="case-list fade-up">
-        <li><strong>1. Pattern consolidati</strong> — Apple Home e Google Home usano liste di dispositivi organizzate per stanza. È un pattern familiare e immediato: l'utente vede subito cosa può controllare senza dover navigare una planimetria.</li>
-        <li><strong>2. Comportamento di Jared</strong> — Jared sta pensando "voglio configurare la finestra della cucina". Una lista chiara con "Kitchen Windows" come prima voce gli permette di arrivare subito al dispositivo target senza passaggi intermedi.</li>
-        <li><strong>3. Semplicità implementativa</strong> — Una lista di dispositivi è più semplice da implementare e mantenere rispetto a una planimetria interattiva, permettendo di concentrarsi sulla qualità delle automazioni e del controllo granulare.</li>
+        <li data-i18n="zu.ux.li1"><strong>1. Pattern consolidati</strong> — Apple Home e Google Home usano liste di dispositivi organizzate per stanza. È un pattern familiare e immediato: l'utente vede subito cosa può controllare senza dover navigare una planimetria.</li>
+        <li data-i18n="zu.ux.li2"><strong>2. Comportamento di Jared</strong> — Jared sta pensando "voglio configurare la finestra della cucina". Una lista chiara con "Kitchen Windows" come prima voce gli permette di arrivare subito al dispositivo target senza passaggi intermedi.</li>
+        <li data-i18n="zu.ux.li3"><strong>3. Semplicità implementativa</strong> — Una lista di dispositivi è più semplice da implementare e mantenere rispetto a una planimetria interattiva, permettendo di concentrarsi sulla qualità delle automazioni e del controllo granulare.</li>
       </ul>
-      <p class="case-section__text fade-up" style="margin-top: 24px; font-style: italic;">"Ho scelto la lista dispositivi come punto di ingresso per bilanciare familiarità del pattern, velocità di accesso, e semplicità implementativa. Permette a Jared di completare i task richiesti nel minor numero di tap possibile."</p>
+      <p class="case-section__text fade-up" style="margin-top: 24px; font-style: italic;" data-i18n="zu.ux.quote">"Ho scelto la lista dispositivi come punto di ingresso per bilanciare familiarità del pattern, velocità di accesso, e semplicità implementativa. Permette a Jared di completare i task richiesti nel minor numero di tap possibile."</p>
     </div>
   </div>
 
@@ -232,55 +235,55 @@
   <div class="case-body">
     <!-- 6. Interactive Components -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Interactive Components</p>
-      <h2 class="case-section__heading fade-up">Animazioni che mostrano<br>lo stato reale dei dispositivi</h2>
-      <p class="case-section__text fade-up">Ho progettato componenti interattivi ad alta fedeltà per i controlli principali:</p>
+      <p class="case-section__title fade-up" data-i18n="zu.ic.t">Interactive Components</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.ic.h">Animazioni che mostrano<br>lo stato reale dei dispositivi</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.ic.p">Ho progettato componenti interattivi ad alta fedeltà per i controlli principali:</p>
       <ul class="case-list fade-up">
-        <li><strong>Window Slider</strong> — Vista isometrica della finestra che si apre progressivamente (0°, 30°, 60°, 90°) mentre l'utente trascina lo slider. Feedback visivo immediato dello stato reale.</li>
-        <li><strong>Light Mood Cards</strong> — Invece di slider RGB complessi, 4 preset predefiniti (Warm Evening, Focus, Cinema, Relax) con preview colore e descrizione. Tap per cambiare mood, slider brightness separato.</li>
-        <li><strong>Duration Pills</strong> — Selezione rapida della durata automazione (5m, 10m, 15m, 30m, 1h) con preview orario apertura/chiusura.</li>
+        <li data-i18n="zu.ic.li1"><strong>Window Slider</strong> — Vista isometrica della finestra che si apre progressivamente (0°, 30°, 60°, 90°) mentre l'utente trascina lo slider. Feedback visivo immediato dello stato reale.</li>
+        <li data-i18n="zu.ic.li2"><strong>Light Mood Cards</strong> — Invece di slider RGB complessi, 4 preset predefiniti (Warm Evening, Focus, Cinema, Relax) con preview colore e descrizione. Tap per cambiare mood, slider brightness separato.</li>
+        <li data-i18n="zu.ic.li3"><strong>Duration Pills</strong> — Selezione rapida della durata automazione (5m, 10m, 15m, 30m, 1h) con preview orario apertura/chiusura.</li>
       </ul>
     </div>
 
     <!-- 7. User Flow Core -->
     <div class="case-section">
-      <p class="case-section__title fade-up">User Flow — Core</p>
-      <h2 class="case-section__heading fade-up">Flusso semplificato<br>per configurazione rapida</h2>
-      <p class="case-section__text fade-up">Ottimizzato per task singoli e veloci come quelli di Jared:</p>
+      <p class="case-section__title fade-up" data-i18n="zu.coreflow.t">User Flow — Core</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.coreflow.h">Flusso semplificato<br>per configurazione rapida</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.coreflow.p">Ottimizzato per task singoli e veloci come quelli di Jared:</p>
       <ul class="case-list fade-up">
-        <li><strong>1. Home Dashboard</strong> — Lista dispositivi organizzati per stanza. Tap su "Kitchen Windows" per accesso diretto.</li>
-        <li><strong>2. Device Control</strong> — Slider angolo apertura (0-90°), visualizzazione real-time finestra, pulsante "New Automation".</li>
-        <li><strong>3. Automation Setup</strong> — Form semplificato con 3 campi: Orario (8:00 AM), Durata (15 min), Angolo (30°). Giorni settimana selezionabili.</li>
-        <li><strong>4. Confirmation</strong> — Riepilogo automazione creata con possibilità di modificare o tornare alla home.</li>
+        <li data-i18n="zu.coreflow.li1"><strong>1. Home Dashboard</strong> — Lista dispositivi organizzati per stanza. Tap su "Kitchen Windows" per accesso diretto.</li>
+        <li data-i18n="zu.coreflow.li2"><strong>2. Device Control</strong> — Slider angolo apertura (0-90°), visualizzazione real-time finestra, pulsante "New Automation".</li>
+        <li data-i18n="zu.coreflow.li3"><strong>3. Automation Setup</strong> — Form semplificato con 3 campi: Orario (8:00 AM), Durata (15 min), Angolo (30°). Giorni settimana selezionabili.</li>
+        <li data-i18n="zu.coreflow.li4"><strong>4. Confirmation</strong> — Riepilogo automazione creata con possibilità di modificare o tornare alla home.</li>
       </ul>
     </div>
 
     <!-- 8. User Flow Plus -->
     <div class="case-section">
-      <p class="case-section__title fade-up">User Flow — Plus</p>
-      <h2 class="case-section__heading fade-up">Flusso avanzato<br>per automazioni multi-dispositivo</h2>
-      <p class="case-section__text fade-up">Per utenti esperti che vogliono orchestrare scenari complessi:</p>
+      <p class="case-section__title fade-up" data-i18n="zu.plusflow.t">User Flow — Plus</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.plusflow.h">Flusso avanzato<br>per automazioni multi-dispositivo</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.plusflow.p1">Per utenti esperti che vogliono orchestrare scenari complessi:</p>
       <ul class="case-list fade-up">
-        <li><strong>Scene Builder</strong> — Canvas per aggiungere più dispositivi e definire azioni simultanee. Es: "Good Morning" = Finestre cucina 30° + Luci soggiorno warm + Caffettiera ON.</li>
-        <li><strong>Advanced Scheduling</strong> — Calendario settimanale con timeline oraria. Drag & drop scene su giorni/orari specifici.</li>
-        <li><strong>Conditional Logic</strong> — Builder "If-Then" per regole condizionali. Es: "If temperatura > 25° Then apri finestre 60°".</li>
+        <li data-i18n="zu.plusflow.li1"><strong>Scene Builder</strong> — Canvas per aggiungere più dispositivi e definire azioni simultanee. Es: "Good Morning" = Finestre cucina 30° + Luci soggiorno warm + Caffettiera ON.</li>
+        <li data-i18n="zu.plusflow.li2"><strong>Advanced Scheduling</strong> — Calendario settimanale con timeline oraria. Drag & drop scene su giorni/orari specifici.</li>
+        <li data-i18n="zu.plusflow.li3"><strong>Conditional Logic</strong> — Builder "If-Then" per regole condizionali. Es: "If temperatura > 25° Then apri finestre 60°".</li>
       </ul>
-      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Motivazione separazione Core/Plus:</strong> Due flussi per diversi livelli di complessità. Il Core è ottimizzato per task singoli e veloci, mentre il Plus offre potenza per utenti che vogliono scenari multi-dispositivo complessi.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="zu.plusflow.p2"><strong>Motivazione separazione Core/Plus:</strong> Due flussi per diversi livelli di complessità. Il Core è ottimizzato per task singoli e veloci, mentre il Plus offre potenza per utenti che vogliono scenari multi-dispositivo complessi.</p>
     </div>
 
     <!-- 9. Design System -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Design System</p>
-      <h2 class="case-section__heading fade-up">Token system completo<br>con Manrope e spacing 4px</h2>
-      <p class="case-section__text fade-up">Ho creato un design system completo con variabili CSS per garantire coerenza e scalabilità:</p>
+      <p class="case-section__title fade-up" data-i18n="zu.ds.t">Design System</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.ds.h">Token system completo<br>con Manrope e spacing 4px</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.ds.p1">Ho creato un design system completo con variabili CSS per garantire coerenza e scalabilità:</p>
       <ul class="case-list fade-up">
-        <li><strong>Typography</strong> — Font Manrope (Regular → ExtraBold). Scale da 10px (Caption/S) a 30px (Heading/XXL) per leggibilità ottimale su schermi digitali.</li>
-        <li><strong>Colors</strong> — Palette semantica con Background (#EDECEA), Card (#FFFFFF), Brand Red (#E5173F), Status colors (Green, Orange, Blue).</li>
-        <li><strong>Spacing</strong> — Sistema basato su multipli di 4px (4px, 8px, 12px, 16px, 20px, 24px, 32px) per allineamento pixel-perfect.</li>
-        <li><strong>Border Radius</strong> — Valori semantici: r-card (8px), r-pill (100px), r-input (6px) per coerenza tra componenti simili.</li>
-        <li><strong>Shadows</strong> — 3 livelli (sm, default, lg) per gerarchia visiva chiara.</li>
+        <li data-i18n="zu.ds.li1"><strong>Typography</strong> — Font Manrope (Regular → ExtraBold). Scale da 10px (Caption/S) a 30px (Heading/XXL) per leggibilità ottimale su schermi digitali.</li>
+        <li data-i18n="zu.ds.li2"><strong>Colors</strong> — Palette semantica con Background (#EDECEA), Card (#FFFFFF), Brand Red (#E5173F), Status colors (Green, Orange, Blue).</li>
+        <li data-i18n="zu.ds.li3"><strong>Spacing</strong> — Sistema basato su multipli di 4px (4px, 8px, 12px, 16px, 20px, 24px, 32px) per allineamento pixel-perfect.</li>
+        <li data-i18n="zu.ds.li4"><strong>Border Radius</strong> — Valori semantici: r-card (8px), r-pill (100px), r-input (6px) per coerenza tra componenti simili.</li>
+        <li data-i18n="zu.ds.li5"><strong>Shadows</strong> — 3 livelli (sm, default, lg) per gerarchia visiva chiara.</li>
       </ul>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">Ogni componente è responsive e adattato per iPhone (393×852) e iPad (834×1194) con padding e font size specifici per device.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="zu.ds.p2">Ogni componente è responsive e adattato per iPhone (393×852) e iPad (834×1194) con padding e font size specifici per device.</p>
     </div>
   </div>
 
@@ -292,15 +295,15 @@
   <div class="case-body">
     <!-- 10. Interactive Prototyping -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Interactive Prototyping</p>
-      <h2 class="case-section__heading fade-up">26 stati componenti<br>con Smart Animate</h2>
-      <p class="case-section__text fade-up">Ho creato prototipi interattivi ad alta fedeltà in Figma usando Component Sets e Smart Animate:</p>
+      <p class="case-section__title fade-up" data-i18n="zu.proto.t">Interactive Prototyping</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.proto.h">26 stati componenti<br>con Smart Animate</h2>
+      <p class="case-section__text fade-up" data-i18n="zu.proto.p1">Ho creato prototipi interattivi ad alta fedeltà in Figma usando Component Sets e Smart Animate:</p>
       <ul class="case-list fade-up">
-        <li><strong>Window Slider</strong> — 4 stati per iPhone + 4 per iPad (8 varianti totali)</li>
-        <li><strong>Light Mood</strong> — 4 mood × 2 device = 8 varianti</li>
-        <li><strong>Duration Pills</strong> — 5 stati × 2 device = 10 varianti</li>
+        <li data-i18n="zu.proto.li1"><strong>Window Slider</strong> — 4 stati per iPhone + 4 per iPad (8 varianti totali)</li>
+        <li data-i18n="zu.proto.li2"><strong>Light Mood</strong> — 4 mood × 2 device = 8 varianti</li>
+        <li data-i18n="zu.proto.li3"><strong>Duration Pills</strong> — 5 stati × 2 device = 10 varianti</li>
       </ul>
-      <p class="case-section__text fade-up" style="margin-top: 16px;"><strong>Totale: 26 stati componenti</strong> con transizioni Smart Animate per feedback visivo immediato.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="zu.proto.p2"><strong>Totale: 26 stati componenti</strong> con transizioni Smart Animate per feedback visivo immediato.</p>
     </div>
   </div>
 
@@ -315,44 +318,44 @@
 
     <!-- 11. Risultati -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Risultati</p>
-      <h2 class="case-section__heading fade-up">Controllo granulare<br>senza complessità</h2>
+      <p class="case-section__title fade-up" data-i18n="zu.results.t">Risultati</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.results.h">Controllo granulare<br>senza complessità</h2>
       <ul class="case-list fade-up">
-        <li><strong>Accesso diretto ai dispositivi</strong> — lista per stanza invece di planimetria obbligatoria</li>
-        <li><strong>Feedback visivo immediato</strong> — animazioni che mostrano lo stato reale</li>
-        <li><strong>Setup semplificato</strong> — niente planimetrie obbligatorie, solo lista dispositivi per stanza</li>
-        <li><strong>Preset intelligenti</strong> — mood predefiniti invece di configurazioni complesse</li>
+        <li data-i18n="zu.results.li1"><strong>Accesso diretto ai dispositivi</strong> — lista per stanza invece di planimetria obbligatoria</li>
+        <li data-i18n="zu.results.li2"><strong>Feedback visivo immediato</strong> — animazioni che mostrano lo stato reale</li>
+        <li data-i18n="zu.results.li3"><strong>Setup semplificato</strong> — niente planimetrie obbligatorie, solo lista dispositivi per stanza</li>
+        <li data-i18n="zu.results.li4"><strong>Preset intelligenti</strong> — mood predefiniti invece di configurazioni complesse</li>
       </ul>
     </div>
 
     <!-- 12. Next Steps -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Next Steps</p>
-      <h2 class="case-section__heading fade-up">Validazione, iterazione<br>e handoff sviluppo</h2>
+      <p class="case-section__title fade-up" data-i18n="zu.next.t">Next Steps</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.next.h">Validazione, iterazione<br>e handoff sviluppo</h2>
       <ul class="case-list fade-up">
-        <li><strong>User Testing</strong> — Test con 5-8 utenti per validare il flusso Core. Task: "Configura apertura automatica finestre cucina alle 8:00". Metriche: tempo completamento, errori, soddisfazione.</li>
-        <li><strong>Implementazione Slider Interattivo</strong> — Completare le varianti del componente finestra (0°, 30°, 60°, 90°) e collegare lo slider con Interactive Components per feedback visivo real-time.</li>
-        <li><strong>Espansione Flow Plus</strong> — Progettare Scene Builder e Advanced Scheduling per utenti avanzati. Validare con utenti che già usano sistemi di automazione complessi (es. Home Assistant, Loxone).</li>
-        <li><strong>Accessibilità</strong> — Audit WCAG 2.1 AA: contrasto colori, navigazione da tastiera, screen reader support. Particolare attenzione a slider e controlli granulari.</li>
-        <li><strong>Handoff Sviluppo</strong> — Documentare design system in Figma con variabili, componenti, e auto-layout. Preparare specifiche tecniche per API (formato dati automazioni, endpoint device control).</li>
+        <li data-i18n="zu.next.li1"><strong>User Testing</strong> — Test con 5-8 utenti per validare il flusso Core. Task: "Configura apertura automatica finestre cucina alle 8:00". Metriche: tempo completamento, errori, soddisfazione.</li>
+        <li data-i18n="zu.next.li2"><strong>Implementazione Slider Interattivo</strong> — Completare le varianti del componente finestra (0°, 30°, 60°, 90°) e collegare lo slider con Interactive Components per feedback visivo real-time.</li>
+        <li data-i18n="zu.next.li3"><strong>Espansione Flow Plus</strong> — Progettare Scene Builder e Advanced Scheduling per utenti avanzati. Validare con utenti che già usano sistemi di automazione complessi (es. Home Assistant, Loxone).</li>
+        <li data-i18n="zu.next.li4"><strong>Accessibilità</strong> — Audit WCAG 2.1 AA: contrasto colori, navigazione da tastiera, screen reader support. Particolare attenzione a slider e controlli granulari.</li>
+        <li data-i18n="zu.next.li5"><strong>Handoff Sviluppo</strong> — Documentare design system in Figma con variabili, componenti, e auto-layout. Preparare specifiche tecniche per API (formato dati automazioni, endpoint device control).</li>
       </ul>
     </div>
 
     <!-- 13. Learnings -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Key Learnings</p>
-      <h2 class="case-section__heading fade-up">Quando togliere è meglio<br>che aggiungere</h2>
+      <p class="case-section__title fade-up" data-i18n="zu.learn.t">Key Learnings</p>
+      <h2 class="case-section__heading fade-up" data-i18n="zu.learn.h">Quando togliere è meglio<br>che aggiungere</h2>
       <ul class="case-list case-list--bold fade-up">
-        <li>La complessità non è una feature — è un bug</li>
-        <li>La planimetria interattiva è visivamente impressionante, ma per la maggior parte degli utenti è cognitive overhead inutile</li>
-        <li>Le animazioni non sono decorazione — sono feedback essenziale</li>
-        <li>Il vantaggio competitivo di Zuru (digital twin nativo) deve essere invisibile all'utente finale</li>
+        <li data-i18n="zu.learn.li1">La complessità non è una feature — è un bug</li>
+        <li data-i18n="zu.learn.li2">La planimetria interattiva è visivamente impressionante, ma per la maggior parte degli utenti è cognitive overhead inutile</li>
+        <li data-i18n="zu.learn.li3">Le animazioni non sono decorazione — sono feedback essenziale</li>
+        <li data-i18n="zu.learn.li4">Il vantaggio competitivo di Zuru (digital twin nativo) deve essere invisibile all'utente finale</li>
       </ul>
     </div>
   </div>
 
   <a href="treedom-dark.html" class="case-next">
-    <p class="case-next__label">Prossimo progetto</p>
+    <p class="case-next__label" data-i18n="cs.next">Prossimo progetto</p>
     <h2 class="case-next__title">Treedom →</h2>
   </a>
 
@@ -362,6 +365,7 @@
   </footer>
 
   <script src="../js/main.js?v=16"></script>
+  <script src="../js/i18n.js"></script>
   <script>
     /* ── Responsive prototype scaler ── */
     function scaleProtos() {

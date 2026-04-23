@@ -114,6 +114,20 @@
     /* Fade-up */
     .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .55s ease, transform .55s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
+    /* Lang toggle */
+    .lang-toggle {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+      padding: 3px 9px;
+      cursor: pointer;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: #a0a09a;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .lang-toggle:hover { border-color: #C6F135; color: #C6F135; }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8ZQ504EGF"></script>
@@ -140,26 +154,28 @@
     </ul>
     <a href="index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
     <ul class="nav__links nav__right">
-      <li><a href="index.html#about" class="nav__link">About</a></li>
-      <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+      <li><a href="index.html#about" class="nav__link" data-i18n="nav.about">About</a></li>
+      <li><a href="index.html#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+      <li><button id="lang-toggle" class="nav__link lang-toggle" aria-label="Switch language">EN</button></li>
     </ul>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- PAGE HERO -->
   <section class="page-hero">
-    <h1 class="page-hero__title fade-up">Works</h1>
-    <p class="page-hero__sub fade-up fade-up-delay-1">Dal concept al lancio — progetti che hanno aiutato prodotti e piattaforme a crescere.</p>
+    <h1 class="page-hero__title fade-up" data-i18n="works-page.title">Works</h1>
+    <p class="page-hero__sub fade-up fade-up-delay-1" data-i18n="works-page.sub">Dal concept al lancio — progetti che hanno aiutato prodotti e piattaforme a crescere.</p>
   </section>
 
   <!-- FILTERS + GRID -->
   <section class="works-section" style="padding-top: 0;">
     <div class="container">
       <div class="filters fade-up">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="product">Product Design</button>
-        <button class="filter-btn" data-filter="ux-research">UX Research</button>
-        <button class="filter-btn" data-filter="elearning">E-learning</button>
-        <button class="filter-btn" data-filter="ui">UI Design</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+        <button class="filter-btn" data-filter="product" data-i18n="filter.product">Product Design</button>
+        <button class="filter-btn" data-filter="ux-research" data-i18n="filter.ux-research">UX Research</button>
+        <button class="filter-btn" data-filter="elearning" data-i18n="filter.elearning">E-learning</button>
+        <button class="filter-btn" data-filter="ui" data-i18n="filter.ui">UI Design</button>
       </div>
 
       <div class="projects-grid">
@@ -169,8 +185,8 @@
             <img src="assets/images/herozuru.webp" alt="Zuru Tech — Smart Home App" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Zuru Tech – Smart Home App</h3>
-            <p class="project-card__desc">App di automazione domestica con digital twin nativo: controllo granulare finestre, luci e clima senza la complessità di Google Home.</p>
+            <h3 class="project-card__title" data-i18n="card.zuru.title">Zuru Tech – Smart Home App</h3>
+            <p class="project-card__desc" data-i18n="card.zuru.desc">App di automazione domestica con digital twin nativo: controllo granulare finestre, luci e clima senza la complessità di Google Home.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">Product Design</span>
@@ -188,8 +204,8 @@
             <img src="assets/images/rentallhero.webp" alt="RentAll — P2P Rental App" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">RentAll – P2P Rental App</h3>
-            <p class="project-card__desc">App di noleggio peer-to-peer progettata con design thinking: ricerca utenti, analisi competitor, prototipazione e test per validare il servizio.</p>
+            <h3 class="project-card__title" data-i18n="card.rentall.title">RentAll – P2P Rental App</h3>
+            <p class="project-card__desc" data-i18n="card.rentall.desc">App di noleggio peer-to-peer progettata con design thinking: ricerca utenti, analisi competitor, prototipazione e test per validare il servizio.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">Product Design</span>
@@ -207,8 +223,8 @@
             <img src="assets/images/HERO.webp" alt="Leone Master School" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Leone Master School – Platform UX</h3>
-            <p class="project-card__desc">Redesign completo della piattaforma e-learning: onboarding, homepage personalizzata, architettura contenuti e UX mobile.</p>
+            <h3 class="project-card__title" data-i18n="card.leone.title">Leone Master School – Platform UX</h3>
+            <p class="project-card__desc" data-i18n="card.leone.desc">Redesign completo della piattaforma e-learning: onboarding, homepage personalizzata, architettura contenuti e UX mobile.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">E-learning</span>
@@ -226,8 +242,8 @@
             <img src="assets/images/tiacard.avif" alt="There Is An Alternative — Career Platform" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">There Is An Alternative – Career Platform</h3>
-            <p class="project-card__desc">UX e layout di una piattaforma career media per esplorare aziende tramite contenuti immersivi e job discovery.</p>
+            <h3 class="project-card__title" data-i18n="card.tia.title">There Is An Alternative – Career Platform</h3>
+            <p class="project-card__desc" data-i18n="card.tia.desc">UX e layout di una piattaforma career media per esplorare aziende tramite contenuti immersivi e job discovery.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UI Design</span>
@@ -245,8 +261,8 @@
             <img src="assets/images/herocolosseum.webp" alt="Colosseum Luxury Suite" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Colosseum Luxury Suite – Website</h3>
-            <p class="project-card__desc">Sito per affitti brevi ottimizzato per conversione: struttura, CTA, contenuti e miglioramenti di performance.</p>
+            <h3 class="project-card__title" data-i18n="card.colosseum.title">Colosseum Luxury Suite – Website</h3>
+            <p class="project-card__desc" data-i18n="card.colosseum.desc">Sito per affitti brevi ottimizzato per conversione: struttura, CTA, contenuti e miglioramenti di performance.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UI Design</span>
@@ -264,8 +280,8 @@
             <img src="assets/images/adeccogenzcard.webp" alt="Adecco Gen Z" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Adecco Gen Z – Engagement Platform</h3>
-            <p class="project-card__desc">Progetto per aumentare l'engagement della Gen Z: ricerca utenti, persona, contenuti editoriali e strategia digitale.</p>
+            <h3 class="project-card__title" data-i18n="card.adecco.title">Adecco Gen Z – Engagement Platform</h3>
+            <p class="project-card__desc" data-i18n="card.adecco.desc">Progetto per aumentare l'engagement della Gen Z: ricerca utenti, persona, contenuti editoriali e strategia digitale.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UX Research</span>
@@ -283,8 +299,8 @@
             <img src="assets/images/hero treedom.avif" alt="Treedom — UX Concept" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Treedom – UX Concept & Experience</h3>
-            <p class="project-card__desc">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità.</p>
+            <h3 class="project-card__title" data-i18n="card.treedom.title">Treedom – UX Concept & Experience</h3>
+            <p class="project-card__desc" data-i18n="card.treedom.desc">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UX Concept</span>
@@ -303,10 +319,11 @@
 
   <footer class="footer">
     <div class="footer__logo">Bruno Lorenzon</div>
-    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+    <p class="footer__copy" data-i18n="footer.copy">© 2025 — UX & Product Designer</p>
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
   <script>
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });

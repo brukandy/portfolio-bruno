@@ -47,6 +47,8 @@
     }
     .nav__link { color: #a0a09a; }
     .nav__link:hover { color: #ffffff; }
+    .lang-toggle { border-color: rgba(255,255,255,0.2) !important; color: #a0a09a !important; }
+    .lang-toggle:hover { border-color: #C6F135 !important; color: #C6F135 !important; }
     .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
     .nav__logo-top    { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
     .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
@@ -239,14 +241,15 @@
   <nav class="nav scrolled" id="nav">
     <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
     <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
-    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
+    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li><li><button id="lang-toggle" class="nav__link lang-toggle" aria-label="Switch language">EN</button></li></ul>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- 1. HERO -->
   <div class="case-hero">
-    <p class="case-hero__eyebrow fade-up">UX Research · Strategy · Content Design</p>
-    <h1 class="case-hero__title fade-up fade-up-delay-1">Riprogettare l'ingresso<br>nel mondo del lavoro</h1>
-    <p class="case-hero__desc fade-up fade-up-delay-2">Come si conquista la fiducia di una generazione che non si fida dei processi impersonali? Ricerca, strategia UX e contenuto al servizio della connessione.</p>
+    <p class="case-hero__eyebrow fade-up" data-i18n="adc.hero.eyebrow">UX Research · Strategy · Content Design</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1" data-i18n="adc.hero.title">Riprogettare l'ingresso<br>nel mondo del lavoro</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2" data-i18n="adc.hero.desc">Come si conquista la fiducia di una generazione che non si fida dei processi impersonali? Ricerca, strategia UX e contenuto al servizio della connessione.</p>
     <div class="case-hero__tags fade-up fade-up-delay-3">
       <span class="tag">UX Research</span>
       <span class="tag tag--outline">Strategy</span>
@@ -263,29 +266,29 @@
   <div class="case-body">
     <div class="case-meta fade-up">
       <div class="case-meta__item">
-        <div class="case-meta__label">Cliente</div>
+        <div class="case-meta__label" data-i18n="cs.client">Cliente</div>
         <div class="case-meta__value">Adecco Italia · Cerved</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__label" data-i18n="cs.role">Ruolo</div>
         <div class="case-meta__value">UX Designer & Strategist</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Anno</div>
+        <div class="case-meta__label" data-i18n="cs.year">Anno</div>
         <div class="case-meta__value">2023</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Strumenti</div>
+        <div class="case-meta__label" data-i18n="cs.tools">Strumenti</div>
         <div class="case-meta__value">Figma · Notion · Maze</div>
       </div>
     </div>
 
     <!-- 2. Contesto -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Contesto</p>
-      <h2 class="case-section__heading fade-up">La Gen Z visita Adecco.<br>Ma non si registra.</h2>
-      <p class="case-section__text fade-up">La sfida non era tecnica — era relazionale. I giovani tra i 18 e i 26 anni arrivano sul sito, guardano, e vanno via. Non perché non cerchino lavoro, ma perché non si sentono nel posto giusto: il linguaggio è troppo formale, i processi sembrano pensati per qualcun altro, e il contatto umano è quasi assente.</p>
-      <p class="case-section__text fade-up" style="margin-top:16px;">Adecco gZ nasce per rispondere a questa distanza — ripensare l'esperienza digitale per un target spesso trascurato dalle piattaforme tradizionali, rendendo il primo approccio al mondo del lavoro più chiaro, coinvolgente e umano.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.ctx.t">Contesto</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.ctx.h">La Gen Z visita Adecco.<br>Ma non si registra.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.ctx.p1">La sfida non era tecnica — era relazionale. I giovani tra i 18 e i 26 anni arrivano sul sito, guardano, e vanno via. Non perché non cerchino lavoro, ma perché non si sentono nel posto giusto: il linguaggio è troppo formale, i processi sembrano pensati per qualcun altro, e il contatto umano è quasi assente.</p>
+      <p class="case-section__text fade-up" style="margin-top:16px;" data-i18n="adc.ctx.p2">Adecco gZ nasce per rispondere a questa distanza — ripensare l'esperienza digitale per un target spesso trascurato dalle piattaforme tradizionali, rendendo il primo approccio al mondo del lavoro più chiaro, coinvolgente e umano.</p>
     </div>
   </div>
 
@@ -299,14 +302,14 @@
   <div class="case-body">
     <!-- 3. Ricerca -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Ricerca</p>
-      <h2 class="case-section__heading fade-up">Capire prima di progettare.<br>Ascoltare prima di costruire.</h2>
-      <p class="case-section__text fade-up">Ho condotto un'analisi approfondita del comportamento digitale della Gen Z e delle loro frizioni con il mondo del lavoro — non come segmento demografico, ma come persone con bisogni concreti e aspettative precise.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.ric.t">Ricerca</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.ric.h">Capire prima di progettare.<br>Ascoltare prima di costruire.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.ric.p">Ho condotto un'analisi approfondita del comportamento digitale della Gen Z e delle loro frizioni con il mondo del lavoro — non come segmento demografico, ma come persone con bisogni concreti e aspettative precise.</p>
       <ul class="case-list fade-up">
-        <li>Analisi di <strong>4 competitor</strong>: Joinrs, Glassdoor, JobTech, Manpower — tono di voce, onboarding, contenuto visivo</li>
-        <li>Definizione di una <strong>persona realistica</strong> (Dani, 20 anni) costruita su comportamenti digitali reali, non stereotipi</li>
-        <li>Analisi qualitativa del <strong>blog Adecco esistente</strong>: contenuti generalisti, sbilanciati su un target 30–45</li>
-        <li>Ricerca quantitativa su <strong>keyword Gen Z</strong>: CV, colloqui, smart working, stipendio, equilibrio vita-lavoro</li>
+        <li data-i18n="adc.ric.li1">Analisi di <strong>4 competitor</strong>: Joinrs, Glassdoor, JobTech, Manpower — tono di voce, onboarding, contenuto visivo</li>
+        <li data-i18n="adc.ric.li2">Definizione di una <strong>persona realistica</strong> (Dani, 20 anni) costruita su comportamenti digitali reali, non stereotipi</li>
+        <li data-i18n="adc.ric.li3">Analisi qualitativa del <strong>blog Adecco esistente</strong>: contenuti generalisti, sbilanciati su un target 30–45</li>
+        <li data-i18n="adc.ric.li4">Ricerca quantitativa su <strong>keyword Gen Z</strong>: CV, colloqui, smart working, stipendio, equilibrio vita-lavoro</li>
       </ul>
     </div>
   </div>
@@ -321,30 +324,30 @@
   <div class="case-body">
     <!-- 4. Insight -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Insight chiave</p>
-      <h2 class="case-section__heading fade-up">Non cercano solo lavoro.<br>Cercano un posto in cui riconoscersi.</h2>
-      <p class="case-section__text fade-up">La Gen Z non è difficile da ingaggiare — è difficile da ingannare. Vuole tono motivazionale ma autentico, contenuti brevi e visivi, e soprattutto la percezione di un contatto umano reale. L'utente ha bisogno di essere guidato passo dopo passo, non abbandonato in un sistema pensato per altri.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.ins.t">Insight chiave</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.ins.h">Non cercano solo lavoro.<br>Cercano un posto in cui riconoscersi.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.ins.p">La Gen Z non è difficile da ingaggiare — è difficile da ingannare. Vuole tono motivazionale ma autentico, contenuti brevi e visivi, e soprattutto la percezione di un contatto umano reale. L'utente ha bisogno di essere guidato passo dopo passo, non abbandonato in un sistema pensato per altri.</p>
       <div class="case-metrics fade-up">
         <div class="case-metric">
           <span class="case-metric__value">↓</span>
-          <span class="case-metric__label">Tasso di registrazione under 25</span>
+          <span class="case-metric__label" data-i18n="adc.ins.m1">Tasso di registrazione under 25</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">↑</span>
-          <span class="case-metric__label">Bounce rate on boarding</span>
+          <span class="case-metric__label" data-i18n="adc.ins.m2">Bounce rate on boarding</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">—</span>
-          <span class="case-metric__label">Linguaggio non adatto al target</span>
+          <span class="case-metric__label" data-i18n="adc.ins.m3">Linguaggio non adatto al target</span>
         </div>
       </div>
     </div>
 
     <!-- 5. Strategia -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Strategia UX</p>
-      <h2 class="case-section__heading fade-up">Un flusso che accompagna,<br>non che abbandona.</h2>
-      <p class="case-section__text fade-up">Ho progettato un'esperienza step-by-step che trasforma la candidatura da azione burocratica a percorso immersivo. Ogni momento del flusso è pensato per ridurre l'ansia, costruire fiducia e avvicinare l'utente all'azienda prima ancora del colloquio.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.str.t">Strategia UX</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.str.h">Un flusso che accompagna,<br>non che abbandona.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.str.p">Ho progettato un'esperienza step-by-step che trasforma la candidatura da azione burocratica a percorso immersivo. Ogni momento del flusso è pensato per ridurre l'ansia, costruire fiducia e avvicinare l'utente all'azienda prima ancora del colloquio.</p>
       <p class="case-section__text fade-up" style="margin-top: 24px;"><strong>Framework:</strong> Awareness → Onboarding → Candidatura → Matching → Fiducia</p>
     </div>
   </div>
@@ -373,14 +376,14 @@
   <div class="case-body">
     <!-- 6. Soluzione: Sistema editoriale -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Soluzione</p>
-      <h2 class="case-section__heading fade-up">Contenuto come UX.<br>48 pezzi. 3 mesi. 4 direzioni.</h2>
-      <p class="case-section__text fade-up">La soluzione non è stata solo una nuova interfaccia — è stato un sistema editoriale pensato in ottica UX. Un piano di 48 contenuti in 3 mesi, divisi in 4 aree tematiche: mondo del lavoro, valori aziendali, nuove tecnologie, formazione.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.sol.t">Soluzione</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.sol.h">Contenuto come UX.<br>48 pezzi. 3 mesi. 4 direzioni.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.sol.p">La soluzione non è stata solo una nuova interfaccia — è stato un sistema editoriale pensato in ottica UX. Un piano di 48 contenuti in 3 mesi, divisi in 4 aree tematiche: mondo del lavoro, valori aziendali, nuove tecnologie, formazione.</p>
       <ul class="case-list fade-up">
-        <li>Articoli brevi, ottimizzati mobile, con call to action integrate nel flusso</li>
-        <li>Tone of voice motivazionale, serio, senza finto entusiasmo</li>
-        <li>Ogni contenuto era un touchpoint progettato — non riempitivo</li>
-        <li>4 aree tematiche: lavoro, valori aziendali, tecnologia, formazione</li>
+        <li data-i18n="adc.sol.li1">Articoli brevi, ottimizzati mobile, con call to action integrate nel flusso</li>
+        <li data-i18n="adc.sol.li2">Tone of voice motivazionale, serio, senza finto entusiasmo</li>
+        <li data-i18n="adc.sol.li3">Ogni contenuto era un touchpoint progettato — non riempitivo</li>
+        <li data-i18n="adc.sol.li4">4 aree tematiche: lavoro, valori aziendali, tecnologia, formazione</li>
       </ul>
     </div>
   </div>
@@ -402,9 +405,9 @@
   <div class="case-body">
     <!-- Candidatura e offerte -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Candidatura</p>
-      <h2 class="case-section__heading fade-up">Un'offerta di lavoro<br>che parla davvero alla Gen Z.</h2>
-      <p class="case-section__text fade-up">Ho riprogettato la pagina di offerta di lavoro per renderla meno burocratica e più umana. Meno requisiti in lista, più contesto sull'ambiente di lavoro. Il linguaggio è diretto, il tono inclusivo, la struttura pensata per chi legge da mobile in 30 secondi.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.cand.t">Candidatura</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.cand.h">Un'offerta di lavoro<br>che parla davvero alla Gen Z.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.cand.p">Ho riprogettato la pagina di offerta di lavoro per renderla meno burocratica e più umana. Meno requisiti in lista, più contesto sull'ambiente di lavoro. Il linguaggio è diretto, il tono inclusivo, la struttura pensata per chi legge da mobile in 30 secondi.</p>
     </div>
   </div>
 
@@ -425,9 +428,9 @@
   <div class="case-body">
     <!-- Pagina azienda -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Pagina azienda</p>
-      <h2 class="case-section__heading fade-up">Non solo un'offerta.<br>Un posto dove vorresti stare.</h2>
-      <p class="case-section__text fade-up">Ho progettato la company page come uno spazio narrativo — non una lista di benefit, ma una finestra su come si lavora davvero. Contenuti generati dall'azienda stessa, recensioni reali, video di team. Fiducia costruita prima ancora del colloquio.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.az.t">Pagina azienda</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.az.h">Non solo un'offerta.<br>Un posto dove vorresti stare.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.az.p">Ho progettato la company page come uno spazio narrativo — non una lista di benefit, ma una finestra su come si lavora davvero. Contenuti generati dall'azienda stessa, recensioni reali, video di team. Fiducia costruita prima ancora del colloquio.</p>
     </div>
   </div>
 
@@ -448,9 +451,9 @@
   <div class="case-body">
     <!-- Homepage -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Homepage</p>
-      <h2 class="case-section__heading fade-up">Una home che accoglie,<br>non che spaventa.</h2>
-      <p class="case-section__text fade-up">La nuova home di Adecco gZ è pensata per il primo impatto. Niente form subito, niente jargon HR. Solo un messaggio chiaro sul perché vale la pena restare — e un percorso guidato verso il primo passo.</p>
+      <p class="case-section__title fade-up" data-i18n="adc.home.t">Homepage</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.home.h">Una home che accoglie,<br>non che spaventa.</h2>
+      <p class="case-section__text fade-up" data-i18n="adc.home.p">La nuova home di Adecco gZ è pensata per il primo impatto. Niente form subito, niente jargon HR. Solo un messaggio chiaro sul perché vale la pena restare — e un percorso guidato verso il primo passo.</p>
     </div>
   </div>
 
@@ -471,53 +474,53 @@
   <div class="case-body">
     <!-- 7. Risultati -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Risultati</p>
-      <h2 class="case-section__heading fade-up">Numeri che parlano<br>di fiducia conquistata.</h2>
+      <p class="case-section__title fade-up" data-i18n="adc.res.t">Risultati</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.res.h">Numeri che parlano<br>di fiducia conquistata.</h2>
       <div class="case-metrics case-metrics--grid fade-up">
         <div class="case-metric">
           <span class="case-metric__value">+20%</span>
-          <span class="case-metric__label">Registrazioni nella fascia under 25</span>
+          <span class="case-metric__label" data-i18n="adc.res.m1">Registrazioni nella fascia under 25</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">+1.739</span>
-          <span class="case-metric__label">CV raccolti nel periodo</span>
+          <span class="case-metric__label" data-i18n="adc.res.m2">CV raccolti nel periodo</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">&gt;3 min</span>
-          <span class="case-metric__label">Tempo medio sul sito</span>
+          <span class="case-metric__label" data-i18n="adc.res.m3">Tempo medio sul sito</span>
         </div>
         <div class="case-metric">
           <span class="case-metric__value">48</span>
-          <span class="case-metric__label">Contenuti pubblicati entro settembre</span>
+          <span class="case-metric__label" data-i18n="adc.res.m4">Contenuti pubblicati entro settembre</span>
         </div>
       </div>
     </div>
 
     <!-- 8. Learnings -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Learnings</p>
-      <h2 class="case-section__heading fade-up">Il contenuto non accompagna la UX.<br>Il contenuto è la UX.</h2>
+      <p class="case-section__title fade-up" data-i18n="adc.learn.t">Learnings</p>
+      <h2 class="case-section__heading fade-up" data-i18n="adc.learn.h">Il contenuto non accompagna la UX.<br>Il contenuto è la UX.</h2>
       <ul class="case-list case-list--bold fade-up">
-        <li>In certi contesti la scrittura e il tono sono tanto importanti quanto il layout</li>
-        <li>La fiducia di un utente si costruisce anche attraverso una parola scelta bene</li>
-        <li>Collaborare con marketer insegna a tradurre obiettivi editoriali in decisioni di design</li>
-        <li>Difendere scelte UX richiede argomenti che parlino anche a chi il design non lo fa</li>
+        <li data-i18n="adc.learn.li1">In certi contesti la scrittura e il tono sono tanto importanti quanto il layout</li>
+        <li data-i18n="adc.learn.li2">La fiducia di un utente si costruisce anche attraverso una parola scelta bene</li>
+        <li data-i18n="adc.learn.li3">Collaborare con marketer insegna a tradurre obiettivi editoriali in decisioni di design</li>
+        <li data-i18n="adc.learn.li4">Difendere scelte UX richiede argomenti che parlino anche a chi il design non lo fa</li>
       </ul>
     </div>
 
     <!-- 9. Next Step -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Next Step</p>
+      <p class="case-section__title fade-up" data-i18n="adc.nexts.t">Next Step</p>
       <ul class="case-list fade-up">
-        <li>Sistema di matching basato su <strong>interessi e soft skill</strong>, non solo titolo di studio</li>
-        <li>Integrazione di <strong>eventi live e contenuti real-time</strong> nelle pagine aziendali</li>
-        <li>Area dedicata a chi è <strong>senza esperienza</strong>, con percorsi guidati e milestone progressive</li>
+        <li data-i18n="adc.nexts.li1">Sistema di matching basato su <strong>interessi e soft skill</strong>, non solo titolo di studio</li>
+        <li data-i18n="adc.nexts.li2">Integrazione di <strong>eventi live e contenuti real-time</strong> nelle pagine aziendali</li>
+        <li data-i18n="adc.nexts.li3">Area dedicata a chi è <strong>senza esperienza</strong>, con percorsi guidati e milestone progressive</li>
       </ul>
     </div>
   </div>
 
   <a href="treedom-dark.html" class="case-next">
-    <p class="case-next__label">Prossimo progetto</p>
+    <p class="case-next__label" data-i18n="cs.next">Prossimo progetto</p>
     <h2 class="case-next__title">Treedom →</h2>
   </a>
 
@@ -527,5 +530,6 @@
   </footer>
 
   <script src="../js/main.js?v=16"></script>
+  <script src="../js/i18n.js"></script>
 </body>
 </html>

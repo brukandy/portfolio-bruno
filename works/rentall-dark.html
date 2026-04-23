@@ -45,6 +45,8 @@
     .nav, .nav.scrolled { background: rgba(14,12,24,0.95) !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
     .nav__link { color: #a0a09a; }
     .nav__link:hover { color: #ffffff; }
+    .lang-toggle { border-color: rgba(255,255,255,0.2) !important; color: #a0a09a !important; }
+    .lang-toggle:hover { border-color: #C6F135 !important; color: #C6F135 !important; }
     .nav__logo { font-family: 'gunter', sans-serif !important; font-style: normal !important; }
     .nav__logo-top { color: #C6F135 !important; font-weight: 700 !important; font-style: normal !important; }
     .nav__logo-bottom { color: #C6F135 !important; opacity: 0.6; font-weight: 400 !important; font-style: normal !important; }
@@ -582,13 +584,14 @@
   <nav class="nav scrolled" id="nav">
     <ul class="nav__links nav__left"><li><a href="../works-dark.html" class="nav__link">← Works</a></li></ul>
     <a href="../index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
-    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li></ul>
+    <ul class="nav__links nav__right"><li><a href="../index.html#contact" class="nav__link">Contact</a></li><li><button id="lang-toggle" class="nav__link lang-toggle" aria-label="Switch language">EN</button></li></ul>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- ── 1. HERO ── -->
   <div class="case-hero">
-    <h1 class="case-hero__title fade-up fade-up-delay-1">Noleggiare tra privati,<br>naturale come inviare un messaggio</h1>
-    <p class="case-hero__desc fade-up fade-up-delay-2">Un'app di noleggio P2P progettata per trasformare la diffidenza in fiducia — 5 settimane di Design Thinking, ricerca qualitativa, e funzionalità AI per abbassare radicalmente la soglia d'ingresso.</p>
+    <h1 class="case-hero__title fade-up fade-up-delay-1" data-i18n="ral.hero.title">Noleggiare tra privati,<br>naturale come inviare un messaggio</h1>
+    <p class="case-hero__desc fade-up fade-up-delay-2" data-i18n="ral.hero.desc">Un'app di noleggio P2P progettata per trasformare la diffidenza in fiducia — 5 settimane di Design Thinking, ricerca qualitativa, e funzionalità AI per abbassare radicalmente la soglia d'ingresso.</p>
     <div class="case-hero__tags fade-up fade-up-delay-3">
       <span class="tag">UX Research</span>
       <span class="tag tag--outline">Design Thinking</span>
@@ -607,29 +610,29 @@
   <div class="case-body">
     <div class="case-meta fade-up">
       <div class="case-meta__item">
-        <div class="case-meta__label">Ruolo</div>
+        <div class="case-meta__label" data-i18n="cs.role">Ruolo</div>
         <div class="case-meta__value">Lead UX Designer</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Durata</div>
+        <div class="case-meta__label" data-i18n="cs.duration">Durata</div>
         <div class="case-meta__value">5 settimane</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Anno</div>
+        <div class="case-meta__label" data-i18n="cs.year">Anno</div>
         <div class="case-meta__value">2023</div>
       </div>
       <div class="case-meta__item">
-        <div class="case-meta__label">Strumenti</div>
+        <div class="case-meta__label" data-i18n="cs.tools">Strumenti</div>
         <div class="case-meta__value">Figma · Maze · Miro · Notion</div>
       </div>
     </div>
 
     <!-- ── 2. LA SFIDA ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">La Sfida</p>
-      <h2 class="case-section__heading fade-up">Trasformare un gesto insolito<br>in qualcosa di naturale</h2>
-      <p class="case-section__text fade-up">Noleggiare tra privati è un'idea potente, ma spesso frenata da dubbi e diffidenze. La sfida era progettare un'esperienza che trasmettesse <strong>fiducia, semplicità e sicurezza</strong>, trasformando un gesto insolito in qualcosa di naturale.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">RentAll doveva rendere il noleggio facile quanto inviare un messaggio — anche per chi non ha mai condiviso nulla con uno sconosciuto. La tecnologia doveva diventare un ponte, non un ostacolo.</p>
+      <p class="case-section__title fade-up" data-i18n="ral.sfida.t">La Sfida</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.sfida.h">Trasformare un gesto insolito<br>in qualcosa di naturale</h2>
+      <p class="case-section__text fade-up" data-i18n="ral.sfida.p1">Noleggiare tra privati è un'idea potente, ma spesso frenata da dubbi e diffidenze. La sfida era progettare un'esperienza che trasmettesse <strong>fiducia, semplicità e sicurezza</strong>, trasformando un gesto insolito in qualcosa di naturale.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="ral.sfida.p2">RentAll doveva rendere il noleggio facile quanto inviare un messaggio — anche per chi non ha mai condiviso nulla con uno sconosciuto. La tecnologia doveva diventare un ponte, non un ostacolo.</p>
     </div>
   </div>
 
@@ -644,33 +647,33 @@
   <div class="case-body">
     <!-- ── 3. METODOLOGIA ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Metodologia</p>
-      <h2 class="case-section__heading fade-up">Design Thinking in 5 settimane<br>sprint da 10 giorni</h2>
-      <p class="case-section__text fade-up">Il progetto è stato sviluppato seguendo un approccio ispirato al <strong>Design Thinking</strong>, unendo strumenti qualitativi e quantitativi per ottenere insight solidi e utili alla progettazione.</p>
+      <p class="case-section__title fade-up" data-i18n="ral.met.t">Metodologia</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.met.h">Design Thinking in 5 settimane<br>sprint da 10 giorni</h2>
+      <p class="case-section__text fade-up" data-i18n="ral.met.p">Il progetto è stato sviluppato seguendo un approccio ispirato al <strong>Design Thinking</strong>, unendo strumenti qualitativi e quantitativi per ottenere insight solidi e utili alla progettazione.</p>
 
       <div class="ra-dt-phases">
         <div class="ra-dt-phase">
           <div class="ra-dt-phase__num">01</div>
           <div>
-            <div class="ra-dt-phase__title">Ricerca</div>
-            <div class="ra-dt-phase__desc">Comprensione di bisogni, ostacoli e comportamenti reali attraverso interviste, survey e analisi del contesto competitivo.</div>
-            <span class="ra-dt-phase__week">Settimane 1–2</span>
+            <div class="ra-dt-phase__title" data-i18n="ral.met.ph1t">Ricerca</div>
+            <div class="ra-dt-phase__desc" data-i18n="ral.met.ph1d">Comprensione di bisogni, ostacoli e comportamenti reali attraverso interviste, survey e analisi del contesto competitivo.</div>
+            <span class="ra-dt-phase__week" data-i18n="ral.met.ph1w">Settimane 1–2</span>
           </div>
         </div>
         <div class="ra-dt-phase">
           <div class="ra-dt-phase__num">02</div>
           <div>
-            <div class="ra-dt-phase__title">Ideazione e Concettualizzazione</div>
-            <div class="ra-dt-phase__desc">Traduzione degli insight in opportunità di design, definizione delle funzionalità chiave e architettura dell'informazione.</div>
-            <span class="ra-dt-phase__week">Settimane 3–4</span>
+            <div class="ra-dt-phase__title" data-i18n="ral.met.ph2t">Ideazione e Concettualizzazione</div>
+            <div class="ra-dt-phase__desc" data-i18n="ral.met.ph2d">Traduzione degli insight in opportunità di design, definizione delle funzionalità chiave e architettura dell'informazione.</div>
+            <span class="ra-dt-phase__week" data-i18n="ral.met.ph2w">Settimane 3–4</span>
           </div>
         </div>
         <div class="ra-dt-phase">
           <div class="ra-dt-phase__num">03</div>
           <div>
-            <div class="ra-dt-phase__title">Prototipazione e Validazione</div>
-            <div class="ra-dt-phase__desc">Costruzione di prototipi ad alto realismo e test con utenti reali per validare le soluzioni e identificare ulteriori aree di miglioramento.</div>
-            <span class="ra-dt-phase__week">Settimana 5</span>
+            <div class="ra-dt-phase__title" data-i18n="ral.met.ph3t">Prototipazione e Validazione</div>
+            <div class="ra-dt-phase__desc" data-i18n="ral.met.ph3d">Costruzione di prototipi ad alto realismo e test con utenti reali per validare le soluzioni e identificare ulteriori aree di miglioramento.</div>
+            <span class="ra-dt-phase__week" data-i18n="ral.met.ph3w">Settimana 5</span>
           </div>
         </div>
       </div>
@@ -678,18 +681,18 @@
 
     <!-- ── 4. LA RICERCA (ESPANSA) ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">La Ricerca</p>
-      <h2 class="case-section__heading fade-up">Due domande guida<br>per capire il comportamento reale</h2>
-      <p class="case-section__text fade-up">La ricerca si è concentrata su <strong>due aspetti principali</strong>, spesso trascurati dalle piattaforme esistenti:</p>
+      <p class="case-section__title fade-up" data-i18n="ral.ric.t">La Ricerca</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.ric.h">Due domande guida<br>per capire il comportamento reale</h2>
+      <p class="case-section__text fade-up" data-i18n="ral.ric.p">La ricerca si è concentrata su <strong>due aspetti principali</strong>, spesso trascurati dalle piattaforme esistenti:</p>
       <ul class="case-list fade-up">
-        <li><strong>Le condizioni che spingono una persona a noleggiare</strong> un oggetto anziché acquistarlo — quando il noleggio diventa la scelta razionale e qual è il trigger emotivo.</li>
-        <li><strong>I timori e le resistenze</strong> che impediscono di mettere a disposizione i propri oggetti — il lato "proprietario" è quello più fragile da un punto di vista della fiducia.</li>
+        <li data-i18n="ral.ric.li1"><strong>Le condizioni che spingono una persona a noleggiare</strong> un oggetto anziché acquistarlo — quando il noleggio diventa la scelta razionale e qual è il trigger emotivo.</li>
+        <li data-i18n="ral.ric.li2"><strong>I timori e le resistenze</strong> che impediscono di mettere a disposizione i propri oggetti — il lato "proprietario" è quello più fragile da un punto di vista della fiducia.</li>
       </ul>
 
       <ul class="case-list fade-up">
-        <li><strong>Interviste semi-strutturate</strong> — Sessioni individuali per esplorare motivazioni, paure e comportamenti profondi. Focus su episodi reali: "Dimmi l'ultima volta che hai avuto bisogno di qualcosa per un uso temporaneo."</li>
-        <li><strong>Survey quantitativa</strong> — Questionario per misurare la propensione al noleggio, la soglia di fiducia verso gli sconosciuti e l'importanza di garanzie e verifiche.</li>
-        <li><strong>Analisi competitor</strong> — Studio approfondito di Fat Llama, Subito e Wallapop per identificare gap critici in fiducia, sicurezza e accessibilità del servizio.</li>
+        <li data-i18n="ral.ric.li3"><strong>Interviste semi-strutturate</strong> — Sessioni individuali per esplorare motivazioni, paure e comportamenti profondi. Focus su episodi reali: "Dimmi l'ultima volta che hai avuto bisogno di qualcosa per un uso temporaneo."</li>
+        <li data-i18n="ral.ric.li4"><strong>Survey quantitativa</strong> — Questionario per misurare la propensione al noleggio, la soglia di fiducia verso gli sconosciuti e l'importanza di garanzie e verifiche.</li>
+        <li data-i18n="ral.ric.li5"><strong>Analisi competitor</strong> — Studio approfondito di Fat Llama, Subito e Wallapop per identificare gap critici in fiducia, sicurezza e accessibilità del servizio.</li>
       </ul>
     </div>
   </div>
@@ -697,29 +700,29 @@
   <!-- Research Insights — inline numbered -->
   <div class="case-body" style="padding-top: 0;">
     <div class="case-section" style="padding-top: 0;">
-      <p class="case-section__title fade-up">Insight chiave</p>
-      <h2 class="case-section__heading fade-up">Tre scoperte che hanno<br>guidato il progetto</h2>
+      <p class="case-section__title fade-up" data-i18n="ral.ins.t">Insight chiave</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.ins.h">Tre scoperte che hanno<br>guidato il progetto</h2>
 
       <div class="ra-insights">
         <div class="ra-insight">
           <div class="ra-insight__num">01</div>
           <div>
-            <div class="ra-insight__title">Oggetti inutilizzati, valore nascosto</div>
-            <div class="ra-insight__desc">Le persone accumulano oggetti che non usano più — spesso dopo un cambio di hobby o stile di vita. La barriera non è la disponibilità degli oggetti, ma la fiducia nel processo di condivisione.</div>
+            <div class="ra-insight__title" data-i18n="ral.ins.t1">Oggetti inutilizzati, valore nascosto</div>
+            <div class="ra-insight__desc" data-i18n="ral.ins.d1">Le persone accumulano oggetti che non usano più — spesso dopo un cambio di hobby o stile di vita. La barriera non è la disponibilità degli oggetti, ma la fiducia nel processo di condivisione.</div>
           </div>
         </div>
         <div class="ra-insight">
           <div class="ra-insight__num">02</div>
           <div>
-            <div class="ra-insight__title">La fiducia è la barriera principale</div>
-            <div class="ra-insight__desc">Il lato proprietario è il più vulnerabile: la paura che l'oggetto venga danneggiato o non restituito blocca sistematicamente l'adozione. Nessun competitor aveva risolto questo problema in modo convincente.</div>
+            <div class="ra-insight__title" data-i18n="ral.ins.t2">La fiducia è la barriera principale</div>
+            <div class="ra-insight__desc" data-i18n="ral.ins.d2">Il lato proprietario è il più vulnerabile: la paura che l'oggetto venga danneggiato o non restituito blocca sistematicamente l'adozione. Nessun competitor aveva risolto questo problema in modo convincente.</div>
           </div>
         </div>
         <div class="ra-insight">
           <div class="ra-insight__num">03</div>
           <div>
-            <div class="ra-insight__title">Pubblicare è percepito come un lavoro</div>
-            <div class="ra-insight__desc">Creare un annuncio — fotografare, descrivere, fissare il prezzo — è visto come un'attività faticosa e rischiosa, non come un gesto naturale. Il friction iniziale è il principale punto di abbandono.</div>
+            <div class="ra-insight__title" data-i18n="ral.ins.t3">Pubblicare è percepito come un lavoro</div>
+            <div class="ra-insight__desc" data-i18n="ral.ins.d3">Creare un annuncio — fotografare, descrivere, fissare il prezzo — è visto come un'attività faticosa e rischiosa, non come un gesto naturale. Il friction iniziale è il principale punto di abbandono.</div>
           </div>
         </div>
       </div>
@@ -729,13 +732,13 @@
   <div class="case-body">
     <!-- ── 5. LA SCOPERTA ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">La Scoperta</p>
-      <h2 class="case-section__heading fade-up">Oggetti inutilizzati, fiducia mancante,<br>setup troppo complesso</h2>
-      <p class="case-section__text fade-up">Cambiando hobby o stile di vita, le persone tendono ad accumulare oggetti inutilizzati. <strong>Chi presta è spesso preoccupato per lo stato in cui l'oggetto verrà restituito</strong> e per l'affidabilità dell'interlocutore.</p>
-      <p class="case-section__text fade-up" style="margin-top: 16px;">In parallelo, l'analisi di competitor come Fat Llama, Subito e Wallapop ha evidenziato <strong>criticità sistemiche</strong> nella fiducia, nella sicurezza e nell'accessibilità del servizio. Nessuno aveva risolto il lato del proprietario in modo convincente.</p>
+      <p class="case-section__title fade-up" data-i18n="ral.disc.t">La Scoperta</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.disc.h">Oggetti inutilizzati, fiducia mancante,<br>setup troppo complesso</h2>
+      <p class="case-section__text fade-up" data-i18n="ral.disc.p1">Cambiando hobby o stile di vita, le persone tendono ad accumulare oggetti inutilizzati. <strong>Chi presta è spesso preoccupato per lo stato in cui l'oggetto verrà restituito</strong> e per l'affidabilità dell'interlocutore.</p>
+      <p class="case-section__text fade-up" style="margin-top: 16px;" data-i18n="ral.disc.p2">In parallelo, l'analisi di competitor come Fat Llama, Subito e Wallapop ha evidenziato <strong>criticità sistemiche</strong> nella fiducia, nella sicurezza e nell'accessibilità del servizio. Nessuno aveva risolto il lato del proprietario in modo convincente.</p>
 
       <div class="ra-quote fade-up">
-        <div class="ra-quote__text">Il problema non è solo trovare chi noleggia — è convincere il proprietario che vale la pena farlo. Senza fiducia, il marketplace non parte.</div>
+        <div class="ra-quote__text" data-i18n="ral.disc.q">Il problema non è solo trovare chi noleggia — è convincere il proprietario che vale la pena farlo. Senza fiducia, il marketplace non parte.</div>
         <div class="ra-quote__author">— Insight chiave dalla ricerca</div>
       </div>
     </div>
@@ -755,9 +758,9 @@
   <div class="case-body">
     <!-- ── 6. IL VIAGGIO ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Il Viaggio</p>
-      <h2 class="case-section__heading fade-up">Tre atti, due protagonisti,<br>una piattaforma di fiducia</h2>
-      <p class="case-section__text fade-up">Ho costruito un <strong>customer journey narrativo in tre atti</strong> che copre entrambi i lati del mercato — il proprietario che mette a noleggio e il noleggiatore che cerca — più il momento critico del controllo a metà noleggio.</p>
+      <p class="case-section__title fade-up" data-i18n="ral.viaig.t">Il Viaggio</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.viaig.h">Tre atti, due protagonisti,<br>una piattaforma di fiducia</h2>
+      <p class="case-section__text fade-up" data-i18n="ral.viaig.p">Ho costruito un <strong>customer journey narrativo in tre atti</strong> che copre entrambi i lati del mercato — il proprietario che mette a noleggio e il noleggiatore che cerca — più il momento critico del controllo a metà noleggio.</p>
     </div>
   </div>
 
@@ -814,9 +817,9 @@
   <div class="case-body">
     <!-- ── 7. SMART SCAN + AI MID-CHECK ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Funzionalità AI</p>
-      <h2 class="case-section__heading fade-up">Due feature per costruire fiducia<br>da entrambi i lati</h2>
-      <p class="case-section__text fade-up">I due insight più critici — "pubblicare è faticoso" e "ho paura che rovinino l'oggetto" — hanno generato direttamente due funzionalità AI che abbattono le barriere principali del marketplace.</p>
+      <p class="case-section__title fade-up" data-i18n="ral.ai.t">Funzionalità AI</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.ai.h">Due feature per costruire fiducia<br>da entrambi i lati</h2>
+      <p class="case-section__text fade-up" data-i18n="ral.ai.p">I due insight più critici — "pubblicare è faticoso" e "ho paura che rovinino l'oggetto" — hanno generato direttamente due funzionalità AI che abbattono le barriere principali del marketplace.</p>
 
       <div class="ra-ai-grid fade-up">
         <!-- Smart Scan -->
@@ -907,36 +910,36 @@
   <div class="case-body">
     <!-- ── 8. COSA HO IMPARATO ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Cosa ho imparato</p>
-      <h2 class="case-section__heading fade-up">Tecnologia al servizio<br>della fiducia tra le persone</h2>
+      <p class="case-section__title fade-up" data-i18n="ral.learn.t">Cosa ho imparato</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.learn.h">Tecnologia al servizio<br>della fiducia tra le persone</h2>
 
       <div class="ra-learnings fade-up">
         <div class="ra-learning">
           <div class="ra-learning__num">01</div>
-          <div class="ra-learning__title">Legare tecnologia e fiducia</div>
-          <div class="ra-learning__desc">In contesti peer-to-peer, la tecnologia non basta da sola. Ogni feature deve rispondere a una paura reale dell'utente — e questo vale doppio quando si tratta di oggetti personali.</div>
+          <div class="ra-learning__title" data-i18n="ral.learn.t1">Legare tecnologia e fiducia</div>
+          <div class="ra-learning__desc" data-i18n="ral.learn.d1">In contesti peer-to-peer, la tecnologia non basta da sola. Ogni feature deve rispondere a una paura reale dell'utente — e questo vale doppio quando si tratta di oggetti personali.</div>
         </div>
         <div class="ra-learning">
           <div class="ra-learning__num">02</div>
-          <div class="ra-learning__title">Prototipi ad alto realismo</div>
-          <div class="ra-learning__desc">Lavorare con prototipi ad alto realismo mi ha aiutato a ottenere feedback concreti anche su funzionalità avanzate come lo Smart Scan e il Mid-Rental Check — gli utenti reagiscono in modo molto più autentico.</div>
+          <div class="ra-learning__title" data-i18n="ral.learn.t2">Prototipi ad alto realismo</div>
+          <div class="ra-learning__desc" data-i18n="ral.learn.d2">Lavorare con prototipi ad alto realismo mi ha aiutato a ottenere feedback concreti anche su funzionalità avanzate come lo Smart Scan e il Mid-Rental Check — gli utenti reagiscono in modo molto più autentico.</div>
         </div>
         <div class="ra-learning">
           <div class="ra-learning__num">03</div>
-          <div class="ra-learning__title">Semplificare il complesso</div>
-          <div class="ra-learning__desc">Ho rafforzato la mia capacità di semplificare interfacce complesse, trasformandole in esperienze familiari e intuitive. La semplicità percepita è il vero differenziatore in un marketplace di fiducia.</div>
+          <div class="ra-learning__title" data-i18n="ral.learn.t3">Semplificare il complesso</div>
+          <div class="ra-learning__desc" data-i18n="ral.learn.d3">Ho rafforzato la mia capacità di semplificare interfacce complesse, trasformandole in esperienze familiari e intuitive. La semplicità percepita è il vero differenziatore in un marketplace di fiducia.</div>
         </div>
       </div>
     </div>
 
     <!-- ── 9. NEXT STEPS ── -->
     <div class="case-section">
-      <p class="case-section__title fade-up">Next Steps</p>
-      <h2 class="case-section__heading fade-up">Dove porterebbe<br>l'iterazione successiva</h2>
+      <p class="case-section__title fade-up" data-i18n="ral.nexts.t">Next Steps</p>
+      <h2 class="case-section__heading fade-up" data-i18n="ral.nexts.h">Dove porterebbe<br>l'iterazione successiva</h2>
 
       <ul class="case-list fade-up">
-        <li><strong>Sistema di garanzie e assicurazione</strong> — Integrazione di un sistema di garanzie e copertura assicurativa per aumentare la fiducia nella piattaforma da parte di chi presta oggetti di valore — il principale blocco all'adozione per il segmento "proprietario".</li>
-        <li><strong>Sistema di reputazione evoluto</strong> — Profili verificati, storia dei noleggi e rating bidirezionali per costruire un sistema di reputazione che riduca ulteriormente la diffidenza iniziale e incentivi i comportamenti virtuosi.</li>
+        <li data-i18n="ral.nexts.li1"><strong>Sistema di garanzie e assicurazione</strong> — Integrazione di un sistema di garanzie e copertura assicurativa per aumentare la fiducia nella piattaforma da parte di chi presta oggetti di valore — il principale blocco all'adozione per il segmento "proprietario".</li>
+        <li data-i18n="ral.nexts.li2"><strong>Sistema di reputazione evoluto</strong> — Profili verificati, storia dei noleggi e rating bidirezionali per costruire un sistema di reputazione che riduca ulteriormente la diffidenza iniziale e incentivi i comportamenti virtuosi.</li>
       </ul>
     </div>
 
@@ -944,7 +947,7 @@
 
   <!-- ── NEXT PROJECT ── -->
   <a href="leone-master-dark.html" class="case-next">
-    <p class="case-next__label">Prossimo progetto</p>
+    <p class="case-next__label" data-i18n="cs.next">Prossimo progetto</p>
     <h2 class="case-next__title">Leone Master School →</h2>
   </a>
 
@@ -955,6 +958,7 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script src="../js/i18n.js"></script>
   <script>
     /* Parallax on hero cover */
     (function () {

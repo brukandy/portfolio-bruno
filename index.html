@@ -92,6 +92,8 @@
       font-style: normal !important;
       color: #C6F135;
     }
+    .nav__hamburger span { background: #a0a09a; }
+    .nav__hamburger.is-open span { background: #ffffff; }
     .nav__logo-bottom {
       font-weight: 400 !important;
       font-style: normal !important;
@@ -258,6 +260,20 @@
       border-color: rgba(255,255,255,0.15);
       color: #555552;
     }
+    /* Lang toggle */
+    .lang-toggle {
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 4px;
+      padding: 3px 9px;
+      cursor: pointer;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: #a0a09a;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .lang-toggle:hover { border-color: #C6F135; color: #C6F135; }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8ZQ504EGF"></script>
@@ -286,9 +302,11 @@
     <a href="index.html" class="nav__logo"><span class="nav__logo-top">Bruno</span><span class="nav__logo-bottom">Lorenzon</span></a>
 
     <ul class="nav__links nav__right">
-      <li><a href="#about" class="nav__link">About</a></li>
-      <li><a href="#contact" class="nav__link">Contact</a></li>
+      <li><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+      <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+      <li><button id="lang-toggle" class="nav__link lang-toggle" aria-label="Switch language">EN</button></li>
     </ul>
+    <button class="nav__hamburger" id="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
 
   <!-- ===================== HERO ===================== -->
@@ -325,10 +343,10 @@
           <textPath fill="#ffffff" style="fill: #ffffff !important;" href="#eyebrow-curve" startOffset="50%" text-anchor="middle">This is Bruno</textPath>
         </text>
       </svg>
-      <h1 class="hero__title fade-up fade-up-delay-1">UX &amp;<br>Product Designer</h1>
-      <p class="hero__subtitle fade-up fade-up-delay-2">Design sistemico + AI workflow — dalla ricerca al prodotto scalabile.</p>
+      <h1 class="hero__title fade-up fade-up-delay-1" data-i18n="hero.title">UX &amp;<br>Product Designer</h1>
+      <p class="hero__subtitle fade-up fade-up-delay-2" data-i18n="hero.subtitle">Design sistemico + AI workflow — dalla ricerca al prodotto scalabile.</p>
       <a href="works-dark.html" class="hero__cta fade-up fade-up-delay-3">
-        Vedi i progetti
+        <span data-i18n="hero.cta">Vedi i progetti</span>
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -338,7 +356,7 @@
   <section class="sneak">
     <div class="sneak__label">
       <div class="sneak__icon">🔭</div>
-      <h2 class="sneak__title">Sneak peak dei miei lavori</h2>
+      <h2 class="sneak__title" data-i18n="sneak.title">Sneak peak dei miei lavori</h2>
     </div>
     <div class="sneak__track-wrapper">
       <div class="sneak__track">
@@ -368,16 +386,16 @@
   <section class="works-section">
     <div class="container">
       <div class="works-section__header">
-        <h2 class="works-section__title">Design in azione</h2>
-        <p class="works-section__sub fade-up fade-up-delay-1">Piattaforme digitali, app, e-learning e strategie UX che producono risultati reali.</p>
+        <h2 class="works-section__title" data-i18n="works.title">Design in azione</h2>
+        <p class="works-section__sub fade-up fade-up-delay-1" data-i18n="works.sub">Piattaforme digitali, app, e-learning e strategie UX che producono risultati reali.</p>
       </div>
 
       <div class="filters fade-up">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="product">Product Design</button>
-        <button class="filter-btn" data-filter="ux-research">UX Research</button>
-        <button class="filter-btn" data-filter="elearning">E-learning</button>
-        <button class="filter-btn" data-filter="ui">UI Design</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
+        <button class="filter-btn" data-filter="product" data-i18n="filter.product">Product Design</button>
+        <button class="filter-btn" data-filter="ux-research" data-i18n="filter.ux-research">UX Research</button>
+        <button class="filter-btn" data-filter="elearning" data-i18n="filter.elearning">E-learning</button>
+        <button class="filter-btn" data-filter="ui" data-i18n="filter.ui">UI Design</button>
       </div>
 
       <div class="projects-grid">
@@ -388,8 +406,8 @@
             <img src="assets/images/herozuru.webp" alt="Zuru Tech — Smart Home App" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Zuru Tech – Smart Home App</h3>
-            <p class="project-card__desc">App di automazione domestica con digital twin nativo: controllo granulare finestre, luci e clima senza la complessità di Google Home.</p>
+            <h3 class="project-card__title" data-i18n="card.zuru.title">Zuru Tech – Smart Home App</h3>
+            <p class="project-card__desc" data-i18n="card.zuru.desc">App di automazione domestica con digital twin nativo: controllo granulare finestre, luci e clima senza la complessità di Google Home.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">Product Design</span>
@@ -408,8 +426,8 @@
             <img src="assets/images/rentallhero.webp" alt="RentAll — P2P Rental App" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">RentAll – P2P Rental App</h3>
-            <p class="project-card__desc">App di noleggio peer-to-peer progettata con design thinking: ricerca utenti, analisi competitor, prototipazione e test.</p>
+            <h3 class="project-card__title" data-i18n="card.rentall.title">RentAll – P2P Rental App</h3>
+            <p class="project-card__desc" data-i18n="card.rentall.desc">App di noleggio peer-to-peer progettata con design thinking: ricerca utenti, analisi competitor, prototipazione e test.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">Product Design</span>
@@ -428,8 +446,8 @@
             <img src="assets/images/HERO.webp" alt="Leone Master School" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top left;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Leone Master School – Platform UX</h3>
-            <p class="project-card__desc">Redesign completo della piattaforma e-learning: onboarding, homepage personalizzata, architettura contenuti e UX mobile.</p>
+            <h3 class="project-card__title" data-i18n="card.leone.title">Leone Master School – Platform UX</h3>
+            <p class="project-card__desc" data-i18n="card.leone.desc">Redesign completo della piattaforma e-learning: onboarding, homepage personalizzata, architettura contenuti e UX mobile.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">E-learning</span>
@@ -448,8 +466,8 @@
             <img src="assets/images/tiacard.avif" alt="There Is An Alternative — Career Platform" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">There Is An Alternative – Career Platform</h3>
-            <p class="project-card__desc">UX e layout per piattaforma career media: esplorazione aziende con contenuti immersivi e job discovery.</p>
+            <h3 class="project-card__title" data-i18n="card.tia.title">There Is An Alternative – Career Platform</h3>
+            <p class="project-card__desc" data-i18n="card.tia.desc">UX e layout per piattaforma career media: esplorazione aziende con contenuti immersivi e job discovery.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UI Design</span>
@@ -468,8 +486,8 @@
             <img src="assets/images/herocolosseum.webp" alt="Colosseum Luxury Suite" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Colosseum Luxury Suite – Website</h3>
-            <p class="project-card__desc">Sito per affitti brevi ottimizzato per conversione: struttura, CTA, contenuti e miglioramenti di performance.</p>
+            <h3 class="project-card__title" data-i18n="card.colosseum.title">Colosseum Luxury Suite – Website</h3>
+            <p class="project-card__desc" data-i18n="card.colosseum.desc">Sito per affitti brevi ottimizzato per conversione: struttura, CTA, contenuti e miglioramenti di performance.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UI Design</span>
@@ -488,8 +506,8 @@
             <img src="assets/images/adeccogenzcard.webp" alt="Adecco Gen Z" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Adecco Gen Z – Engagement Platform</h3>
-            <p class="project-card__desc">Engagement Gen Z: ricerca utenti, persona, contenuti editoriali e strategia digitale per registrazioni e upload CV.</p>
+            <h3 class="project-card__title" data-i18n="card.adecco.title">Adecco Gen Z – Engagement Platform</h3>
+            <p class="project-card__desc" data-i18n="card.adecco.desc">Engagement Gen Z: ricerca utenti, persona, contenuti editoriali e strategia digitale per registrazioni e upload CV.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UX Research</span>
@@ -508,8 +526,8 @@
             <img src="assets/images/hero treedom.avif" alt="Treedom — UX Concept" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;" />
           </div>
           <div class="project-card__body">
-            <h3 class="project-card__title">Treedom – UX Concept & Experience</h3>
-            <p class="project-card__desc">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità.</p>
+            <h3 class="project-card__title" data-i18n="card.treedom.title">Treedom – UX Concept & Experience</h3>
+            <p class="project-card__desc" data-i18n="card.treedom.desc">Concept UX per migliorare l'esperienza utente e la comunicazione del valore legato alla sostenibilità.</p>
             <div class="project-card__bottom">
               <div class="project-card__tags">
                 <span class="tag">UX Concept</span>
@@ -533,8 +551,8 @@
     <!-- Center content -->
     <div class="value__center">
       <div class="value__icon">🛸</div>
-      <h2 class="value__title">Cosa metto<br>in tavola</h2>
-      <p class="value__sub">Esperienze digitali che coinvolgono gli utenti<br>e aiutano i prodotti a crescere davvero.</p>
+      <h2 class="value__title" data-i18n="value.title">Cosa metto<br>in tavola</h2>
+      <p class="value__sub" data-i18n="value.sub">Esperienze digitali che coinvolgono gli utenti<br>e aiutano i prodotti a crescere davvero.</p>
     </div>
   </section>
 
@@ -542,14 +560,12 @@
   <section id="about" style="padding: 0 0 var(--gap);">
     <div class="about fade-up">
       <div class="about__content">
-        <p class="about__eyebrow">Behind the canvas</p>
-        <h2 class="about__title">Ciao,<br>sono Bruno</h2>
-        <p class="about__text">
-          Sono il tipo che ferma la riunione quando si salta la ricerca. Lavoro su prodotti complessi — dall'architettura al visual — con un processo sistematico e workflow AI che tagliano i tempi senza tagliare la qualità del pensiero.
-          Ho imparato che i problemi di design più difficili non sono mai di design. Sono di chiarezza, di contesto, di chi parla con chi. Il mio lavoro è capire tutto questo prima di aprire Figma.
-        </p>
+        <p class="about__eyebrow" data-i18n="about.eyebrow">Behind the canvas</p>
+        <h2 class="about__title" data-i18n="about.title">Ciao,<br>sono Bruno</h2>
+        <p class="about__text" data-i18n="about.text1">Sono il tipo che ferma la riunione quando si salta la ricerca. Lavoro su prodotti complessi — dall'architettura al visual — con un processo sistematico e workflow AI che tagliano i tempi senza tagliare la qualità del pensiero.</p>
+        <p class="about__text" data-i18n="about.text2" style="margin-top:12px;">Ho imparato che i problemi di design più difficili non sono mai di design. Sono di chiarezza, di contesto, di chi parla con chi. Il mio lavoro è capire tutto questo prima di aprire Figma.</p>
         <a href="#contact" class="about__cta">
-          Parliamo
+          <span data-i18n="about.cta">Parliamo</span>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
@@ -563,16 +579,16 @@
   <section id="contact" class="contact">
     <div class="container">
       <div class="contact__icon fade-up">📬</div>
-      <h2 class="contact__title">Costruiamo qualcosa<br>di straordinario?</h2>
-      <p class="contact__sub fade-up fade-up-delay-1">Sono disponibile per collaborazioni, freelance e opportunità full-time.</p>
+      <h2 class="contact__title" data-i18n="contact.title">Costruiamo qualcosa<br>di straordinario?</h2>
+      <p class="contact__sub fade-up fade-up-delay-1" data-i18n="contact.sub">Sono disponibile per collaborazioni, freelance e opportunità full-time.</p>
 
       <div class="contact__links fade-up fade-up-delay-2">
         <a href="mailto:lorenzonbruno93@gmail.com" class="contact__link-item">
-          <span class="contact__link-label">Email</span>
+          <span class="contact__link-label" data-i18n="contact.email-label">Email</span>
           <span class="contact__link-value">lorenzonbruno93@gmail.com</span>
         </a>
         <a href="https://www.linkedin.com/in/lorenzonstudio/" target="_blank" class="contact__link-item">
-          <span class="contact__link-label">LinkedIn</span>
+          <span class="contact__link-label" data-i18n="contact.linkedin-label">LinkedIn</span>
           <span class="contact__link-value">linkedin.com/in/lorenzonstudio</span>
         </a>
       </div>
@@ -582,9 +598,10 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="footer__logo"><span class="footer__logo-top">Bruno</span><span class="footer__logo-bottom">Lorenzon</span></div>
-    <p class="footer__copy">© 2025 — UX & Product Designer</p>
+    <p class="footer__copy" data-i18n="footer.copy">© 2025 — UX & Product Designer</p>
   </footer>
 
   <script src="js/main.js?v=6"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>
