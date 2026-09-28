@@ -3,4 +3,5 @@ Allow: /
 Disallow: /cv-bruno-lorenzon.html
 Disallow: /linkedin-banner.html
 Disallow: /assets/zuru-flow.html
+Disallow: /assets/vetrine-proto/
 Sitemap: https://brunolorenzon.com/sitemap.xml
